@@ -1,17 +1,14 @@
 # A motivação do tipo dinheiro
 
 
-	Segundo o Wikipédia, o dinheiro é o meio usado na troca de bens, usado na compra de bens, serviços, força de trabalho, divisas estrangeiras ou nas demais transações financeiras, emitido e controlado pelo governo de cada país, que é o único que tem essa atribuição. Considerando isso, muitos sistemas em Java acabam utilizando ou representando esse o valor monetário, mas como representar o dinheiro em seu sistema?
-
+Segundo o Wikipédia, o dinheiro é o meio usado na troca de bens, usado na compra de bens, serviços, força de trabalho, divisas estrangeiras ou nas demais transações financeiras, emitido e controlado pelo governo de cada país, que é o único que tem essa atribuição. Considerando isso, muitos sistemas em Java acabam utilizando ou representando esse o valor monetário, mas como representar o dinheiro em seu sistema?
 
 Para representar o dinheiro a primeira estratégia é utilizar os tipos já oriundos do Java, o livro Java Efetivo não recomenda a utilização do uso do double e float quando respostas precisas são necessárias. 
 
-[code]
+``` java
 double val = 1.03 - .42;
 System.out.println(val); //0.6100000000000001
-[/code]
-
-
+```
 
 O Java efetivo recomenda duas estratégias, a primeira delas é utilizando o long e o int, para isso, é necessário realizar a conversão do valor para centavos, essa solução é muito recomendada quando a velocidade e a ocupação de memória são pontos importantes, no entanto, é importante se preocupar com o número de casas decimais, o livro não recomenda representação maior que nove casas decimais.
 
