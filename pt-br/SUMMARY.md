@@ -1,4 +1,5 @@
 # Summary
 
-* [A motivação do tipo dinheiro](introduction.md)
-* [Mas ninguém passou por isso antes? Conhecimento da API](chapter1.md)
+* [Introdução](introduction.md)
+* [A motivação do tipo dinheiro](chapter1.md)
+* * [Mas ninguém passou por isso antes? Conhecimento da API](chapter2.md)
