@@ -131,8 +131,8 @@ Pronto, Com isso resolvemos todos os nossos problemas, certo? Errado! Vamos list
 
  
 * Para realizar o somatório de produtos é necessário que a pessoa lembre de realizar a chamada da classe utilitária, mas o que acontece com aquilo que você tem de lembrar? Exato, fatalmente se esquece. 
-Como falamos acima, o dinheiro pode ser usado não apenas com produto, mas com diversas coisas, serviços, força de trabalho, etc., assim será necessário duplicar os dois campos, moeda e valor monetário, para diversos pontos.
-Uma vez com diversas classes utilizando o dinheiro teremos duas estratégias para realizar a validação, uma seria criar classes utilitárias para todo modelo que use dinheiro, ServiceUtils, GoodsUtils, etc., ou uma classe utilitária que recebe quatro parâmetros (o valor e a moeda dos dois para ser comparado e então somado).
+* Como falamos acima, o dinheiro pode ser usado não apenas com produto, mas com diversas coisas, serviços, força de trabalho, etc., assim será necessário duplicar os dois campos, moeda e valor monetário, para diversos pontos.
+* Uma vez com diversas classes utilizando o dinheiro teremos duas estratégias para realizar a validação, uma seria criar classes utilitárias para todo modelo que use dinheiro, ServiceUtils, GoodsUtils, etc., ou uma classe utilitária que recebe quatro parâmetros (o valor e a moeda dos dois para ser comparado e então somado).
 
 ``` java
 public class MoneyUtils {
@@ -143,18 +143,18 @@ public class ServiceUtils {}
 public class WorkerUtils {}
 ```
 
-O que acontece se eu apenas definir apenas um único item do dinheiro, o valor ou a moeda? Faz sentido dizer que o produto vale doze? Ou que ele vale dólar? Absolutamente não, ele vale doze dólares e isso precisa ser validado.
-É de responsabilidade da classe produto, ou qualquer outra que trate do dinheiro, cuidar da criação e do estado do dinheiro? 
-Uma vez utilizando classes utilitárias para realizar essa validação não estamos vazando encapsulamento? Afinal é possível realizar o somatório de dois valores ignorando a validação da moeda gerando erro. Olhando a definição do Wikipédia sobre o encapsulamento: Permite esconder propriedades e métodos de um objeto para proteger o código de corrupções acidentais.
+* O que acontece se eu apenas definir apenas um único item do dinheiro, o valor ou a moeda? Faz sentido dizer que o produto vale doze? Ou que ele vale dólar? Absolutamente não, ele vale doze dólares e isso precisa ser validado.
+* É de responsabilidade da classe produto, ou qualquer outra que trate do dinheiro, cuidar da criação e do estado do dinheiro? 
+* Uma vez utilizando classes utilitárias para realizar essa validação não estamos vazando encapsulamento? Afinal é possível realizar o somatório de dois valores ignorando a validação da moeda gerando erro. Olhando a definição do Wikipédia sobre o encapsulamento: Permite esconder propriedades e métodos de um objeto para proteger o código de corrupções acidentais.
 
 
 Além desses problemas, usando como referência o Clean Code, temos uma ótima definição entre estrutura de dados e um objeto, basicamente o objeto esconde os dados para expor um comportamento, ou seja, não estamos programando orientado a objetos dessa forma. 
 
 A solução para resolver esse problema virá de um artigo do Martin Fowler, na qual ele cita o exemplo do dinheiro como o seu favorito, assim será criado o tipo dinheiro. Com isso resolveremos:
 
-Centralização do código, todo o comportamento do dinheiro estará na classe dinheiro.
-Removeremos a responsabilidade das outras classes, não será necessário, por exemplo, ter o controle na hora de criar valores dentro da classe produto citada anteriormente.
-Adeus as classes utilitárias, uma vez a validação dentro da classe dinheiro, as classes utilitárias não serão mais necessárias, sem falar no clássico problema de esquecer de usá-las. 
+* Centralização do código, todo o comportamento do dinheiro estará na classe dinheiro.
+* Removeremos a responsabilidade das outras classes, não será necessário, por exemplo, ter o controle na hora de criar valores dentro da classe produto citada anteriormente.
+* Adeus as classes utilitárias, uma vez a validação dentro da classe dinheiro, as classes utilitárias não serão mais necessárias, sem falar no clássico problema de esquecer de usá-las. 
 
 ``` java
 public class Money {
