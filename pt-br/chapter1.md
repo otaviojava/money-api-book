@@ -3,14 +3,14 @@
 
 Segundo o Wikipédia, o dinheiro é o meio usado na troca de bens, usado na compra de bens, serviços, força de trabalho, divisas estrangeiras ou nas demais transações financeiras, emitido e controlado pelo governo de cada país, que é o único que tem essa atribuição. Considerando isso, muitos sistemas em Java acabam utilizando ou representando esse o valor monetário, mas como representar o dinheiro em seu sistema?
 
-Para representar o dinheiro a primeira estratégia é utilizar os tipos já oriundos do Java, o livro Java Efetivo não recomenda a utilização do uso do double e float quando respostas precisas são necessárias. 
+Para representar o dinheiro a primeira estratégia é utilizar os tipos já oriundos do Java, o livro Java Efetivo não recomenda a utilização do uso do ``double`` e ``float`` quando respostas precisas são necessárias. 
 
 ``` java
 double val = 1.03 - .42;
 System.out.println(val); //0.6100000000000001
 ```
 
-O Java efetivo recomenda duas estratégias, a primeira delas é utilizando o long e o int, para isso, é necessário realizar a conversão do valor para centavos, essa solução é muito recomendada quando a velocidade e a ocupação de memória são pontos importantes, no entanto, é importante se preocupar com o número de casas decimais, o livro não recomenda representação maior que nove casas decimais.
+O Java efetivo recomenda duas estratégias, a primeira delas é utilizando o ``long`` e o ``int``, para isso, é necessário realizar a conversão do valor para centavos, essa solução é muito recomendada quando a velocidade e a ocupação de memória são pontos importantes, no entanto, é importante se preocupar com o número de casas decimais, o livro não recomenda representação maior que nove casas decimais.
 
 ``` java
 public static void main(String[] args) {
@@ -25,7 +25,7 @@ System.out.println("Money left over: "+ funds + " cents");
 }
 ```
 
-	Um problema de utilizar a representação do dinheiro com int e long é a dificuldade e a não legibilidade de representar valores monetários dessa forma. Para exemplificar, um produto tem um preço no valor de doze dólares, como representamos em centavos, colocaremos o valor de mil e duzentos centavos.
+Um problema de utilizar a representação do dinheiro com ``int`` e ``long`` é a dificuldade e a não legibilidade de representar valores monetários dessa forma. Para exemplificar, um produto tem um preço no valor de doze dólares, como representamos em centavos, colocaremos o valor de mil e duzentos centavos.
 
 ``` java
 public class Product {
@@ -41,7 +41,7 @@ int sum = banana.getMoney() + macarrao.getMoney();
  Mas o que aconteceria se esquecermos de converter esse valor de dólares para centavos (no caso colocar apenas doze em vez de mil e duzentos)? Certamente o resultado seria desastroso, outro problema seria no controle de arredondamentos.
 
 
-Além do uso de int e long o Java efetivo recomenda o uso do Bigdecimal, com isso, nosso produto terá uma chamada bem mais intuitiva e mais comum, afinal, é mais natural falar que um produto custa doze dólares e não mil e duzentos centavos.
+Além do uso de ``int`` e ``long`` o Java efetivo recomenda o uso do ``Bigdecimal``, com isso, nosso produto terá uma chamada bem mais intuitiva e mais comum, afinal, é mais natural falar que um produto custa doze dólares e não mil e duzentos centavos.
 
 ``` java
 public class Product {
@@ -54,7 +54,7 @@ Produto pasta = new Produto("pasta", BigDecimal.valueOf(4D));
 BigDecimal sum = banana.getMoney().add(macarrao.getMoney());
 ```
 
-Outro ponto importante que o BigDecimal já trata é o controle de arredondamentos de maneira tranquila.
+Outro ponto importante que o ``BigDecimal`` já trata é o controle de arredondamentos de maneira tranquila.
 
 Indo além com a nossa classe produto, temos um pequeno problema com ela, não representamos a moeda! Ou seja, ela ficou subentendida em todos os casos, caso o meu sistema lide apenas com uma moeda isto não é um problema, mas imagine que o meu produto seja vendido em diversos pontos do mundo. Apenas o doze não significa nada, doze pode ser qualquer coisa (reais, pesos, dólares, etc.).
 
@@ -62,7 +62,7 @@ Para representar o dinheiro é importante entendê-lo. De forma resumida, o dinh
 
 Assim, teremos que adicionar a moeda dentro do produto. Podemos representar moeda de algumas formas: 
 
-A primeira delas é utilizando o tipo String, mas o que acontece se em vez de escrever dólar escrever “dolra” com um pequeno problema de escrita? Não temos nenhum controle com o tipo String, assim ele pode receber desde um pequeno erro de escrita até valores ilógicos como banana, macarrão, etc. Apesar destes últimos não serem moedas serão normalmente aceitos se forem passados como String.
+A primeira delas é utilizando o tipo ``String``, mas o que acontece se em vez de escrever *dólar* escrever *“dolra”* com um pequeno problema de escrita? Não temos nenhum controle com o tipo ``String``, assim ele pode receber desde um pequeno erro de escrita até valores ilógicos como banana, macarrão, etc. Apesar destes últimos não serem moedas serão normalmente aceitos se forem passados como ``String``.
 
 ``` java
 public class Product {
@@ -73,7 +73,7 @@ public class Product {
 }
 ```
 
-A segunda estratégia seria utilizar um enum para representar as moedas, dessa forma, as opções serão restritas. Com essa estratégia resolvemos o problema da String, apenas serão possíveis os valores que definiremos a partir do enum, porém nosso enum precisará ficar mais rico uma vez que temos de lidar com diversos aspectos de internacionalização dentre eles a ISO 4217, padrão para moeda.
+A segunda estratégia seria utilizar um ``enum`` para representar as moedas, dessa forma, as opções serão restritas. Com essa estratégia resolvemos o problema da ``String``, apenas serão possíveis os valores que definiremos a partir do ``enum``, porém nosso enum precisará ficar mais rico uma vez que temos de lidar com diversos aspectos de internacionalização dentre eles a ISO 4217, padrão para moeda.
 
 ``` java
 public class Product {
@@ -87,7 +87,7 @@ enum Currency {
 }
 ```
 
-Para resolver isso, é possível utilizar uma classe já existente dentro do JDK a classe java.util.Currency, com ela conseguimos resolver os dois problemas:
+Para resolver isso, é possível utilizar uma classe já existente dentro do JDK a classe *java.util.Currency*, com ela conseguimos resolver os dois problemas:
 
 Apenas entrarão valores do tipo Currency no setter e o outro é que ela já trabalha com a ISO 4217.
 
@@ -129,7 +129,8 @@ BigDecimal sum = ProdutoUtils.sum(pasta, banana);
 
 Pronto, Com isso resolvemos todos os nossos problemas, certo? Errado! Vamos listar alguns possíveis problemas:
 
-Para realizar o somatório de produtos é necessário que a pessoa lembre de realizar a chamada da classe utilitária, mas o que acontece com aquilo que você tem de lembrar? Exato, fatalmente se esquece. 
+ 
+* Para realizar o somatório de produtos é necessário que a pessoa lembre de realizar a chamada da classe utilitária, mas o que acontece com aquilo que você tem de lembrar? Exato, fatalmente se esquece. 
 Como falamos acima, o dinheiro pode ser usado não apenas com produto, mas com diversas coisas, serviços, força de trabalho, etc., assim será necessário duplicar os dois campos, moeda e valor monetário, para diversos pontos.
 Uma vez com diversas classes utilizando o dinheiro teremos duas estratégias para realizar a validação, uma seria criar classes utilitárias para todo modelo que use dinheiro, ServiceUtils, GoodsUtils, etc., ou uma classe utilitária que recebe quatro parâmetros (o valor e a moeda dos dois para ser comparado e então somado).
 
