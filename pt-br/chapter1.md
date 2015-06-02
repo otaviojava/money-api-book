@@ -10,7 +10,7 @@ double val = 1.03 - .42;
 System.out.println(val); //0.6100000000000001
 ```
 
-O Java efetivo recomenda duas estratégias, a primeira delas é utilizando o ``long`` e o ``int``, para isso, é necessário realizar a conversão do valor para centavos, essa solução é muito recomendada quando a velocidade e a ocupação de memória são pontos importantes, no entanto, é importante se preocupar com o número de casas decimais, o livro não recomenda representação maior que nove casas decimais.
+Esse mesmo livro recomenda duas estratégias, a primeira delas é utilizando o long e o ``int``, para isso, é necessário realizar a conversão do valor para centavos, essa solução é muito recomendada quando a velocidade e a ocupação de memória são pontos importantes, no entanto, é importante se preocupar com o número de casas decimais, o livro não recomenda representação maior que nove casas decimais.
 
 ``` java
 public static void main(String[] args) {
@@ -38,10 +38,10 @@ Produto pasta = new Produto("pasta", 4_00);
 int sum = banana.getMoney() + macarrao.getMoney();
 ```
 
- Mas o que aconteceria se esquecermos de converter esse valor de dólares para centavos (no caso colocar apenas doze em vez de mil e duzentos)? Certamente o resultado seria desastroso, outro problema seria no controle de arredondamentos.
+ Mas o que aconteceria se esquecermos de converter esse valor de dólares para centavos (no caso colocar apenas doze em vez de mil e duzentos)? Certamente o resultado seria desastroso, outro problema estaria no controle de arredondamentos.
 
 
-Além do uso de ``int`` e ``long`` o Java efetivo recomenda o uso do ``Bigdecimal``, com isso, nosso produto terá uma chamada bem mais intuitiva e mais comum, afinal, é mais natural falar que um produto custa doze dólares e não mil e duzentos centavos.
+Além do uso de ``int`` e ``long`` o Java efetivo recomenda o uso do ``BigDecimal``, com isso, nosso produto terá uma chamada bem mais intuitiva e mais comum, afinal, é mais natural falar que um produto custa doze dólares e não mil e duzentos centavos.
 
 ``` java
 public class Product {
@@ -58,11 +58,9 @@ Outro ponto importante que o ``BigDecimal`` já trata é o controle de arredonda
 
 Indo além com a nossa classe produto, temos um pequeno problema com ela, não representamos a moeda! Ou seja, ela ficou subentendida em todos os casos, caso o meu sistema lide apenas com uma moeda isto não é um problema, mas imagine que o meu produto seja vendido em diversos pontos do mundo. Apenas o doze não significa nada, doze pode ser qualquer coisa (reais, pesos, dólares, etc.).
 
-Para representar o dinheiro é importante entendê-lo. De forma resumida, o dinheiro é composto por duas partes, a parte do valor que é a quantidade, assim representada de forma numérica, mas apenas com esse valor não conseguimos fazer muita coisa, precisamos da moeda. A moeda representa o “sistema do dinheiro” em comum uso, especialmente dentro de uma nação, seguindo essa definição o real, peso, dólar e euros são tipos de moedas.
+Para representar o dinheiro é importante entendê-lo. De forma resumida, o dinheiro é composto por duas partes, a parte do valor que é a quantidade numérica, mas apenas com esse valor não conseguimos fazer muita coisa, precisamos da moeda. A moeda representa o “sistema do dinheiro” em comum uso, especialmente dentro de uma nação, seguindo essa definição o real, peso, dólar e euros são tipos de moedas. Portanto, teremos que adicionar a moeda dentro do produto. Podemos representar moeda de algumas formas: 
 
-Assim, teremos que adicionar a moeda dentro do produto. Podemos representar moeda de algumas formas: 
-
-A primeira delas é utilizando o tipo ``String``, mas o que acontece se em vez de escrever *dólar* escrever *“dolra”* com um pequeno problema de escrita? Não temos nenhum controle com o tipo ``String``, assim ele pode receber desde um pequeno erro de escrita até valores ilógicos como banana, macarrão, etc. Apesar destes últimos não serem moedas serão normalmente aceitos se forem passados como ``String``.
+A primeira delas é utilizando o tipo ``String``, mas o que acontece se em vez de escrever dólar escrever “dolra” com um pequeno problema de escrita? Não temos nenhum controle com o tipo String, assim ele pode receber desde um pequeno erro de escrita até valores ilógicos como banana, macarrão, etc. Apesar destes últimos não serem moedas serão normalmente aceitos se forem passados como ``String``.
 
 ``` java
 public class Product {
@@ -73,7 +71,8 @@ public class Product {
 }
 ```
 
-A segunda estratégia seria utilizar um ``enum`` para representar as moedas, dessa forma, as opções serão restritas. Com essa estratégia resolvemos o problema da ``String``, apenas serão possíveis os valores que definiremos a partir do ``enum``, porém nosso enum precisará ficar mais rico uma vez que temos de lidar com diversos aspectos de internacionalização dentre eles a ISO 4217, padrão para moeda.
+A segunda estratégia seria utilizar um ``enum`` para representar as moedas, dessa forma, as opções serão restritas. Com essa estratégia resolvemos o problema da ~~``String``,~~ apenas serão possíveis os valores que definiremos a partir do ``enum``, porém nosso ``enum`` precisará ficar mais rico uma vez que temos de lidar com diversos aspectos de internacionalização dentre eles a ISO *4217*, padrão para moeda.
+
 
 ``` java
 public class Product {
@@ -89,7 +88,9 @@ enum Currency {
 
 Para resolver isso, é possível utilizar uma classe já existente dentro do JDK a classe *java.util.Currency*, com ela conseguimos resolver os dois problemas:
 
-Apenas entrarão valores do tipo Currency no setter e o outro é que ela já trabalha com a ISO 4217.
+* Apenas entrarão valores do tipo **Currency** no setter.
+* Essa classe já trabalha com a ISO 4217.
+
 
 ``` java
 public class Product {
@@ -144,11 +145,11 @@ public class WorkerUtils {}
 ```
 
 * O que acontece se eu apenas definir apenas um único item do dinheiro, o valor ou a moeda? Faz sentido dizer que o produto vale doze? Ou que ele vale dólar? Absolutamente não, ele vale doze dólares e isso precisa ser validado.
-* É de responsabilidade da classe produto, ou qualquer outra que trate do dinheiro, cuidar da criação e do estado do dinheiro? 
+* É de responsabilidade da classe produto, ou qualquer outra que precise trabalhar com o dinheiro, cuidar da criação e do estado do dinheiro? 
 * Uma vez utilizando classes utilitárias para realizar essa validação não estamos vazando encapsulamento? Afinal é possível realizar o somatório de dois valores ignorando a validação da moeda gerando erro. Olhando a definição do Wikipédia sobre o encapsulamento: Permite esconder propriedades e métodos de um objeto para proteger o código de corrupções acidentais.
 
 
-Além desses problemas, usando como referência o Clean Code, temos uma ótima definição entre estrutura de dados e um objeto, basicamente o objeto esconde os dados para expor um comportamento, ou seja, não estamos programando orientado a objetos dessa forma. 
+Além desses problemas, usando como referência o Clean Code, temos uma ótima definição entre estrutura de dados e um objeto, basicamente o objeto esconde os dados para expor um comportamento, ou seja, não estamos programando orientado a objetos dessa forma.
 
 A solução para resolver esse problema virá de um artigo do Martin Fowler, na qual ele cita o exemplo do dinheiro como o seu favorito, assim será criado o tipo dinheiro. Com isso resolveremos:
 
