@@ -11,3 +11,4 @@ Relembrando o conceito de dinheiro, de forma resumida, o dinheiro é composto po
 
 
 Na money-api, será usado esse nome em vez de JSR 354, também será necessário representar tanto o valor numérico quanto a moeda. Para representar a moeda existe a interface CurrencyUnit ela precisa ser imutável e thread-safe.
+
