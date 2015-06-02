@@ -1,0 +1,4 @@
+# A motivação do tipo dinheiro
+
+
+No capítulo anterior foi discutido as vantagens de se trazer o dinheiro como um tipo em vez de tratá-lo como apenas como tipo primitivo. Mas será que ninguém nunca passou por esse problema antes? A arte de “reinventar a roda” além de ser muito custosa, já que demanda muito tempo, passa a ser muito perigosa já que se tende a passar pelos mesmos problemas que um programador mais experiente já enfrentou. Uma famosa frase de Clarice Lispector diz: "Quem caminha sozinho pode até chegar mais rápido, mas aquele que vai acompanhado, com certeza vai mais longe.", ou seja, a melhor estratégia é se unir à um framework que já faz isso, assim é possível trocar experiências com programadores que já passaram por isso, não repetir os mesmos erros, contribuir com essa ferramenta, dessa forma, ela ficará cada mais e mais robusta e com menos erros.
