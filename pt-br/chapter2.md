@@ -14,6 +14,6 @@ Na money-api, será usado esse nome em vez de JSR 354, também será necessário
 
 |Nome do método| Descrição |Exemplo|
 | -- | -- | -- |
-|String getCurrencyCode()|Retorna o código da moeda, para as moedas que seguem o ISO isso serão retornados três letras.|BRL para o real brasileiro, USD para dólares americanos.
-|int getNumericCode()|Retorna o código numérico da moeda, assim como o código ele possui três dígitos.|986 para a moeda brasileira, 840 para dólares americanos.|
-|int getDefaultFractionDigits()|Retorna o número de dígitos normalmente utilizado pela moeda.|BRL tem dois e JPY não tem.|
+|```String getCurrencyCode()```|Retorna o código da moeda, para as moedas que seguem o ISO isso serão retornados três letras.|BRL para o real brasileiro, USD para dólares americanos.
+|```int getNumericCode()```|Retorna o código numérico da moeda, assim como o código ele possui três dígitos.|986 para a moeda brasileira, 840 para dólares americanos.|
+|``` int getDefaultFractionDigits()``` |Retorna o número de dígitos normalmente utilizado pela moeda.|BRL tem dois e JPY não tem.|
