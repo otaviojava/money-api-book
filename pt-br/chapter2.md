@@ -52,7 +52,7 @@ public class CurrencyExample2 {
 
 ```
 
-Definido a representação da moeda o próximo passo será a representação do valor monetário, para isso, existe a interface MonetaryAmount, uma característica importante é que todas as implementações precisam ser imutável e thread-safe. 
+Definido a representação da moeda o próximo passo será a representação do valor monetário, para isso, existe a interface ```MonetaryAmount```, uma característica importante é que todas as implementações precisam ser imutável e thread-safe. 
 
 |Método| Descrição|
 | -- | -- |
@@ -76,3 +76,4 @@ Definido a representação da moeda o próximo passo será a representação do 
 |```MonetaryAmount negate()```|Realiza a negação do montante monetário, ou seja, -this.
 |```getCurrency()```|Retorna o dinheiro da moeda.|
 
+Dentro do moneta existem três implementações para a interface ```MonetaryAmount```:
