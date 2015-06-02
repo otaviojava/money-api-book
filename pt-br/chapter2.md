@@ -10,7 +10,7 @@ Uma vez definindo a interface comum, cada empresa ou desenvolvedor poderá optar
 Relembrando o conceito de dinheiro, de forma resumida, o dinheiro é composto por duas partes, a parte do valor que é a quantidade, assim representada de forma numérica, mas apenas com esse valor não conseguimos fazer muita coisa, precisamos da moeda. A moeda representa o “sistema do dinheiro” em comum uso, especialmente dentro de uma nação, seguindo essa definição o real, peso, dólar e euros são tipos de moedas.
 
 
-Na money-api, será usado esse nome em vez de JSR 354, também será necessário representar tanto o valor numérico quanto a moeda. Para representar a moeda existe a interface CurrencyUnit ela precisa ser imutável e thread-safe.
+Na money-api, será usado esse nome em vez de JSR 354, também será necessário representar tanto o valor numérico quanto a moeda. Para representar a moeda existe a interface ```CurrencyUnit``` ela precisa ser imutável e thread-safe.
 
 |Nome do método| Descrição |Exemplo|
 | -- | -- | -- |
