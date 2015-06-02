@@ -77,3 +77,12 @@ Definido a representação da moeda o próximo passo será a representação do 
 |```getCurrency()```|Retorna o dinheiro da moeda.|
 
 Dentro do moneta existem três implementações para a interface ```MonetaryAmount```:
+
+
+1. 
+Money: a implementação padrão, ela representa o valor numérico com o BigDecimal.
+1. 
+RoundedMoney: assim como a implementação Money, representa o valor numérico com o BigDecimal, a diferença entre eles é que com o RoundedMoney é possível receber um MonetaryOperator para ser chamada a cada operação, por exemplo, a cada operação aritmética realizar uma operação de arredondamento.
+
+1. 
+FastMoney: a implementação que representa o valor número com o primitivo long, das implementações apresentadas ela é a mais rápida, cerca de quinze vezes mais rápidas que as outras duas, além de ser mais leve na criação. Porém ela possui uma maior limitação em relação a precisão, caso seja necessário trabalhar com essa precisão, as operações não podem ultrapassar de cinco casas decimais.
