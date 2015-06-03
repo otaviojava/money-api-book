@@ -10,4 +10,5 @@
  * [Operações Aritméticas:](chapter2_2.md)
  * [NumberValue: A representação da parte numérica do money:](chapter2_3.md)
 * [Manipulando e extraindo informação do MonetaryAmount](chapter3.md)
+ * [MonetaryOperator:](chapter3_1.md)
 * [Bibliografia](bibliography.md)
