@@ -1,4 +1,4 @@
-### Métodos de criação:
+### Métodos de criação
 
 
 Para criar uma instância de ```MonetaryAmount```, todas as implementações seguem o mesmo padrão de nomenclatura utilizando, com uma pequena exceção no ```RoundedMoney``` uma vez que ele pode receber um ```MonetaryOperator``` para trabalhar como “arredondador” em cada operação. Listando os mais importantes temos o total de três métodos, que são:
