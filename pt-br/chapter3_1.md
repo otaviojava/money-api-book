@@ -66,4 +66,4 @@ public class MonetaryOperatorsExample {
         MonetaryAmount resultExchange = money.with(MonetaryOperators.exchange(dollar));//USD 120.231
     }
 }
-[/code]
+```
