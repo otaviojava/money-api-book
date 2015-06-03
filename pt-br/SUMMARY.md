@@ -15,4 +15,5 @@
  * [MonetaryQuery vs MonetaryOperator:](chapter3_3.md)
 * [Formatando dinheiro:](chapter4.md)
  * [A classe MonetaryAmountFormat](chapter4_1.md)
+ * [A classe MonetaryAmountFormatSymbols](chapter4_2.md)
 * [Bibliografia](bibliography.md)
