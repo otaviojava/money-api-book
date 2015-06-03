@@ -1,11 +1,10 @@
 ### Predicates
 
 
-Operação de predicate é quando dado uma entrada o retorno é um valor booleano, ou seja, verdadeiro ou falso. Dentro do Stream o predicate pode ser utilizado como filtragem, filtrar por uma moeda específica, ou para match, verificar se existe algum elemento da lista ou todos batem com a condição.
+Operação de predicate é quando dado uma entrada o retorno é um valor booleano, ou seja, *verdadeiro* ou *falso*. Dentro do Stream o predicate pode ser utilizado como filtragem, filtrar por uma moeda específica, ou para match, verificar se existe algum elemento da lista ou todos batem com a condição.
 
 
-[code]
-
+```java
 public class BooleanMonetaryAmount {
 
     public static void main(String[] args) {
@@ -29,5 +28,4 @@ public class BooleanMonetaryAmount {
                 .allMatch(MonetaryFunctions.isCurrency(dollar));//true
     }
 }
-
-[/code]
+```
