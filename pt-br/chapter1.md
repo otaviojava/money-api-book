@@ -1,4 +1,4 @@
-# A motivação do tipo dinheiro
+## A motivação do tipo dinheiro
 
 
 Segundo o Wikipédia, o dinheiro é o meio usado na troca de bens, usado na compra de bens, serviços, força de trabalho, divisas estrangeiras ou nas demais transações financeiras, emitido e controlado pelo governo de cada país, que é o único que tem essa atribuição. Considerando isso, muitos sistemas em Java acabam utilizando ou representando esse o valor monetário, mas como representar o dinheiro em seu sistema?
