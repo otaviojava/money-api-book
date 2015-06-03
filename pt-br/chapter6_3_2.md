@@ -11,7 +11,7 @@ Além de operações com moeda é possível realizar condições com o valor num
 * `isBetween(MonetaryAmount min, MonetaryAmount max)`
 
 
-[code]
+```java
 public class PredicateMonetaryAmountNumberValue {
 
     public static void main(String[] args) {
@@ -39,5 +39,4 @@ public class PredicateMonetaryAmountNumberValue {
     System.out.println(greaterThanZero);
     }
 }
-[/code]
-
+```
