@@ -10,7 +10,7 @@ No primeiro capítulo será discutido a motivação por trás de utilizar um tip
 
 Criação de um tipo dinheiro, mas será que ninguém nunca teve esse problema? Essa pergunta será respondida nesse segundo capítulo, falando da motivação da especificação além do uso básico da API.
 
-Extrair valores e realizar pequenas operações a partir de um valor monetário, esse é o principal objetivo das operações com query e operador: Será demonstrado o funcionamento da classe MonetaryOperator e MonetaryQuery, diferenças entre elas, as classes utilitárias MonetaryOperators e MonetaryQueries como criar uma query ou operação no dinheiro.
+Extrair valores e realizar pequenas operações a partir de um valor monetário, esse é o principal objetivo das operações com query e operador: Será demonstrado o funcionamento das classes ```MonetaryOperator``` e ```MonetaryQuery```, diferenças entre elas, as classes utilitárias ```MonetaryOperators``` e ```MonetaryQueries``` e como criar uma query ou operação no dinheiro.
 
 Formatando um montante monetário: Será demonstrado aqui a forma de exibir formatar o dinheiro com classes já suportadas pela API, além de como criar um formatador do zero.
 
