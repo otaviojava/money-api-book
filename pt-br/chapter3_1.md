@@ -1,4 +1,4 @@
-## MonetaryOperator
+### MonetaryOperator
 
 
 O ```MonetaryOperator``` é uma interface funcional que recebe um ```MonetaryAmount``` e retorna um ```MonetaryAmount```. Essa interface é muito discutida ao se falar sobre a implementação do ```RoundedMoney``` que a utiliza como agente arredondador. Com essa interface é possível realizar operações de arredondamento, retornar parte do dinheiro, o dobro do valor etc. 
