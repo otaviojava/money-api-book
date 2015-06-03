@@ -1,3 +1,5 @@
-#### Realizando ordenação com moeda
+### Ordenando uma lista monetária:
 
-No caso da ordenação da moeda é levado em consideração o código da moeda. Por exemplo, uma lista com as moedas `USD`, `EUR`, `BRL` retornará `BRL`, `EUR` e `USD` de forma ascendente e USD, EUR, BRL de forma decrescente. 
+
+Dentro da classe `MonetaryFunctions` é possível ordenar pela moeda, pelo valor numérico apenas, além da valiosidade de um dinheiro, levando em consideração a cotação da moeda, de forma ascendente e descendente. 
+ 
