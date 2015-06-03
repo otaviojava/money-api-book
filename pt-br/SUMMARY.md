@@ -28,7 +28,7 @@
    * [Juntando as ordenações](chapter6_1_4.md)
  * [Métodos de redução](chapter6_2.md)
    * [Somatório](chapter6_2_1.md)
-   *  [Valor mínimo e valor máximo](chapter6_2_2.md)
+   * [Valor mínimo e valor máximo](chapter6_2_2.md)
  * [Predicates](chapter6_3.md)
    * [Predicate com moedas](chapter6_3_1.md)
    * [Predicate com o valor numérico](chapter6_3_2.md)
