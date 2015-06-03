@@ -19,4 +19,5 @@
 * [Cotação](chapter5.md)
  * [Realizando cotação com ExchangeRateProvider](chapter5_1.md)
  * [Realizando a cotação a partir de uma data específica](chapter5_2.md)
+ * [Ignorando a cotação](chapter5_3.md)
 * [Bibliografia](bibliography.md)
