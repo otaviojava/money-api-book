@@ -19,7 +19,7 @@ public class SortMonetaryAmountExchange {
         ExchangeRateProvider provider =
                 MonetaryConversions.getExchangeRateProvider(ExchangeRateType.IMF);
 
-        ;
+    
         List<MonetaryAmount> resultAsc = Stream.of(money, money2, money3)
                 .sorted(MonetaryFunctions
                         .sortValiable(provider))
