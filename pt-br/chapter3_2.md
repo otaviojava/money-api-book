@@ -1,4 +1,4 @@
-### MonetaryQuery: 
+### MonetaryQuery
 
 
 O ```MonetaryQuery``` semelhante ao ```MonetaryOperator``` é uma interface funcional que recebe um ```MonetaryOperator```, a sua diferença está no retorno, ele pode retornar qualquer tipo de objeto a partir do *generics*. Com o ```MonateryQuery``` é possível recuperar algumas informações no ```MonetaryAmount```, por exemplo, o código da moeda, apenas o número no formato long ou em BigDecimal.
