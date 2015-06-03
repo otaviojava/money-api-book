@@ -1,6 +1,6 @@
 # Sumário
 
-* [Introdução](introduction.md)
+* [Uma especificação de dinheiro, será que vale mesmo a pena?](introduction.md)
 * [Crédito](credicts.md)
 * [Sobre o Autor](about_me.md)
 * [A motivação do tipo dinheiro](chapter1.md)
