@@ -21,4 +21,8 @@
  * [Realizando a cotação a partir de uma data específica](chapter5_2.md)
  * [Ignorando a cotação](chapter5_3.md)
 * [Trabalhando com Streams](chapter6.md)
+ * [Realizando ordenação com moeda](chapter6_1.md)
+ * [Realizando ordenação com o valor numérico](chapter6_2.md)
+ * [Realizando ordenação levando em consideração a cotação](chapter6_3.md)
+ * [Juntando as ordenações](chapter6_4.md)
 * [Bibliografia](bibliography.md)
