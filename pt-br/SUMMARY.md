@@ -12,4 +12,5 @@
 * [Manipulando e extraindo informação do MonetaryAmount](chapter3.md)
  * [MonetaryOperator:](chapter3_1.md)
  * [MonetaryQuery:](chapter3_2.md)
+ * [MonetaryQuery vs MonetaryOperator:](chapter3_3.md)
 * [Bibliografia](bibliography.md)
