@@ -1,0 +1,1 @@
+### Métodos de Criação para o RoundedMoney
