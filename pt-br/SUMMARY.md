@@ -17,4 +17,5 @@
  * [A classe MonetaryAmountFormat](chapter4_1.md)
  * [A classe MonetaryAmountFormatSymbols](chapter4_2.md)
 * [Cotação](chapter5.md)
+ * [Realizando cotação com ExchangeRateProvider](chapter5_1)
 * [Bibliografia](bibliography.md)
