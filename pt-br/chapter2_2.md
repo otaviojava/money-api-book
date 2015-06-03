@@ -31,3 +31,18 @@ public class ArithmeticOperations2 {
     }
 }
 ```
+
+Também é possível realizar operações de sinais com o ```MonetaryAmount```.
+
+
+```java
+public class ArithmeticOperations3 {
+
+    public static void main(String[] args) {
+        CurrencyUnit currency = Monetary.getCurrency("BRL");
+        MonetaryAmount money = Money.of(100, currency);
+        MonetaryAmount negateResult = money.negate();//BRL -100
+        MonetaryAmount plusResult = money.plus();//BRL 100
+    }
+}
+```
