@@ -8,8 +8,7 @@ Com o moneta é possível realizar predicate a partir da moeda, usando o inclusi
 * `filterByExcludingCurrency(CurrencyUnit... currencies)`: Retorna verdadeiro caso o MonetaryAmount não tenha nenhuma das moedas especificadas.
 
 
-
-[code]
+```java
 public class PredicateMonetaryAmountCurrency {
 
     public static void main(String[] args) {
@@ -45,5 +44,4 @@ public class PredicateMonetaryAmountCurrency {
        
     }
 }
-[/code]
-
+```
