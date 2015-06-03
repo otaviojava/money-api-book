@@ -8,4 +8,5 @@
  * [Métodos de criação:](chapter2_1.md)
    * [Métodos de Criação para o RoundedMoney](chapter2_1_1.md)
  * [Operações Aritméticas:](chapter2_2.md)
+ * [NumberValue: A representação da parte numérica do money:](chapter2_3.md)
 * [Bibliografia](bibliography.md)
