@@ -1,4 +1,4 @@
-## Realizando cotação com ExchangeRateProvider
+### Realizando cotação com ExchangeRateProvider
 
 Com o money-api é possível realizar a cotação da moeda, o responsável por essa ação é a interface ```ExchangeRateProvider```.
 
