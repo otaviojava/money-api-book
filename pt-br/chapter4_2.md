@@ -1,4 +1,4 @@
-## A classe MonetaryAmountFormatSymbols
+### A classe MonetaryAmountFormatSymbols
 
 Existe também a interface ```MonetaryAmountFormatSymbols```, que de forma semelhante a classe ```DecimalFormat``` com a classe ```Number```, tem o objetivo de realizar formatações do dinheiro a partir de configurações de símbolos, moedas, quantidade mínima e máxima de dígitos antes e depois da vírgula, etc.
 
