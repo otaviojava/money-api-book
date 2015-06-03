@@ -1,4 +1,4 @@
-## A classe MonetaryAmountFormat
+### A classe MonetaryAmountFormat
 
 A implementação de referência tem duas formas de criar formatador para dinheiro. A primeira opção é com a classe ```MonetaryFormats``` com ela é possível criar formatador a partir de uma query builder ou utilizando apenas pelo ```Locale```. Além do parse sem parâmetros nas implementações do ```MonetaryAmount```, também existe o método parse que aceita o ```MonetaryAmountFormat```.
 
