@@ -6,4 +6,5 @@
 * [A motivação do tipo dinheiro](chapter1.md)
 * [Mas ninguém passou por isso antes? Conhecimento da API](chapter2.md)
  * [Métodos de criação:](chapter2_1.md)
+   * [Métodos de Criação para o RoundedMoney](chapter2_1_1.md)
 * [Bibliografia](bibliography.md)
