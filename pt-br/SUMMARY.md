@@ -26,4 +26,7 @@
    * [Realizando ordenação com o valor numérico](chapter6_1_2.md)
    * [Realizando ordenação levando em consideração a cotação](chapter6_1_3.md)
    * [Juntando as ordenações](chapter6_1_4.md)
+ * [Métodos de redução](chapter6_2.md)
+   * [Somatório](chapter6_2_1.md)
+   *  [Valor mínimo e valor máximo](chapter6_2_2.md)
 * [Bibliografia](bibliography.md)
