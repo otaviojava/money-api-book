@@ -13,4 +13,5 @@
  * [MonetaryOperator:](chapter3_1.md)
  * [MonetaryQuery:](chapter3_2.md)
  * [MonetaryQuery vs MonetaryOperator:](chapter3_3.md)
+* [Formatando dinheiro:](chapter4.md)
 * [Bibliografia](bibliography.md)
