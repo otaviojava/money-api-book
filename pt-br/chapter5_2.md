@@ -1,9 +1,9 @@
 ### Realizando a cotação a partir de uma data específica
 
-Em alguns momentos da aplicação é importante saber não apenas o valor da cotação atual, mas a partir de uma data específica, por exemplo, ao se alugar um hotel normalmente o valor de cotação é dado a partir da confirmação da reserva ou no caso do cartão de crédito o valor da cotação é definido apenas no fechamento da fatura. Com o moneta é possível realizar tal busca a partir de uma data específica para isso é utilizado a  classe ConversionQuery com ela é possível realizar buscas de datas diferentes ou num range de datas. A representação de data aceita é a classe LocalDate.
+Em alguns momentos da aplicação é importante saber não apenas o valor da cotação atual, mas a partir de uma data específica, por exemplo, ao se alugar um hotel normalmente o valor de cotação é dado a partir da confirmação da reserva ou no caso do cartão de crédito o valor da cotação é definido apenas no fechamento da fatura. Com o moneta é possível realizar tal busca a partir de uma data específica para isso é utilizado a  classe ```ConversionQuery``` com ela é possível realizar buscas de datas diferentes ou num range de datas. A representação de data aceita é a classe ```LocalDate```.
 
 
-[code]
+```java
 public class ExchangeRateProviderExample2 {
 
     public static void main(String[] args) {
@@ -27,11 +27,11 @@ public class ExchangeRateProviderExample2 {
         System.out.println(monetaryAmount);
     }
 }
-[/code]
+```
 
 Caso a data especificada não seja encontrada será retornada uma exceção, por exemplo, não será possível recuperar a cotação do dia 9 de janeiro de 2011, uma vez que essa data foi em um domingo e a grande maioria dos provedores de cotação não trabalham nesse dia.
 
-[code]
+```java
 public class ExchangeRateProviderExample3 {
 
     public static void main(String[] args) {
@@ -55,12 +55,12 @@ public class ExchangeRateProviderExample3 {
 
     }
 }
-[/code]
+```
 
 
 Uma possível solução para esse problema é passar um range de datas, assim a implementação vai procurar algumas das datas, caso não encontre nenhuma delas lançará uma exceção, vale salientar que a implementação buscará a partir da ordem que foi definida.
 
-[code]
+```java
 public class ExchangeRateProviderExample4 {
 
     public static void main(String[] args) {
@@ -85,4 +85,4 @@ public class ExchangeRateProviderExample4 {
 
     }
 }
-[/code]
+```
