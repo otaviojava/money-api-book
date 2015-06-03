@@ -19,7 +19,7 @@ public class ExchangeRateProviderExample {
 ```
 
 
-Dentro do moneta existem cinco implementações de ```ExchangeRateProvider```:
+Dentro do moneta existem quatro implementações de ```ExchangeRateProvider```:
 
 * **ECB** implementação que recupera informação recente do Banco Central Europeu.
 * **IMF** implementação que recupera as cotações mais recentes do Fundo Internacional Monetário.
