@@ -1,4 +1,4 @@
-## Formatando dinheiro:
+## Formatando dinheiro
 
 
 
