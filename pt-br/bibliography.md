@@ -1,6 +1,5 @@
 # Bibliografia
 
-
 * Block, Joshua. Java Efetivo. 2ª Ed, 2008.
 * Martin, Robert C. Clean Code - A Handbook of Agile Software Craftsman, 2008.
 * [Fowler, Martin. When to make a Type](http://martinfowler.com/ieeeSoftware/whenType.pdf)
