@@ -5,7 +5,7 @@
 * [Sobre o Autor](about_me.md)
 * [A motivação do tipo dinheiro](chapter1.md)
 * [Mas ninguém passou por isso antes? Conhecimento da API](chapter2.md)
-* [Acesso ao código fonte e instalação](chapter2_1.md)
+ * [Acesso ao código fonte e instalação](chapter2_1.md)
  * [Representando dinheiro e moeda com o money-api](chapter2_2.md)
  * [Métodos de criação](chapter2_3.md)
    * [Métodos de Criação para o RoundedMoney](chapter2_3_1.md)
