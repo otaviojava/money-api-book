@@ -37,9 +37,10 @@ Em seguida acesse a pasta:
 cd javamoney-parent
 ```
 
-Compile e código-fonte e o instale em seu repositório local:
+Compile e código-fonte e o instale em seu repositório local, no nosso caso também pularemos os testes apenas para que seja mais rápido:
+
 ```
-mvn clean install
+mvn clean install -Dmaven.test.skip
 ```
 
 Pronto, uma vez feito isso o próximo passo será realizar a instalação do moneta.
@@ -51,13 +52,15 @@ git clone git@github.com:JavaMoney/jsr354-ri.git
 ```
 
 Em seguida acesse a pasta:
+
 ```
 cd jsr354-ri
 ```
 
-Compile e código-fonte e o instale em seu repositório local:
+Compile e código-fonte e o instale em seu repositório local, no nosso caso também pularemos os testes apenas para que seja mais rápido:
+
 ```
-mvn clean install
+mvn clean install -Dmaven.test.skip
 ```
 
 
