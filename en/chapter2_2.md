@@ -46,7 +46,7 @@ public class CurrencyExample2 {
 
 Once was discussed about the currency the next step will talk about the representation of the monetary amount, for this, there is the `MonetaryAmount`'s interface, an important behavior is all implementation must be immutable and thread-safe.
 
-|Método| Descrição|
+|Method| Description|
 | -- | -- |
 |```<R> R query(MonetaryQuery<R> query)```|Realiza query com o valor monetário.|
 |```MonetaryAmount with(MonetaryOperator operator)```|Realiza operações com o montante monetário.|
