@@ -1,7 +1,6 @@
-### A classe MonetaryAmountFormat
+### The class MonetaryAmountFormat
 
-Com o `MonetaryFormats` é possível criar formatador a partir de uma query builder ou utilizando apenas pelo `Locale`, com o enum `CurrencyStyle` é possível informar quais informações entrarão no formator.
-
+Using the `MonetaryFormats` may to create from a query builder or just using from `Locale` with the `CurrencyStyle` `enum` may put informations that will show on formatter. 
 
 
 ```java
