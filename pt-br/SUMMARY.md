@@ -19,7 +19,7 @@
 * [Formatando dinheiro](chapter4.md)
  * [A classe MonetaryAmountFormat](chapter4_1.md)
  * [A classe MonetaryAmountFormatSymbols](chapter4_2.md)
-* [Cotação](chapter5.md)
+* [Exchange Rate](chapter5.md)
  * [Realizando cotação com ExchangeRateProvider](chapter5_1.md)
  * [Realizando a cotação a partir de uma data específica](chapter5_2.md)
  * [Ignorando a cotação](chapter5_3.md)
