@@ -39,13 +39,13 @@ public class HelloMonetaryOperator {
 The **Moneta** provides some implementations of `MonetaryOperator` on `MonetaryOperators` class. It is a utilitarian class that has some functionalities really trivial to all Java developers who will work with money such:
 
 
-* **reciprocal()** Retorna o dinheiro como reciprocal, multiplicando pelo valor inverso (1/n).
-* **permil(Number number)** retorna o valor permil do dinheiro, por exemplo, **permil(10)** de `EUR 2.35` retornará EUR `0.0235`.
-* **percent(Number number)** retorna o percentual de um dinheiro, por exemplo, **percent(10)** de `EUR 200.00` retornará `EUR 20.00`.
-* **minorPart()** retorna o valor que se encontra na direita da vírgula, por exemplo, a menor parte de `EUR 2.35` é ```EUR 0.35```.
-* **majorPart()** retorna o valor inteiro do dinheiro, por exemplo, a menor parte de `EUR 2.35` é `EUR 2`.
-* **rounding()** realiza o processo de arredondamento do dinheiro, para saber o número de casas após a vírgula é recuperado a informação do método getDefaultFractionDigits() da interface CurrencyUnit.
-* **exchange(CurrencyUnit currency)** dado um dinheiro esse operador realizará a troca da moeda, ou seja, ele apenas vai trocar mudar a moeda não levando em consideração a sua cotação, por exemplo, `EUR 2.35` **exchange('BRL')** retornará `BRL 2.35`.
+* **reciprocal()** returns the money as reciprocal, multiply this value by inverse (1/n).
+* **permil(Number number)** returns the permil value of the money, for example, permil(10) of `EUR 2.35` returns `EUR 0.0235`.
+* **percent(Number number)** returns the percentage of a money, for example, the `percent(10)` of `EUR 200.00` returns `EUR 20.00`.
+* **minorPart()** returns the minor part of the money, the value on right of the comma, for example, the minor part of `EUR 2.35` is `EUR 0.35`.
+* **majorPart()** returns the integer part of the money, for example, the major part of `EUR 2.35` is `EUR 2`.
+* **rounding()** it does the rounding process of the money, to know how much decimal digits the rounding will have will used the **getDefacultFractionDigits** from `CurrencyUnit`.
+* **exchange(CurrencyUnit currency)** Given a money this operator just exchange the currency, in other words, just change the currency, but it isn't an exchange rate, for example, the `exchange('BRL')` of `EUR 2.35` returns `BRL 2.35`.
 
 ```java
 
