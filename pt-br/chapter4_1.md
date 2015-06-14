@@ -4,27 +4,6 @@ Com o `MonetaryFormats` é possível criar formatador a partir de uma query buil
 
 
 ```java
-public class MonetaryFormatsExample {
-
-
-    public static void main(String[] args) {
-        CurrencyUnit currency = Monetary.getCurrency("EUR");
-        MonetaryAmount money = Money.of(12, currency);
-
-        MonetaryAmountFormat format =
-                MonetaryFormats.getAmountFormat(Locale.US);
-
-        String resultText = format.format(money);//EUR 12
-        MonetaryAmount monetaryAmount = format.parse(resultText);
-        MonetaryAmount result2 = Money.parse(resultText, format);
-
-    }
-}
-```
-
-
-
-```java
 public class MonetaryFormatsExampleQuery {
 
     public static void main(String[] args) {
