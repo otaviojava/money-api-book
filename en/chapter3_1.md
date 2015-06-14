@@ -1,7 +1,7 @@
-### MonetaryOperator
+### MonetaryOperator: 
 
 
-O ```MonetaryOperator``` é uma interface funcional que recebe um ```MonetaryAmount``` e retorna um ```MonetaryAmount```. Essa interface é muito discutida ao se falar sobre a implementação do ```RoundedMoney``` que a utiliza como agente arredondador. Com essa interface é possível realizar operações de arredondamento, retornar parte do dinheiro, o dobro do valor etc. 
+The `MonetaryOperator` is an functional interface that receive a `MonetaryAmount` and then returns a `MonetaryAmount`. This interface was told when discussed about the `RoundedMoney` implementation. With this interface is possible does rounding operations, return some part of the money, the double of the money, etc.
 
 ```java
 public class MonetaryOperatorExamples {
