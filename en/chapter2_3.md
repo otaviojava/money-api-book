@@ -1,7 +1,7 @@
-### Métodos de criação
+### Creation Methods
 
 
-Para criar uma instância de ```MonetaryAmount```, todas as implementações seguem o mesmo padrão de nomenclatura utilizando, com uma pequena exceção no ```RoundedMoney``` uma vez que ele pode receber um ```MonetaryOperator``` para trabalhar como “arredondador” em cada operação. Listando os mais importantes temos o total de três métodos, que são:
+To create a `MonetaryAmount` instance, all implementations follow the same standard for nomenclature, with a little exception on `RoundedMoney` once it can receive a `MonetaryOperator` to work as rounding agent on each operation. Listing the most important methods have:
 
 * O método **of** passando um number e um código de moeda.
 * O método **zero** passando um CurrencyUnit.
