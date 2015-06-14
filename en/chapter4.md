@@ -19,7 +19,7 @@ public interface MonetaryAmountFormat extends MonetaryQuery<String>{
 }
 ```
 
-Um exemplo simples é o **toString** e o parse dentro das implementações do ```MonetaryAmount``` dentro do **Moneta**.
+A simple example is the **toString** method and the parse inside of all implementation of `MonetaryAmount` on **Moneta**.
 
 
 ```java
