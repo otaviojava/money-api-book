@@ -1,7 +1,6 @@
 ### MonetaryQuery vs MonetaryOperator 
 
-
-Mas com o ```MonetaryQuery``` é possível também retornar ```MonetaryAmount``` e assim temos o mesmo resultado que um ```MonetaryOperator```, assim qual é o objetivo de ter duas interfaces? O Objetivo de terem as duas interfaces é por questão de nomenclatura e padronização. ```MonetaryQuery``` tem o objetivo extrair e buscar informações dentro do ```MonetaryAmount```, já o ```MonetaryOperator``` tem o objetivo de realizar operações com o dinheiro.
+Considering with `MonetaryQuery` may return a `MonetaryAmount`, so it's possible to have the same result of a `MonetaryOperator`, but what is the goal of have two interfaces? The goal is just to nomenclature and standarization. `MonetaryQuery` has the goal of retrieve information within a `MonetaryAmount`, with `MonetaryOperator` has the goal to do operations with `MonetaryAmount`.
 
 ```java
 public class DifferenceMonetaryQueryMonetaryOperator {
