@@ -29,7 +29,8 @@ public class ExchangeRateProviderExample2 {
 }
 ```
 
-Caso a data especificada não seja encontrada será retornada uma exceção, por exemplo, não será possível recuperar a cotação do dia 9 de janeiro de 2011, uma vez que essa data foi em um domingo e a grande maioria dos provedores de cotação não trabalham nesse dia.
+If **Moneta** doesn't find the date, will return an exception, for example, will not possible find a rate from January 9th of 2011, once this date was on Sunday and almost always providers of this information doesn't work on this day.
+
 
 ```java
 public class ExchangeRateProviderExample3 {
@@ -58,7 +59,7 @@ public class ExchangeRateProviderExample3 {
 ```
 
 
-Uma possível solução para esse problema é passar um range de datas, assim a implementação vai procurar algumas das datas, caso não encontre nenhuma delas lançará uma exceção, vale salientar que a implementação buscará a partir da ordem que foi definida.
+A possible solution to this problem is inform a range of dates, this way, the implementation will find out for all dates, if it doesn't find all will return an exception, worth pointing out, the implementation will find out by the same order that was informed.
 
 ```java
 public class ExchangeRateProviderExample4 {
