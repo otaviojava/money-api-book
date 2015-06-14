@@ -18,3 +18,21 @@ public class MonetaryFormatsExampleQuery {
     }
 }
 ```
+
+With `AmountFormatQueryBuilder` custom formats can be created.
+
+```java
+public class MonetaryFormatsExampleQueryCustom {
+
+    public static void main(String[] args) {
+    	MonetaryAmount amount = Money.of(12345.67, "USD");
+    	MonetaryAmountFormat customFormat = MonetaryFormats.getAmountFormat(
+    			AmountFormatQueryBuilder.of(Locale.US)
+    			.set(CurrencyStyle.NAME)
+    			.set("pattern", "00,00,00,00.00 ¤")
+    			.build()); 
+
+    			String formatted = customFormat.format(amount); //00,01,23,45.67 US Dollar
+    }
+}
+```
