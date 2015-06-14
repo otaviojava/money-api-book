@@ -1,5 +1,5 @@
-# Introdução
+# Introduction
 
-Boa parte dos sistemas de informação que desenvolvemos manipulam valores monetários e moedas. Entretanto, é no mínimo curioso perceber que os conceitos de "Dinheiro" e "Moeda" comumente são relegados a tipos primitivos como Float, Double e BigDecimal. Sistemas com melhor encapsulamento acabam implementando cada um as suas próprias classes de "Dinheiro" e "Moeda". Mas até quando os desenvolvedores Java teriam que continuar resolvendo os mesmos problemas sem ter uma solução de referência padronizada?
+System of information that are developed works with monetary values. However it is funny to know that concern about money and  currency are just relegated to primitives types like Float, Double and BigDecimal.  System with a good design has own implementation of money and currency. But if many people has the same problem why does not solve it?
 
-A JSR 354 (Money and Currency API) é um esforço para definir uma API e fornecer uma implementação de referência para resolver os problemas definidos em torno dos conceitos de "Dinheiro" e "Moeda".
+The JSR 354 (Money and Currency API) is a work to define an API and provides representation about the approach around the money and currency.
