@@ -1,6 +1,6 @@
-### Realizando a cotação a partir de uma data específica
+### Exchange rate from a specific data
 
-Em alguns momentos da aplicação é importante saber não apenas o valor da cotação atual, mas a partir de uma data específica, por exemplo, ao se alugar um hotel normalmente o valor de cotação é dado a partir da confirmação da reserva ou no caso do cartão de crédito o valor da cotação é definido apenas no fechamento da fatura. Com o moneta é possível realizar tal busca a partir de uma data específica para isso é utilizado a  classe ```ConversionQuery``` com ela é possível realizar buscas de datas diferentes ou num range de datas. A representação de data aceita é a classe ```LocalDate```.
+For some reasons in the application is important to know not just the exchange rate most recent, but an exchange rate from a distinct date, from example, when rent a room in the hotel, normally will be used the rate when the room was reserved or in the credit card that use the rate when the bill was closed. **Moneta** gives support to do it, just use the `ConversationQuery` class, it is possible find out with defined date or a range of dates. The representation that is accepted for date is the `LocalDate` class.
 
 
 ```java
