@@ -21,4 +21,4 @@ public class MistakeExample {
 ```
 
 
-Utilizando o money-api, ele gerará uma exceção afirmando que existe um erro ao tentar somar dinheiro com moedas diferentes, nesse caso real com dólar. Essa exceção foi lançada de forma correta uma vez que não necessariamente um dólar equivale a um real. Para realiza tal operação de somatório entre moedas diferentes é necessário primeiro realizar a cotação da moeda. A taxa de câmbio é a relação das moedas entre dois países que resulta no preço de uma delas com relação a outra. 
+Using the **Moneta**, will happen an exception with the error to try sum money with currencies distinct. It is a “right error” once the dollar, not necessarily, has the value of one Brazilian real. To do this operation of sum among currencies, it needs first do the exchange rate. The exchange rate is the rate at which one currency will be exchanged for another.
