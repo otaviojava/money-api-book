@@ -46,27 +46,28 @@ public class CurrencyExample2 {
 
 Once was discussed about the currency the next step will talk about the representation of the monetary amount, for this, there is the `MonetaryAmount`'s interface, an important behavior is all implementation must be immutable and thread-safe.
 
-|Method| Description|
+||Method|Description|
 | -- | -- |
-|```<R> R query(MonetaryQuery<R> query)```|Realiza query com o valor monetário.|
-|```MonetaryAmount with(MonetaryOperator operator)```|Realiza operações com o montante monetário.|
-|```boolean isGreaterThan(MonetaryAmount amount)```|Retorna verdadeiro se a instância é maior que o valor passado no parâmetro, caso sejam iguais ele retornará falso.|
-|```boolean   isGreaterThanOrEqualTo(MonetaryAmount amount)```|Retorna verdadeiro se a instância é maior ou igual que o valor passado no parâmetro, caso sejam iguais ele retornará verdadeiro.|
-|```boolean isLessThan(MonetaryAmount amount)```|Retorna verdadeiro se a instância é menor que o valor passado no parâmetro, caso sejam iguais ele retornará falso.|
-|```isLessThanOrEqualTo(MonetaryAmount amt)```|Retorna verdadeiro se a instância é menor ou igual que o valor passado no parâmetro, caso sejam iguais ele retornará verdadeiro.|
-|```boolean isEqualTo(MonetaryAmount amount)```|Retorna verdadeiro caso a instância é igual ao valor monetário passado no parâmetro.|
-|```boolean isNegative()```|Retorna verdadeiro se negativo|
-|```boolean isNegativeOrZero()```|Retorna verdadeiro se é negativo ou zero|
-|```isPositive()```|Retorna verdadeiro se é positivo|
-|```boolean isPositiveOrZero()```|Retorna verdadeiro se positivo ou igual a zero|
-|```isZero()```|Verifica se o valor do dinheiro é zero.|
-|```MonetaryAmount add(MonetaryAmount amount)```|Realiza a soma e retorna o resultado|
-|```MonetaryAmount subtract(MonetaryAmount amount)```|Realiza a subtração e retorna o reusltado|
-|```MonetaryAmount multiply(Number multiplicand)```|Realiza a multiplicação e retorna o resultado|
-|```MonetaryAmount divide(Number divisor)```|Realiza a divisão|
-|```MonetaryAmount remainder(Number divisor)```|Realiza a divisão e retorna o resto|
-|```MonetaryAmount negate()```|Realiza a negação do montante monetário, ou seja, -this.
-|```getCurrency()```|Retorna o dinheiro da moeda.|
+|`<R> R query(MonetaryQuery<R> query)`|Does query with monetary amount|
+|`MonetaryAmount with(MonetaryOperator operator)`|Does operations with monetary amount.|
+|`boolean isGreaterThan(MonetaryAmount amount)`|Returns true if this instance is greater than the monetary in parameter, so if they are equal will return false.|
+|`boolean   isGreaterThanOrEqualTo(MonetaryAmount amount)`|Returns true if this instance is greater or equals than the monetary amount passed on parameter.|
+|`boolean isLessThan(MonetaryAmount amount)`|Returns true if this instance is lesser than the value passed on parameter, so if they are equal will return false.|
+|`isLessThanOrEqualTo(MonetaryAmount amt)`|Returns true if this instance is lesser than the value passed on parameter or equals.|
+|`boolean isEqualTo(MonetaryAmount amount)`|Returns true if this instance is equals to the monetary value passed on parameter.|
+|`boolean isNegative()`|Returns true if this instance is negative.|
+|`boolean isNegativeOrZero()`|Returns true if this instance is negative or zero.|
+|`isPositive()`|Returns true if this instance is positive.|
+|`boolean isPositiveOrZero()`|Returns true if this instance is positive or zero.|
+|`isZero()`|Returns true if this instance is zero.|
+|`MonetaryAmount add(MonetaryAmount amount)`|Does the add with this instance and the monetary passed on parameter and the return will the result of the operation.|
+|`MonetaryAmount subtract(MonetaryAmount amount)`|Does the subtract with this instance and the monetary passed on parameter and the return will the result of the operation.|
+|`MonetaryAmount multiply(Number multiplicand)`|Does the multiply with this instance and the number passed on parameter and the return will the result of the operation.|
+|`MonetaryAmount divide(Number divisor)`|Does the divide with this instance and the number passed on parameter and the return will the result of the operation.|
+|`MonetaryAmount remainder(Number divisor)`|Does the divide with this instance and the number passed on parameter and the return will the remainder of the operation.|
+|`MonetaryAmount negate()`|Does the negation operation, so the return will the -this.|
+|`getCurrency()`| Returns the currency of the monetary amount.|
+
 
 Dentro do moneta existem três implementações para a interface ```MonetaryAmount```:
 
