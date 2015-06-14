@@ -59,7 +59,7 @@ public class MonetaryAmountFormatSymbolsExample3 {
 }
 ```
 
-As on `DecimalFormat` class, it may to use a `String` as formating pattern, the regex follows the same standardization of `DecimalFormat`.
+As on `DecimalFormat` class, it may to use a `String` as formating pattern, the regex follows the same standardization of [DecimalFormat](http://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html).
 
 ```java
 public class MonetaryAmountFormatSymbolsExample3 {
