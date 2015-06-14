@@ -69,13 +69,9 @@ Once was discussed about the currency the next step will talk about the represen
 |`getCurrency()`| Returns the currency of the monetary amount.|
 
 
-Dentro do moneta existem três implementações para a interface ```MonetaryAmount```:
+Inside the **Moneta** there are three implementation to `MonetaryAmount`'s interface:
 
 
-1. 
-Money: a implementação padrão, ela representa o valor numérico com o BigDecimal.
-1. 
-RoundedMoney: assim como a implementação Money, representa o valor numérico com o BigDecimal, a diferença entre eles é que com o RoundedMoney é possível receber um MonetaryOperator para ser chamada a cada operação, por exemplo, a cada operação aritmética realizar uma operação de arredondamento.
-
-1. 
-FastMoney: a implementação que representa o valor número com o primitivo long, das implementações apresentadas ela é a mais rápida, cerca de quinze vezes mais rápidas que as outras duas, além de ser mais leve na criação. Porém ela possui uma maior limitação em relação a precisão, caso seja necessário trabalhar com essa precisão, as operações não podem ultrapassar de cinco casas decimais.
+1. **Money**: The default implementation, it represents the numeric value using BigDecimal.
+1. **RoundedMoney**: Look like the Money implementation, it represents the numeric value with BigDecimal, but with RoundedMoney is possible to receive a MonetaryOperator to be called on each operation, for exemplo, to do rounding operation after each arithmetic process. 
+1. **FastMoney**: An implementation which represents the numeric value with long primitive, it is the fastest implementation on Moneta, around fifteen time faster than the others implementations. However it has a precision limitation, if need work with precision with this implementation, it cannot be longer than five decimal digits.
