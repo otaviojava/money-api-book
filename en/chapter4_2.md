@@ -17,10 +17,10 @@ public class MonetaryAmountFormatSymbolsExample {
 ```
 
 
-Caso seja necessário configurar as informações como quantidade mínima, moeda, etc. Existem duas classes: 
+Using this class may change the settings about minimum quantity, currency, etc. there are two classes to do that:
 
-* A primeira é a ```MonetaryAmountSymbols``` com ela é possível definir os símbolos que serão utilizados, por exemplo, símbolo da moeda, separador, etc. 
-* A classe ```MonetaryAmountNumericInformation``` cuidará das informações com relação a formatação do valor numérico, por exemplo, o número mínimo e máximo de dígitos antes e depois da vírgula. 
+* The first is `MonetaryAmountSymbols` with it is may to define the symbols that will be used, for example, currency symbols, separator symbols. 
+* The `MonetaryAmountNumericInformation` takes care of the informations about the numeric value like minimum and maximum digits after and before the comma.
 
 ```java
 public class MonetaryAmountFormatSymbolsExample2 {
