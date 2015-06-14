@@ -41,7 +41,8 @@ public class ToStrimgExample {
 }
 ```
 
-A implementação de referência tem duas formas de criar formatador para dinheiro. A primeira opção é com a classe `MonetaryFormats` com ela é possível criar formatador a partir de uma query builder ou utilizando apenas pelo `Locale`. A segunda opção é utilziando a classe `MonetaryAmountFormatSymbols` que tem o seu funcionamento semelhante a classe `DecimalFormat`. Além do parse sem parâmetros nas implementações do MonetaryAmount, também existe o método parse que aceita o MonetaryAmountFormat.
+The reference implementation has two ways to create money formatter. The first option is with the `MonetaryFormat` with it may create a formatter from a query builder or just using `Locale`. The second one is using the `MonetaryAmountFormatSymbols` that has its behavior look like the `DecimalFormat` class. Further the parse without parameters on implementations of `MonetaryAmount`, also exist the parse method which accept the `MonetaryAmountFormat`.
+
 
 
 ```java
