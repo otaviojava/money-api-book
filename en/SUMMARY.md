@@ -1,8 +1,8 @@
 # Sumário
 
 * [Uma especificação de dinheiro, será que vale mesmo a pena?](introduction.md)
-* [Crédito](credits.md)
-* [Sobre o Autor](about_me.md)
+* [Credit](credits.md)
+* [About the Author](about_me.md)
 * [A motivação do tipo dinheiro](chapter1.md)
 * [But nobody else thought it before? Knowing the API](chapter2.md)
  * [Access source and install](chapter2_1.md)
