@@ -11,7 +11,7 @@ On money-api, will used this name instead of JSR 354, also will be necessary to 
 |``` int getDefaultFractionDigits()``` |Returns the number of digits normally used by currency.|BRL has two digits and JPY hasn't.|
 
 
-Nesse material a implementação utilizada será o **moneta**, a implementação de referência para essa especificação. Com ele é possível criar uma instância de moedas de duas formas. A primeira delas é utilizando o código da moeda, caso seja uma moeda que siga o padrão de moeda será uma ```String``` com três letras.
+This book will use the **Moneta** implementation, the reference implementation to this specification. Using the **Moneta** is possible have the currency's instance on two ways. The first way is using the currency code, so will use the ```String``` with three words.
 
 
 ```java
@@ -28,7 +28,7 @@ public class CurrencyExample1 {
 }
 ```
 
-A outra forma simples é utilizando a classe ```Locale```, essa criação é muito interessante, por exemplo, em uma aplicação web de compras em que a partir do ```Locale``` do request será possível saber qual é a moeda do usuário que está acessando a aplicação.
+The simplest way is using the `Locale` class, this option is very interesting when, for example, a web application knows, from `Locale` on request, the currency of the user that is accessing the application.
 
 ```java
 
@@ -44,7 +44,7 @@ public class CurrencyExample2 {
 
 ```
 
-Definido a representação da moeda o próximo passo será a representação do valor monetário, para isso, existe a interface ```MonetaryAmount```, uma característica importante é que todas as implementações precisam ser imutável e thread-safe. 
+Once was discussed about the currency the next step will talk about the representation of the monetary amount, for this, there is the `MonetaryAmount`'s interface, an important behavior is all implementation must be immutable and thread-safe.
 
 |Método| Descrição|
 | -- | -- |
