@@ -1,4 +1,4 @@
-### Acesso ao código fonte e instalação
+### Access source and install
 
 Como toda especificação no Java, JSR, além da API ela possui uma implementação de referência, como o próprio nome diz, essa implementação servirá de base para as próximas implementações. No caso da JSR 354, money-api, a implementação de referência é o moneta (Para mais informações em relação ao código-fonte do projeto acesse [https://github.com/JavaMoney/jsr354-ri](https://github.com/JavaMoney/jsr354-ri)). Basicamente, é possível utilizar o moneta de duas formas:
 
