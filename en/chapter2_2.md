@@ -2,13 +2,13 @@
 
 
 
-Na money-api, será usado esse nome em vez de JSR 354, também será necessário representar tanto o valor numérico quanto a moeda. Para representar a moeda existe a interface ```CurrencyUnit``` ela precisa ser imutável e thread-safe.
+On money-api, will used this name instead of JSR 354, also will be necessary to represent both the numeric value and currency. To represents the currency there is the CurrencyUnit interface all implementation must be immutable and thread-safe.
 
-|Nome do método| Descrição |Exemplo|
+|Method's name| Description |Example|
 | -- | -- | -- |
-|```String getCurrencyCode()```|Retorna o código da moeda, para as moedas que seguem o ISO isso serão retornados três letras.|BRL para o real brasileiro, USD para dólares americanos.
-|```int getNumericCode()```|Retorna o código numérico da moeda, assim como o código ele possui três dígitos.|986 para a moeda brasileira, 840 para dólares americanos.|
-|``` int getDefaultFractionDigits()``` |Retorna o número de dígitos normalmente utilizado pela moeda.|BRL tem dois e JPY não tem.|
+|```String getCurrencyCode()```|Returns the currency code, to currency that follows the ISO will be returned three words.|BRL to Brazilian Real and USD dollar.
+|```int getNumericCode()```|Returns the numeric code of the currency, similar to currency code it has three digits.|986 to Brazilian Real and 840 to dollar.|
+|``` int getDefaultFractionDigits()``` |Returns the number of digits normally used by currency.|BRL has two digits and JPY hasn't.|
 
 
 Nesse material a implementação utilizada será o **moneta**, a implementação de referência para essa especificação. Com ele é possível criar uma instância de moedas de duas formas. A primeira delas é utilizando o código da moeda, caso seja uma moeda que siga o padrão de moeda será uma ```String``` com três letras.
