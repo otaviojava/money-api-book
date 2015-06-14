@@ -11,7 +11,7 @@
    * [Métodos de Criação para o RoundedMoney](chapter2_3_1.md)
  * [Operações Aritméticas](chapter2_4.md)
  * [Operações boolianas](chapter2_5.md)
- * [NumberValue: A representação da parte numérica do money:](chapter2_6.md)
+ * [NumberValue: A representação da parte numérica do money](chapter2_6.md)
 * [Manipulando e extraindo informação do MonetaryAmount](chapter3.md)
  * [MonetaryOperator](chapter3_1.md)
  * [MonetaryQuery](chapter3_2.md)
