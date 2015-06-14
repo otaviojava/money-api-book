@@ -1,4 +1,4 @@
-### Representando dinheiro e moeda com o money-api
+### Representing money and currency with money-api
 
 
 
