@@ -1,7 +1,7 @@
-### Operações Aritméticas
+### Arithmetics operations:
 
 
-Com o ```MonetaryAmount``` é possível realizar operações como subtração e soma, salientando que as implementações são imutáveis, ou seja, o resultado resultará em uma nova instância. Ao realizar operações que recebem um ```MonetaryAmount``` o resultado será também um ```MonetaryAmount```, mas da implementação da instância que chamou o método.
+The `MonetaryAmount` can does arithmetics operation such subtract and sum, just to remember, all implementation must be immutable, in other words, the result of the operation will be the return, another instance, once the `MonetaryAmount` implementations are unchanged and the implementation that will chosen will the instance that called the method. 
 
 ```java
 public class ArithmeticOperations {
@@ -16,7 +16,7 @@ public class ArithmeticOperations {
 }
 ```
 
-Para as operações que de multiplicação, divisão e resto é necessário passar um parâmetro do tipo ```Number```.
+To do multiplication, division and remain operation is necessary to pass a `Number` instance parameter.
 
 ```java
 public class ArithmeticOperations2 {
