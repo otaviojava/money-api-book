@@ -1,8 +1,7 @@
-#### Métodos de Criação para o RoundedMoney
+#### Creations methods to RoundedMoney
 
 
-
-Além dos métodos comuns de construção a classe ```RoundedMoney```, possui outras formas de parâmetros para que seja possível informar o ```MonetaryOperator``` para ser executado após cada operação do ```MonetaryAmount```, vale lembrar, a principal característica dessa classe é realizar esse tipo de operação, caso não seja necessário, outra implementação é recomendada.
+Beyond the same creation methods, the `RoundedMoney` class has others ways, mainly adding the `MonetaryOperator` to be used as “*rounding agent*”, just to remember, this rounding is the only reason to this implementation exists, if doesn't need it, the recommendation is to use another implementation.
 
 
 ```java
