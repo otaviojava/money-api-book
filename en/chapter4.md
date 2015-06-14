@@ -1,8 +1,8 @@
-## Formatando dinheiro
+## Formating money
 
 
+The user's iteration in the software is a fundamental part, so is necessary think the way to show the information to the user besides interacting with the software. The money is a significant part of a software, so is vital show the total cost of a service or the total of products that will be purchased or the money that will be borrowed using an Internet bank. To work with formatting of a `MonetaryAmount` exist a `MonetaryAmountFormat`'s interface that basically given a `MonetaryAmount` convert to `String` and given the `String` returns a `MonetaryAmount`.
 
-A interação com o usuário na maioria dos software é uma parte fundamental, assim é necessário pensar na forma de apresentar a informação para o usuário além da interação com o software. O dinheiro é uma parte importante desses softwares, assim é importante exibir o total gasto por um serviço ou o somatório de produtos que o usuário deseja comprar. Sem falar na forma de interação, por exemplo, informar o dinheiro que será transferido por uma outra conta via internet banking. Para trabalhar com a formatação de um ```MonetaryAmount``` existe a interface ```MonetaryAmountFormat``` que basicamente expõe o ```MonetaryAmount``` como ```String``` e recupera um ```MonetaryAmount``` a partir de uma ```String```. 
 
 
 ```java
