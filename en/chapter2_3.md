@@ -3,9 +3,10 @@
 
 To create a `MonetaryAmount` instance, all implementations follow the same standard for nomenclature, with a little exception on `RoundedMoney` once it can receive a `MonetaryOperator` to work as rounding agent on each operation. Listing the most important methods have:
 
-* O método **of** passando um number e um código de moeda.
-* O método **zero** passando um CurrencyUnit.
-* O método **ofMinor** passando um long e uma moeda, esse long será tratado como centavos e será convertido levando em consideração a moeda, por exemplo, 200 cents equivalem a dois dólares.
+* The method “**of**” with a number and the `CurrencyUnit`.
+The method “**zero**” with a `CurrencyUnit`.
+The method “**ofMinor**” with a long and a `CurrencyUnit`, this `long` will take as cents and will converted considering the currency fraction digits, for example, 200 cents of dollar will two dollars.
+
 
 
 ```java
