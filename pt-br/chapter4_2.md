@@ -60,7 +60,7 @@ public class MonetaryAmountFormatSymbolsExample3 {
 }
 ```
 
-Também é possível passar uma ```String``` como pattern para a formatação, essa ```String``` segue o mesmo padrão da classe ```DecimalFormat```.
+Também é possível passar uma ```String``` como pattern para a formatação, essa ```String``` segue o mesmo padrão da classe [DecimalFormat](http://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html).
 
 ```java
 public class MonetaryAmountFormatSymbolsExample3 {
