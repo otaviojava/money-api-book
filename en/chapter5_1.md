@@ -1,6 +1,6 @@
-### Realizando cotação com ExchangeRateProvider
+### Using the ExchangeRateProvider
 
-Com o money-api é possível realizar a cotação da moeda, o responsável por essa ação é a interface ```ExchangeRateProvider```.
+The **money-api** provides a way to do exchange rate, the `ExchangeRateProvider` interface represents this action.
 
 ```java
 public class ExchangeRateProviderExample {
