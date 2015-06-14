@@ -58,7 +58,6 @@ public class ExchangeRateProviderExample3 {
 }
 ```
 
-
 A possible solution to this problem is inform a range of dates, this way, the implementation will find out for all dates, if it doesn't find all will return an exception, worth pointing out, the implementation will find out by the same order that was informed.
 
 ```java
