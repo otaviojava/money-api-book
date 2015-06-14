@@ -1,9 +1,9 @@
-## Cotação
+## Exchange Rate
 
 
-A internacionalização é um conceito aplicado em diversas áreas, basicamente, é uma troca de cultura, economia e política em diversos lugares do mundo. Com a internacionalização é possível, por exemplo, saber o que acontece do outro lado mundo de maneira instantânea, conhecer lugares e culturas sem sair de casa além de adquirir produtos. É muito comum exportar e importar diversas coisas, produtos, serviços, assinaturas, etc. Seguindo a tendência mundial os softwares também precisam estar preparados para uma arquitetura internacionalizada, ou seja, permitir a interação de usuário em diversos pontos do mundo. Com o dinheiro não é diferente, é necessário estar pronto para isso.
+The internationalization is the approach applied on several areas, basically, is a change of culture, economy and politics on considerable places on the world. With internalization may to know what is happening in across the world instantaneously, know cultures just surfing in the Internet as well as buy products or services in other countries. The software needs to follow this trend, in other words, allow interaction with users in all globe. With money it isn't different, the software has the obligation to be ready to it.
 
-Falando de internacionalização e dinheiro é natural que precise interagir com diversas moedas, mas o que acontece ao realizar operações com moedas diferentes?
+Talking about money and internationalization is trivial think the interaction between currencies, but what happen when try do operation with different currencies?
 
 
 ```java
