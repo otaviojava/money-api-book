@@ -1,6 +1,6 @@
-### Operações boolianas
+### Booleans operations
 
-Com o MonetaryAmount é possível realizar comparações em relações a outros ```MonetaryAmount```, com ele é possível, por exemplo, verificar se um dinheiro é maior, menor ou igual ao outro.
+The `MonetaryAmount` has comparatives methods with another `MonetaryAmount`, with this method is possible, for example, verify it's one is greater, lesser, equals, etc.
 
 
 ```java
