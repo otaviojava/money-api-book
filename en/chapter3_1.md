@@ -36,8 +36,7 @@ public class HelloMonetaryOperator {
 ```
 
 
-O moneta traz por padrão algumas implementações de ```MonetaryOperator```, a classe ```MonetaryOperators```. Ela é uma classe utilitária que traz algumas funcionalidades importantes e algumas vezes muito corriqueira dentro da vida de um desenvolvedor Java, como:
-
+The **Moneta** provides some implementations of `MonetaryOperator` on `MonetaryOperators` class. It is a utilitarian class that has some functionalities really trivial to all Java developers who will work with money such:
 
 
 * **reciprocal()** Retorna o dinheiro como reciprocal, multiplicando pelo valor inverso (1/n).
