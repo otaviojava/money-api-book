@@ -11,7 +11,7 @@ Na money-api, será usado esse nome em vez de JSR 354, também será necessário
 |``` int getDefaultFractionDigits()``` |Retorna o número de dígitos normalmente utilizado pela moeda.|BRL tem dois e JPY não tem.|
 
 
-Nesse material a implementação utilizada será o **moneta**, a implementação de referência para essa especificação. Com ele é possível criar uma instância de moedas de duas formas. A primeira delas é utilizando o código da moeda, caso seja uma moeda que siga o padrão de moeda será uma ```String``` com três letras.
+Nesse material a implementação utilizada será o **Moneta**, a implementação de referência para essa especificação. Com ele é possível criar uma instância de moedas de duas formas. A primeira delas é utilizando o código da moeda, caso seja uma moeda que siga o padrão de moeda será uma ```String``` com três letras.
 
 
 ```java
@@ -68,7 +68,7 @@ Definido a representação da moeda o próximo passo será a representação do 
 |```MonetaryAmount negate()```|Realiza a negação do montante monetário, ou seja, -this.
 |```getCurrency()```|Retorna o dinheiro da moeda.|
 
-Dentro do moneta existem três implementações para a interface ```MonetaryAmount```:
+Dentro do **Moneta** existem três implementações para a interface ```MonetaryAmount```:
 
 
 1. 
