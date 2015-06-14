@@ -1,6 +1,6 @@
-### Ignorando a cotação
+### Ignoring the exchange rate
 
-Em alguns momentos é necessário realizar uma troca de moeda sem realizar cotação, para isso existe o método **exchange** dentro do ```MonetaryOperator```.
+If what is need it, is just change the currency, ignoring the rate, there is the method exchange within `MonetaryOperators`.
 
 ```java
 public class ExchangeRateProviderExample5 {
