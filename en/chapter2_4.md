@@ -32,7 +32,7 @@ public class ArithmeticOperations2 {
 }
 ```
 
-Também é possível realizar operações de sinais com o ```MonetaryAmount```.
+Also is possible do operation just using signal on `MonetaryAmount`.
 
 
 
