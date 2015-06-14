@@ -36,12 +36,12 @@ public class MonetaryAmountFormatSymbolsExample2 {
 
 
 
-Também é possível definir qual implementação que será utilizada na serialização do objeto. Para isso existe a classe funcional ```MonetaryAmountProducer```, com ela é possível definir sua própria implementação a partir do number e da moeda. O moneta por padrão já vem com três implementações:
+There is the possibility to define which implementation will be used to serialization. To do it, exist the functional class `MonetaryAmountProduce`, it may define own implementation from `Number` and `Currency`. The **Moneta** provides three producer one to each implementation that it already has:
 
 
-* ```FastMoneyProducer``` produtor de ```MonetaryAmount``` com a implementação ```FastMoney```.
-* ```MoneyProducer``` produtor de ```MonetaryAmount``` com a implementação ```Money```.
-* ```RoundedMoneyProducer``` produtor de ```MonetaryAmount``` com a implementação ```RoundedMoney```, nela é possível passar um ```MonetaryOperator``` que será utilizado na construção dessa implementação caso não seja informado um operador de arredondamento será utilizado o ```MonetaryOperators.rounding()```. Lembrando que ```MonetaryOperator``` dentro da implementação ```RoundedMoney``` será utilizado como agente arredondador, ou seja, para cada operação esse operador será chamado.
+* `FastMoneyProducer` producer of `MonetaryAmount` using the `FastMoney` implementation.
+* `MoneyProducer` producer of `MonetaryAmount` using the `Money` implementation.
+* `RoundedMoneyProducer` producer of `MonetaryAmount` using the `RoundedMoney` implementation. This class has two constructors: the first one has the `MonetaryOperator` as parameter, this parameter will be used on creation of all `RoundedMoney` created in this class. The second is the default constructor, without parameter, so will use `MonetaryOperators.rounding()` as `MonetaryOperator` that will use on all of `MonetaryAmount` creation using the `RoundedMoney` implementation.
 
 
 
@@ -59,7 +59,7 @@ public class MonetaryAmountFormatSymbolsExample3 {
 }
 ```
 
-Também é possível passar uma ```String``` como pattern para a formatação, essa ```String``` segue o mesmo padrão da classe ```DecimalFormat```.
+As on `DecimalFormat` class, it may to use a `String` as formating pattern, the regex follows the same standardization of `DecimalFormat`.
 
 ```java
 public class MonetaryAmountFormatSymbolsExample3 {
