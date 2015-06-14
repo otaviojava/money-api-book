@@ -44,7 +44,7 @@ O moneta traz por padrão algumas implementações de ```MonetaryOperator```, a 
 * **permil(Number number)** retorna o valor permil do dinheiro, por exemplo, **permil(10)** de `EUR 2.35` retornará EUR `0.0235`.
 * **percent(Number number)** retorna o percentual de um dinheiro, por exemplo, **percent(10)** de `EUR 200.00` retornará `EUR 20.00`.
 * **minorPart()** retorna o valor que se encontra na direita da vírgula, por exemplo, a menor parte de `EUR 2.35` é ```EUR 0.35```.
-* **majorPart()** retorna o valor inteiro do dinheiro, por exemplo, a menor parte de `EUR 2.35` é `EUR 2`.
+* **majorPart()** retorna o valor inteiro do dinheiro, por exemplo, a maior parte de `EUR 2.35` é `EUR 2`.
 * **rounding()** realiza o processo de arredondamento do dinheiro, para saber o número de casas após a vírgula é recuperado a informação do método getDefaultFractionDigits() da interface CurrencyUnit.
 * **exchange(CurrencyUnit currency)** dado um dinheiro esse operador realizará a troca da moeda, ou seja, ele apenas vai trocar mudar a moeda não levando em consideração a sua cotação, por exemplo, `EUR 2.35` **exchange('BRL')** retornará `BRL 2.35`.
 
