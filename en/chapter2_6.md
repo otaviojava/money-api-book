@@ -16,7 +16,8 @@ public class RetrieveInformationMethods {
 }
 ```
 
-Além disso, com o ```NumberValue``` é possível realizar mais algumas operações, por exemplo, é possível definir qual classe será recuperada a partir do ```NumberValue```, desde que essa classe seja filha da classe ```Number```. No caso da implementação de referência serão todas as classes que são ```Number``` e estão dentro do JDK.
+With `NumberValue` also is possible do one more operation, for example, is possible define which class will returned from `NumberValue`, once this class be son of `Number`. On reference implementation all classes that extend `Number` on **JDK** can be returned.
+
 
 
 ```java
