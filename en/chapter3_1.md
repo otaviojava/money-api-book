@@ -44,7 +44,7 @@ The **Moneta** provides some implementations of `MonetaryOperator` on `MonetaryO
 * **percent(Number number)** returns the percentage of a money, for example, the `percent(10)` of `EUR 200.00` returns `EUR 20.00`.
 * **minorPart()** returns the minor part of the money, the value on right of the comma, for example, the minor part of `EUR 2.35` is `EUR 0.35`.
 * **majorPart()** returns the integer part of the money, for example, the major part of `EUR 2.35` is `EUR 2`.
-* **rounding()** it does the rounding process of the money, to know how much decimal digits the rounding will have will used the **getDefacultFractionDigits** from `CurrencyUnit`.
+* **rounding()** it does the rounding process of the money, to know how much the decimal digits the rounding will use, see the **getDefacultFractionDigits** from `CurrencyUnit`.
 * **exchange(CurrencyUnit currency)** Given a money this operator just exchange the currency, in other words, just change the currency, but it isn't an exchange rate, for example, the `exchange('BRL')` of `EUR 2.35` returns `BRL 2.35`.
 
 ```java
