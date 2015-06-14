@@ -1,7 +1,6 @@
-### NumberValue: A representação da parte numérica do money
+### NumberValue: The representation of numeric part of the money.
 
-
-Em alguns momentos é importante recuperar e tratar as informações do dinheiro de forma separada, para isso, a interface dispõe de método para recuperar tanto a moeda quanto o valor monetário. Para a moeda ele obviamente retorna a interface ```CurrencyUnit``` e para representar o valor numérico é retornado a classe ```NumberValue```. Essa classe é filha da ```Number``` do Java, assim é possível recuperar para os tipos primitivos básicos do Java (```int```, ```long```, ```float```, ```double```, etc.).
+Some moments, is important retrieve and take care the money information separately, to does that, the interface has methods to just return both currency and the numeric value. To the currency will return an implementation of `CurrencyUnit` and to represent the numeric value will return the `NumberValue` class. This class extends `Number`, so is possible parse it to almost all primitives types on Java (`int`, `long`, `float`, `double`, etc.).
 
 
 ```java
