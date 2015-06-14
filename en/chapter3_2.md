@@ -1,7 +1,7 @@
 ### MonetaryQuery
 
 
-O ```MonetaryQuery``` semelhante ao ```MonetaryOperator``` é uma interface funcional que recebe um ```MonetaryOperator```, a sua diferença está no retorno, ele pode retornar qualquer tipo de objeto a partir do *generics*. Com o ```MonateryQuery``` é possível recuperar algumas informações no ```MonetaryAmount```, por exemplo, o código da moeda, apenas o número no formato long ou em BigDecimal.
+The `MonetaryQuery` similar to `MonetaryOperator` is a funcional interface that receives a `MonetaryOperator`, the difference is on return, the `MonetaryQuery` can return anything, using generics. With the `MonetaryQuery` is possible retrieve some information such the currency code, just the number on `long` or `BigDecimal` format.
 
 ```java
 public class MonetaryQueryExamples {
@@ -16,7 +16,7 @@ public class MonetaryQueryExamples {
 }
 ```
 
-Para o executá-lo basta chamar o método apply da interface ou chamar o método “with” dentro do MonetaryAmount.
+To execute the `MonetaryQuery` there are two ways, either call the **queryFrom** method on `MonetaryQuery` interface or call the **query** method on `MonetaryAmount`.
 
 
 ```java
