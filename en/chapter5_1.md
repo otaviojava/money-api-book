@@ -19,6 +19,7 @@ public class ExchangeRateProviderExample {
 ```
 
 
+
 Inside the Moneta there are five implementations of `ExchangeRateProvider`:
 
 * **ECB** implementation that retrieve the rate most recent from Europe Central Bank.
