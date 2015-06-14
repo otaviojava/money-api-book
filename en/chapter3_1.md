@@ -19,7 +19,7 @@ public class MonetaryOperatorExamples {
 }
 ```
 
-Para o executá-lo basta chamar o método apply da interface ou chamar o método **with** dentro do ```MonetaryAmount```.
+To execute the `MonetaryOperator` there are two ways, either call the **apply** method on `MonetaryOperator` interface or call the **with** method on `MonetaryAmount`.
 
 
 ```java
