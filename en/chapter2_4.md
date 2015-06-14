@@ -1,4 +1,4 @@
-### Arithmetics operations:
+### Arithmetics operations
 
 
 The `MonetaryAmount` can does arithmetics operation such subtract and sum, just to remember, all implementation must be immutable, in other words, the result of the operation will be the return, another instance, once the `MonetaryAmount` implementations are unchanged and the implementation that will chosen will the instance that called the method. 
