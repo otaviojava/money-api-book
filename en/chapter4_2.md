@@ -1,7 +1,6 @@
-### A classe MonetaryAmountFormatSymbols
+### The class MonetaryAmountFormatSymbols
 
-Existe também a interface ```MonetaryAmountFormatSymbols```, que de forma semelhante a classe ```DecimalFormat``` com a classe ```Number```, tem o objetivo de realizar formatações do dinheiro a partir de configurações de símbolos, moedas, quantidade mínima e máxima de dígitos antes e depois da vírgula, etc.
-
+The `MonetaryAmountFormatSymbols`  that has the behavior look like `DecimalFormat` with the Number class, the goal is formating the money from some configurations such currency, minimum and maximum digits quantities after and before the comma, etc.
 
 ```java
 public class MonetaryAmountFormatSymbolsExample {
