@@ -37,7 +37,7 @@ public class MonetaryAmountFormatSymbolsExample2 {
 
 
 
-Também é possível definir qual implementação que será utilizada na serialização do objeto. Para isso existe a classe funcional ```MonetaryAmountProducer```, com ela é possível definir sua própria implementação a partir do number e da moeda. O moneta por padrão já vem com três implementações:
+Também é possível definir qual implementação que será utilizada na serialização do objeto. Para isso existe a classe funcional ```MonetaryAmountProducer```, com ela é possível definir sua própria implementação a partir do number e da moeda. O **Moneta** por padrão já vem com três implementações:
 
 
 * ```FastMoneyProducer``` produtor de ```MonetaryAmount``` com a implementação ```FastMoney```.
