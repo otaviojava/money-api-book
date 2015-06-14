@@ -17,7 +17,6 @@ public class MonetaryAmountFormatSymbolsExample {
 }
 ```
 
-
 Caso seja necessário configurar as informações como quantidade mínima, moeda, etc. Existem duas classes: 
 
 * A primeira é a ```MonetaryAmountSymbols``` com ela é possível definir os símbolos que serão utilizados, por exemplo, símbolo da moeda, separador, etc. 
@@ -34,8 +33,6 @@ public class MonetaryAmountFormatSymbolsExample2 {
     }
 }
 ```
-
-
 
 Também é possível definir qual implementação que será utilizada na serialização do objeto. Para isso existe a classe funcional ```MonetaryAmountProducer```, com ela é possível definir sua própria implementação a partir do number e da moeda. O **Moneta** por padrão já vem com três implementações:
 
