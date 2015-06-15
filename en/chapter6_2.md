@@ -1,4 +1,4 @@
-### Métodos de redução
+### Reduction methods
 
 
-A redução é o processo em que, dado uma lista de valores ele deverá retornar uma ou nenhuma saída, basicamente, a partir de uma lista transformá-lo para apenas um elemento, ou a ausência dele.
+The reducing process is given a list of values it will return one or zero output, basically, from a list will transform on just one element or none. 
