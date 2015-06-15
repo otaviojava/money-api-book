@@ -1,7 +1,7 @@
 ### Predicates
 
 
-Operação de predicate é quando dado uma entrada o retorno é um valor booleano, ou seja, *verdadeiro* ou *falso*. Dentro do Stream o predicate pode ser utilizado como filtragem, filtrar por uma moeda específica, ou para match, verificar se existe algum elemento da lista ou todos batem com a condição.
+The predicate operations is when given an input will return a boolean value, true or false. Within Stream the predicate may be used as filter such filter by a currency, or to match, verify if any or all elements match with this condition.
 
 
 ```java
