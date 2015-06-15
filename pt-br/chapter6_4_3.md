@@ -1,4 +1,4 @@
-#### Sumarizando a moeda:
+#### Sumarizando a moeda
 
 
 
