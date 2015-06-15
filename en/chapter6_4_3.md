@@ -76,7 +76,6 @@ public class AggregateSummaringExchangeRateMonetaryAmount {
 
         ExchangeRateProvider provider = MonetaryConversions.getExchangeRateProvider(ExchangeRateType.IMF);
 
-
         MonetaryAmount money = Money.of(10, dollar);
         MonetaryAmount money2 = Money.of(10, real);
         MonetaryAmount money3 = Money.of(10, dollar);
