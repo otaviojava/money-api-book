@@ -1,0 +1,1 @@
+Agrupamento do MonetaryAmount
