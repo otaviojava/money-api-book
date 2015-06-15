@@ -1,6 +1,6 @@
-#### Somatório
+#### Sum
 
-A soma ou a redução pela soma é definido em: Dado uma lista de `MonetaryAmount` ele retornará um elemento com o somatório desses valores.
+The sum or reducing by sum is defined on: given a list of `MonetaryAmount` it will return an element with the sum of all values.
 
 
 ```java
@@ -22,7 +22,7 @@ public class ReduceSumMonetaryAmount {
 }
 ```
 
-Salientando, caso tenha uma moeda diferente no somatório ele retornará uma exceção.
+Remember, it the list has different currency the sum will return an exception.
 
 ```java
 public class ReduceSumMonetaryAmountError {
@@ -44,7 +44,7 @@ public class ReduceSumMonetaryAmountError {
 }
 ```
 
-Caso seja necessário somar e converter para uma específica moeda, o moneta dar suporte para isso, basta informar uma implementação de `ExchangeRateProvider` e também a moeda que todos os valores serão convertidos.
+The **Moneta** provides the sum using the exchange rate, to do that just need to inform the `ExchangeRateProvider` and the currency whose the money will converted.
 
 ```java
 public class ReduceSumMonetaryAmountExchange {
