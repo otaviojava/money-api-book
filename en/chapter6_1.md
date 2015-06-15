@@ -1,5 +1,5 @@
 ### Sorting a monetary list
 
 
-Dentro da classe `MonetaryFunctions` é possível ordenar pela moeda, pelo valor numérico apenas, além da valiosidade de um dinheiro, levando em consideração a cotação da moeda, de forma ascendente e descendente. 
+Using the `MonetaryFunctions` may sort by currency, numeric value, just looking to numeric value and looking to a money using exchange rate using ascending and descending way.
  
