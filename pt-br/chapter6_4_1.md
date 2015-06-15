@@ -1,4 +1,4 @@
-#### Agrupando pela moeda:
+#### Agrupando pela moeda
 
 
 O moneta traz uma função para facilitar o agrupamento dos `MonetaryAmount` a partir da Moeda.
