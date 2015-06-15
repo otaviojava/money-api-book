@@ -23,9 +23,6 @@ public class AggregatePredicateMonetaryAmount {
                 .collect(Collectors.partitioningBy(
                         MonetaryFunctions.isCurrency(dollar)));//{false=[BRL 10, BRL 9], true=[USD 10, USD 10, USD 8]}
 
-
-
-
     }
 }
 ```
