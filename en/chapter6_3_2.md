@@ -1,7 +1,7 @@
-#### Predicate com o valor numérico
+#### Predicates with numeric values
 
 
-Além de operações com moeda é possível realizar condições com o valor numérico do `MonetaryAmount`, os métodos têm o mesmo comportamento da interface do `MonetaryAmount`:
+The moneta provides predicates with numeric values on MonetaryAmount, the methods have the same behavior of the `MonetaryAmount` interface:
 
 
 * `MonetaryFunctions.isLessThanOrEqualTo(monetaryAmount)`
