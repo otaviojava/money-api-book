@@ -1,7 +1,7 @@
-#### Realizando ordenação levando em consideração a cotação
+#### Sorting using exchange rate
 
 
-Também é possível realizar uma ordenação de forma crescente e decrescente levanto em consideração a cotação da moeda. Para isso basta passar uma implementação de `ExchangeRateProvider`. Por exemplo, dado uma lista com dez dólares, onze reais e nove euros, retornará de forma ascendente o valor de onze reais, dez dólares e nove euros levando em consideração que pela cotação o dólar é mais valioso que o real e menos que valioso que o euro.
+Also may to do a sort on ascending and descending way looking to exchange rate. To do this, need to inform an `ExhcnageRateProvider` implementation. For example, given a list with ten dollars, eleven Brazilian real and nine euro, will return on ascending way the values of eleven Brazilian real, ten dollars and nine euros, just because, for example, the dollar is more valuable than real and lesser valuable than euro.
 
 
 ```java
