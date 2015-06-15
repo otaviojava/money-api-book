@@ -4,7 +4,7 @@
 As well the predicates was explained, it may partition from the money informations with a boolean. The partitioning works on given a condition the values will mapped on true, the `MonetaryAmount` attended this condition, and false, the `MonetaryAmount` doesn't  attended this condition, using the Predicates. Basically the result will be a map whose the keys are `true` and `false` from a `Predicate` condition.
 
 
-[code]
+```java
 public class AggregatePredicateMonetaryAmount {
 
     public static void main(String[] args) {
@@ -28,4 +28,4 @@ public class AggregatePredicateMonetaryAmount {
 
     }
 }
-[/code]
+```
