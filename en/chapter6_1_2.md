@@ -1,6 +1,6 @@
-#### Realizando ordenação com o valor numérico
+#### Sorting using the numeric value
 
-A ordenação pelo valor numérico ignora a moeda e ordena apenas levando em consideração o valor monetário, vale salientar, que essa ordenação não realiza cotação de valores, em outras palavras, o valor de dez reais terá o mesmo valor que dez dólares. Também é possível retornar de forma ascendente e descendente.
+The sorting using the numeric value, will ignore the currency and will look just the numeric value, worth pointing out, this sort will not do an exchange rate, in other words, the money that has the value of ten Brazilian real has the same sort value of the ten dollars. Also is possible sort on ascending and descending way.
 
 ```java
 public class SortMonetaryAmountNumber {
