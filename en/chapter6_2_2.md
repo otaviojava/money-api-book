@@ -1,6 +1,7 @@
-#### Valor mínimo e valor máximo
+#### Maximum and minimum value
 
-É possível realizar a redução pelo valor máximo e mínimo, por exemplo, dado uma lista é possível retornar o maior ou o menor valor da lista.
+
+**Moneta** supports the maximum and minimum reduction, so given a list will return the biggest or the lowest value.
 
 
 ```java
@@ -28,7 +29,7 @@ public class ReduceMaxMinMonetaryAmount {
 }
 ```
 
-Caso seja realizado a operação de mínimo e máximo com moedas diferentes, acontecerá uma exceção. É possível passar um `ExchangeRateProvider` para realizar a conversão e então a comparação.
+If a list has different currencies is possible to do exchange rate before the comparison. If don't do that, the comparison with different currencies will launch an exception.
 
 
 ```java
