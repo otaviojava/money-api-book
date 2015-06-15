@@ -36,7 +36,6 @@ public class PredicateMonetaryAmountNumberValue {
                 .allMatch(MonetaryFunctions.isBetween(Money.zero(dollar),
                         Money.of(BigDecimal.TEN, dollar)));//true
 
-    System.out.println(greaterThanZero);
     }
 }
 ```
