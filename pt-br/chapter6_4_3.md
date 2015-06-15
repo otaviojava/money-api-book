@@ -64,7 +64,6 @@ public class AggregateGroupSummaringMonetaryAmount {
     }
 }
 ```
- 
 
 
 Também é possível sumarizar todos os valores convertendo as moedas para a moeda definida no método, para isso basta informar um `ExchangeRateProvider`.
