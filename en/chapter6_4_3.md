@@ -1,11 +1,11 @@
-Summarizing the money
+#### Summarizing the money
 
 
-Summarizing the money is given the list of money, will return a MonetarySummaryStatistics, the object that has informations of the list such minimum and maximum value, average, sum and the number of elements in the list. To do this just need inform the currency, if the MonetaryAmount has a different currency, it will be ignored. 
+Summarizing the money is given the list of money, will return a `MonetarySummaryStatistics`, the object that has informations of the list such minimum and maximum value, average, sum and the number of elements in the list. To do this just need inform the currency, if the `MonetaryAmount` has a different currency, it will be ignored. 
 
 
 
-[code]
+```java
 public class AggregateSummaringMonetaryAmount {
 
     public static void main(String[] args) {
@@ -31,11 +31,11 @@ public class AggregateSummaringMonetaryAmount {
         
     }
 }
-[/code]
+```
 
-The Moneta provides also a grouping of MonetarySummaryStatistics  from the currencies.
+The **Moneta** provides also a grouping of `MonetarySummaryStatistics`  from the currencies.
 
-[code]
+```java
 public class AggregateGroupSummaringMonetaryAmount {
 
     public static void main(String[] args) {
@@ -63,11 +63,11 @@ public class AggregateGroupSummaringMonetaryAmount {
 
     }
 }
-[/code]
+```
 
-Also is possible convert all currencies to just one on MonetarySummaryStatistics, to do this just inform an ExchangeRateProvider.
+Also is possible convert all currencies to just one on `MonetarySummaryStatistics`, to do this just inform an `ExchangeRateProvider`.
 
-[code]
+```java
 public class AggregateSummaringExchangeRateMonetaryAmount {
 
     public static void main(String[] args) {
@@ -94,4 +94,4 @@ public class AggregateSummaringExchangeRateMonetaryAmount {
         
     }
 }
-[/code]
+```
