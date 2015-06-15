@@ -1,4 +1,8 @@
-## Trabalhando com Streams
+## Working with Stream
 
-Uma vez que a API nasceu após o Java 8, é natural que ele tenha suporte a alguns recursos do Java 8, como já vimos no capítulo anterior, a busca de uma cotação é data a partir de um ```LocalDate```, sem falar no suporte a nova estrutura de dados que melhorou a experiência em trabalhar com listas, o **Stream**. Trabalhar com coleções é muito importante e comum, por exemplo, uma lista de produtos que serão cobrados é natural que seja impresso o valor total dessa compra. Para trabalhar com Stream a referência de implementação tem a classe ```MonetaryFunctions```.
+
+Once this API was born after the Java 8, is really common that API has support for some specific resources of Java 8, how as viewed in the last chapter, to find out an exchange rate from specific date is used a LocalDate, other important stuff is the support to work Stream. Work with list is important, for example, given a list of products a sum of these products. To work with Stream the **Moneta** provides the `MonetaryFunctions`.
+
+
+
 
