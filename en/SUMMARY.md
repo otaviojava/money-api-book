@@ -1,4 +1,4 @@
-# Sumário
+# Summary
 
 * [One specification to money, is it really worth it?](introduction.md)
 * [Credit](credits.md)
