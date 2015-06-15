@@ -1,8 +1,8 @@
-#### Juntando as ordenações
+#### Mixing the sorters
 
 
 
-Apenas como recordação, já que esse recurso não é da money-api e sim do Java 8, é possível também misturar mais de um ordenador, para isso basta utilizar o método **thenComparing**. Basicamente ele faz a ordenação e caso os valores tenham o mesmo peso, ao usar o compare retorne o valor zero, ele usará o outro ordenador, assim a ordem que for definida o sort influenciará no resultado da ordenação.
+Just to remember, because this feature isn't of the money-api but from Java 8, it may mix two or more sorter, to do it just uses the **thenComparing** method. Basically it does a sort operation and when returns zero, it will use the other sorter, so the way it is putted the sorter will change the sort result.
 
 
 ```java
