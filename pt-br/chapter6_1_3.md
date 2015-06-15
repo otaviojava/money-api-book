@@ -22,12 +22,12 @@ public class SortMonetaryAmountExchange {
     
         List<MonetaryAmount> resultAsc = Stream.of(money, money2, money3)
                 .sorted(MonetaryFunctions
-                        .sortValiable(provider))
+                        .sortValuable(provider))
                 .collect(Collectors.toList());//[BRL 11, EUR 9, USD 10]
 
         List<MonetaryAmount> resultDesc = Stream.of(money, money2, money3)
                 .sorted(MonetaryFunctions
-                        .sortValiableDesc(provider)).collect(Collectors.toList());//[USD 10, EUR 9, BRL 11]
+                        .sortValuableDesc(provider)).collect(Collectors.toList());//[USD 10, EUR 9, BRL 11]
 
     }
 }
