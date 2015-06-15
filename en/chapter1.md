@@ -1,4 +1,4 @@
-## The motivation of type money
+## The motivation behind the money type
 
 According to Wikipedia, the money is the means used to exchange goods, used in the purchase of goods, services, workforce, foreign currencies or in other financial transactions, issued and controlled by the government of each country, which is the only one this assignment. Considering this, many systems in Java end up using or representing this monetary value, but how to represent the money in your system?
 
