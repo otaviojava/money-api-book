@@ -36,4 +36,4 @@
    * [Predicates using currencies](chapter6_3_1.md)
    * [Predicates with numeric values](chapter6_3_2.md)
    * [Mixing with predicates](chapter6_3_3.md)
-* [Bibliografia](bibliography.md)
+* [Bibliography](bibliography.md)
