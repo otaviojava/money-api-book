@@ -1,6 +1,6 @@
 # Sumário
 
-* [Uma especificação de dinheiro, será que vale mesmo a pena?](introduction.md)
+* [One specification to money, is it really worth it?](introduction.md)
 * [Credit](credits.md)
 * [About the Author](about_me.md)
 * [The motivation behind the money type](chapter1.md)
