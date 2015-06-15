@@ -8,17 +8,17 @@ In the first chapter will discuss the motivation behind has a money type on a sy
 
 Creation of a money type, but did nobody live this problem before? This chapter will answer this question, talking the motivation to has a specification and the introduction to the API.
 
-Extract values and do some operations from monetary amount, it is the goal of operations with query and operator: Will show how the MonetaryOperator and MonetaryQuery classes work, the difference between them, and the MonetaryOperators and MonetaryQueries utilitarian classes and how create the own query and operation with money.
+Extract values and do some operations from monetary amount, it is the goal of operations with query and operator: Will show how the `MonetaryOperator` and `MonetaryQuery` classes work, the difference between them, and the `MonetaryOperators` and `MonetaryQueries` utilitarian classes and how create the own query and operation with money.
 
 
 The Formatting a monetary amount and retrieve it from String beyond the create custom a formatter. It is the objective of this chapter.	
 
-Yes, there are support to Java 8! Know the functions that already exist on reference implementation to work with Stream on monetary amount.
+Yes, there are support to Java 8! Know the functions that already exist on reference implementation to work with **Stream** on monetary amount.
 
 Exchange rate, sum money with different currencies will return an exception. In this point will show how do exchange rate of a monetary amount and find rate from a specific date.
 
 
-Working with Java EE such JSF converter, CDI, JPA, etc. it will show in this chapter and how work the money API with these technologies.
+Working with **Java EE** such **JSF** converter, **CDI**, **JPA**, **bean validator** etc. it will show in this chapter and how work the money API with these technologies.
 
 I hope that the reader enjoy this project that was made to Java community to Java community.
 
