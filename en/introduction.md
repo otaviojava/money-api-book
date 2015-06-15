@@ -1,21 +1,25 @@
-# Uma especificação de dinheiro, será que vale mesmo a pena?
+# One specification to money, is it really worth it?
+
+Money is the main way to do exchange goods, products, buy services etc. It is absolutely represented in several Java programs. But after all, does make sense a money type? Why not just use types that are already on Java such `Double`, `Float`, `String`, `BigDecimal`, etc.? Are there solutions better than it? What does happen with the encapsulation if the choice is a type that already exist on Java? the utilitarian is really useful, but if a developer need to remember to do something, they may forget and the result will a disaster. Once was talked about the money question is born the first question: Did nobody live this problem? Is it worth reinventing the wheel? To solve these problems the money specification was born. 
+	
+The **JSR 354**, is a specification whose the goal is take care of the money, solve some general problems and make the life of the Java developer easier. From this specification will be more obvious work with money on standardization way. To understand better the API, this cook book will be divided em some parts:
+
+In the first chapter will discuss the motivation behind has a money type on a system, the benefits on design, it hasn't messy code, the easy maintenance and more code object-oriented.
+
+Creation of a money type, but did nobody live this problem before? This chapter will answer this question, talking the motivation to has a specification and the introduction to the API.
+
+Extract values and do some operations from monetary amount, it is the goal of operations with query and operator: Will show how the MonetaryOperator and MonetaryQuery classes work, the difference between them, and the MonetaryOperators and MonetaryQueries utilitarian classes and how create the own query and operation with money.
 
 
-Dinheiro é a forma mais comum de realizar trocas de bens, compra de materiais etc. Ele certamente foi, é e será representando em diversos programas que rodam Java. Mas afinal qual é a motivação por trás de se usar um tipo dinheiro? Não vale mais a pena utilizar um tipo primitivo do Java como o ```Double```, ```Float```, ```String```, ```BigDecimal```, etc.? Existem soluções melhores que essa? O que acontece com o meu encapsulamento quando se toma decisão de usar tipos primitivos? Usar classes utilitárias para tratar a mesma moeda pode ser muito interessante, mas caso a desenvolvedor esqueça de utilizar tal classe o resultado poderá ser desastroso. Uma vez que seja necessário criar um tipo dinheiro, surge a primeira dúvida: Será que ninguém nunca passou por esse problema antes? Vale lembrar que o fator de ficar “reinventando a roda” não é uma boa estratégia sem falar, que o desenvolvedor passará pelos mesmos problemas já resolvidos por outros mais experientes. Com esse intuito nasceu a especificação de moeda.
+The Formatting a monetary amount and retrieve it from String beyond the create custom a formatter. It is the objective of this chapter.	
+
+Yes, there are support to Java 8! Know the functions that already exist on reference implementation to work with Stream on monetary amount.
+
+Exchange rate, sum money with different currencies will return an exception. In this point will show how do exchange rate of a monetary amount and find rate from a specific date.
 
 
-A JSR 354, é uma especificação Java cujo o objetivo é tomar conta do dinheiro e resolvendo alguns problemas triviais que os desenvolvedores Java vem enfrentado em seu dia a dia. A partir dessa especificação será mais fácil trabalhar com dinheiro de forma padronizada, já que com a era dos micros serviços será mais fácil lidar com a comunicação desse tipo, por exemplo, um e-commerce solicitar um pagamento de um produto a partir de um gateway de pagamento. Esse material será dividido em algumas partes:
+Working with Java EE such JSF converter, CDI, JPA, etc. it will show in this chapter and how work the money API with these technologies.
 
-No primeiro capítulo será discutido a motivação por trás de utilizar um tipo dinheiro em seu sistema, os benefícios tanto no design, centralização de código, manutenção e orientação a objetos.
+I hope that the reader enjoy this project that was made to Java community to Java community.
 
-Criação de um tipo dinheiro, mas será que ninguém nunca teve esse problema? Essa pergunta será respondida nesse segundo capítulo, falando da motivação da especificação além do uso básico da API.
 
-Extrair valores e realizar pequenas operações a partir de um valor monetário, esse é o principal objetivo das operações com query e operador: Será demonstrado o funcionamento das classes ```MonetaryOperator``` e ```MonetaryQuery```, diferenças entre elas, as classes utilitárias ```MonetaryOperators``` e ```MonetaryQueries``` e como criar uma query ou operação no dinheiro.
-
-Formatando um montante monetário: Será demonstrado aqui a forma de exibir formatar o dinheiro com classes já suportadas pela API, além de como criar um formatador do zero.
-
-Sim, estamos preparador para o Java 8!: Conheça as funções embutidas dentro da RI feita para trabalhar com **Streams** de montante monetário.
-Convertendo valores: O que acontece quando tentamos realizar somatórios de dinheiros com moedas diferentes? Certamente lançará uma exceção certo? Nesse ponto será demonstrado como realizar conversão com cotações de valores, além de realizar a busca de cotação a partir de uma data específica.
- Trabalhando com o Java EE: Conversores de JSF, CDI e Spring, nesse capítulo mostraremos classes utilitárias para trabalhar com essas tecnologias.
-
-Espero que os leitores curtam bastante o projeto realizado em conjunto com toda a comunidade Java.
