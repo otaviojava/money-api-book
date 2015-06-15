@@ -36,4 +36,8 @@
    * [Predicates using currencies](chapter6_3_1.md)
    * [Predicates with numeric values](chapter6_3_2.md)
    * [Mixing with predicates](chapter6_3_3.md)
+ * [Grouping MonetaryAmount](chapter6_4.md)
+   * [Grouping by currency](chapter6_4_1.md)
+   * [Partitioning](chapter6_4_2.md)
+   * [Summarizing the money](chapter6_4_3.md)
 * [Bibliography](bibliography.md)
