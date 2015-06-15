@@ -4,8 +4,8 @@
 Com o moneta é possível realizar predicate a partir da moeda, usando o inclusive e o exclusive. Ambos utilizam varargs, ou seja, é possível adicionar n elementos na condição:
 
 
-* `isCurrency(CurrencyUnit... currencies)`: Retorna verdadeiro caso o MonetaryAmount tenha a uma das moedas especificadas.	
-* `filterByExcludingCurrency(CurrencyUnit... currencies)`: Retorna verdadeiro caso o MonetaryAmount não tenha nenhuma das moedas especificadas.
+* `isCurrency(CurrencyUnit... currencies)`: Retorna verdadeiro caso o `MonetaryAmount` tenha a uma das moedas especificadas.	
+* `filterByExcludingCurrency(CurrencyUnit... currencies)`: Retorna verdadeiro caso o `MonetaryAmount` não tenha nenhuma das moedas especificadas.
 
 
 ```java
