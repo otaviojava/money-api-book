@@ -1,6 +1,6 @@
-#### Realizando ordenação com moeda
+#### Sorting by currency
 
-No caso da ordenação da moeda é levado em consideração o código da moeda. Por exemplo, uma lista com as moedas `USD`, `EUR`, `BRL` retornará `BRL`, `EUR` e `USD` de forma ascendente e USD, EUR, BRL de forma decrescente.
+Using sorting using the currency, the **Moneta** will look to the currency code. So given a list of money with the currencies `USD`, `EUR`, `BRL` will return `BRL`, `EUR` and `USD` on ascending way and `USD`, `EUR`, `BRL` on descending way.
 
 ```java
 public class SortMonetaryAmountCurrency {
