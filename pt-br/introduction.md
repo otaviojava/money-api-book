@@ -14,7 +14,7 @@ Extrair valores e realizar pequenas operações a partir de um valor monetário,
 
 Formatando um montante monetário: Será demonstrado aqui a forma de exibir formatar o dinheiro com classes já suportadas pela API, além de como criar um formatador do zero.
 
-Sim, estamos preparador para o Java 8!: Conheça as funções embutidas dentro da RI feita para trabalhar com **Streams** de montante monetário.
+Sim, estamos preparados para o Java 8!: Conheça as funções embutidas dentro da RI feita para trabalhar com **Streams** de montante monetário.
 Convertendo valores: O que acontece quando tentamos realizar somatórios de dinheiros com moedas diferentes? Certamente lançará uma exceção certo? Nesse ponto será demonstrado como realizar conversão com cotações de valores, além de realizar a busca de cotação a partir de uma data específica.
  Trabalhando com o Java EE: Conversores de JSF, CDI e Spring, nesse capítulo mostraremos classes utilitárias para trabalhar com essas tecnologias.
 
