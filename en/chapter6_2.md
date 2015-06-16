@@ -1,4 +1,4 @@
 ### Reduction methods
 
 
-The reducing process is given a list of values it will return one or zero output, basically, from a list will transform on just one element or none. 
+The reduction is the process that, given a list of values it should return one or no output, basically, from a list turn it to only one element, or the lack of it.
