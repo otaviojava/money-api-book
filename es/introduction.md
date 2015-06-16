@@ -1,4 +1,4 @@
-# Una especificación de Dinero, realmente vale la pena?
+# Una especificacion de Dinero, realmente vale la pena?
 
 Dinero es la forma mas común de realizar intercambio de bienes, compra de materiales, etc. Este concepto fué y ha sido representado en diversos programas que ejecutan Java. Pero despues de todo cual es la motivación detrás de usar un tipo Dinero? Acaso ya no vale la pena mas usar un tipo primitivo de Java como ```Double```, ```Float```, ```String```, ```BigDecimal```, etc.? Existen mejores soluciones que esa? Que sucede con mi encapsulación cuando se toma la decisión de usar tipos primitivos? Usar clases Helper para tratar la misma moneda resulta interesante, pero si el desarrollador obvia u olvida de usar esa clase Helper puede ser contraproducente. Una vez que sea necesario crear un tipo Dinero, emerge la primera duda: Será que nadie mas pasó por este problema antes? Recuerde que el factor de quedar "reinventando la rueda" no es una buena estratégia sin hablar, que el desarrollador pasará por los mismos problemas ya resueltos por otros mas experimentados. Con ese objetivo nació la especificación Moneda.
 
