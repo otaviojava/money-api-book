@@ -2,7 +2,7 @@
 
 
 
-En money-api, será usado ese nombre en vez de JSR 354, tambien será necesario representar tanto el valor numérico en cuanto a la moneda. Para representar la moneda existe la interface ```CurrencyUnit``` esta necesita ser inmutable y thread-safe.
+En money-api, será usado ese nombre en vez de JSR 354, también será necesario representar tanto el valor numérico en cuanto a la moneda. Para representar la moneda existe la interface ```CurrencyUnit``` esta necesita ser inmutable y thread-safe.
 
 |Nombre del método| Descripción |Ejemplo|
 | -- | -- | -- |
