@@ -2,7 +2,7 @@
 
 
 
-Solo como recordatorio, ya que este recurso no es de money-api y si de Java 8, es posible mezclar mas de un ordenador, para eso basta utilizar el método **thenComparing**. Basicamente el hace la ordenación y si los valores tengan el mismo peso, al usar el compare devuelva el valor zero, este usará el otro ordenador, asi el orden que fuera definido o sort influenciará en el resultado de la ordenación.
+Solo como recordatorio, ya que este recurso no es de money-api y si de Java 8, es posible mezclar mas de un ordenador, para eso basta utilizar el método **thenComparing**. Básicamente el hace la ordenación y si los valores tengan el mismo peso, al usar el compare devuelva el valor zero, este usará el otro ordenador, asi el orden que fuera definido o sort influenciará en el resultado de la ordenación.
 
 
 ```java
