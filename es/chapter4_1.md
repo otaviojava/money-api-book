@@ -1,6 +1,6 @@
 ### La clase MonetaryAmountFormat
 
-La implementación de referencia tiene dos formas de crear formato para Dinero. La primera opción es con la clase  ```MonetaryFormats``` con esta es posible crear un formateador a partir de un query builder o utilizando solo por ```Locale```. Además del parseo sin parametros en las implementaciones de ```MonetaryAmount```, tambien existe el metodo parse que acepta ```MonetaryAmountFormat```.
+La implementación de referencia tiene dos formas de crear formato para Dinero. La primera opción es con la clase  ```MonetaryFormats``` con esta es posible crear un formateador a partir de un query builder o utilizando solo por ```Locale```. Además del parseo sin parametros en las implementaciones de ```MonetaryAmount```, también existe el metodo parse que acepta ```MonetaryAmountFormat```.
 
 
 ```java
