@@ -1,6 +1,6 @@
 ### Acceso al código fuente e instalación
 
-Como toda especificación en Java, JSR, además del API esta posee una implementación de referencia, como el propio nombre dice, esa implementación servirá de base para las próximas implementaciones. En el caso de la JSR 354, money-api, una implementación de referencia es moneta (Para mas informaciones en relación al codigo fuente del proyecto puedes acceder a [https://github.com/JavaMoney/jsr354-ri](https://github.com/JavaMoney/jsr354-ri)). Basicamente, es posible utilizar moneta de dos formas:
+Como toda especificación en Java, JSR, además del API esta posee una implementación de referencia, como el propio nombre dice, esa implementación servirá de base para las próximas implementaciones. En el caso de la JSR 354, money-api, una implementación de referencia es moneta (Para mas informaciones en relación al codigo fuente del proyecto puedes acceder a [https://github.com/JavaMoney/jsr354-ri](https://github.com/JavaMoney/jsr354-ri)). Básicamente, es posible utilizar moneta de dos formas:
 
 La primera de ellas es accesando a su repositorio de dependencia de maven ([http://mvnrepository.com/artifact/org.javamoney/moneta](http://mvnrepository.com/artifact/org.javamoney/moneta)), por lo que si tu proyecto usa maven, por ejemplo, basta adicionar una dependencia de moneta em su proyecto de la siguiente forma:
 
