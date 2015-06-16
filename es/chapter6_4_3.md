@@ -33,7 +33,7 @@ public class AggregateSummaringMonetaryAmount {
 }
 ```
 
-**Moneta** tambien tiene soporte para agrupar los resumenes a partir de la moneda.
+**Moneta** también tiene soporte para agrupar los resumenes a partir de la moneda.
 
 ```java
 public class AggregateGroupSummaringMonetaryAmount {
