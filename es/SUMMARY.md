@@ -36,4 +36,8 @@
    * [Predicate con monedas](chapter6_3_1.md)
    * [Predicate con valor numérico](chapter6_3_2.md)
    * [Interactuando con Predicates](chapter6_3_3.md)
+ * [Agrupamiento de MonetaryAmount](chapter6_4.md)
+   * [Agrupando por la moneda](chapter6_4_1.md)
+   * [Particionamiento](chapter6_4_2.md)
+   * [Resumiendo monedas](chapter6_4_3.md)
 * [Bibliografia](bibliography.md)
