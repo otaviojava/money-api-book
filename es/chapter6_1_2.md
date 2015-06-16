@@ -1,6 +1,6 @@
 #### Realizando ordenación con valor numérico
 
-La ordenación por el valor numérico ignora la moneda y ordena solo teniendo en consideración el valor monetário, cabe resaltar, que esa ordenación no realiza cotización de valores, en otras palabras, el valor de diez reales tendrá el mismo valor que diez dolares. Tambien es posible retornar de forma ascendente y descendente.
+La ordenación por el valor numérico ignora la moneda y ordena solo teniendo en consideración el valor monetário, cabe resaltar, que esa ordenación no realiza cotización de valores, en otras palabras, el valor de diez reales tendrá el mismo valor que diez dolares. También es posible retornar de forma ascendente y descendente.
 
 ```java
 public class SortMonetaryAmountNumber {
