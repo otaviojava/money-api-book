@@ -148,7 +148,7 @@ public class WorkerUtils {}
 * Una vez utilizado clases utilitarias para realizar esa validación no estamos aminorando encapsulamiento? Despues de todo es posible realizar la sumatoria de dos valores ignorando la validación de la moneda generando asi un error. Mirando la definición de Wikipédia sobre el encapsulamiento: Permite esconder propiedades y métodos de un objeto para proteger el código de acceso directos y efectos secundarios accidentales.
 
 
-Además de esos problemas, usando como referencia el libro Clean Code, tenemos una optima definición entre estructura de datos y un objeto, basicamente el objeto esconde los datos para exponer un comportamiento, o sea, no estamos programando orientado a objetos de esa forma.
+Además de esos problemas, usando como referencia el libro Clean Code, tenemos una optima definición entre estructura de datos y un objeto, básicamente el objeto esconde los datos para exponer un comportamiento, o sea, no estamos programando orientado a objetos de esa forma.
 
 Una solución para resolver ese problema vendrá de un articulo de Martin Fowler, en el cual el cita un ejemplo de tipo dinero como su favorito, asi será creado el tipo dinero. con eso resolveremos:
 
