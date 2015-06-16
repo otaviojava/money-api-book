@@ -131,7 +131,7 @@ Listo, con esto resolvemos todos nuestros problemas, correcto?, Falso!, vamos a 
 
  
 * Para realizar la sumatoria de productos es necesario que la persona se acuerde de realizar la llamada a la clase utilitaria, pero que pasa con aquello que tiene que acordarse? Exacto!, desafortunadamente se olvida. 
-* Como hablamos anteriormente, el dinero puede ser usado no solamente con Producto, con diversas cosas tambien, servicios, fuerza de trabajo, etc., asi será necesario duplicar los dos campos, moneda y valor monetário, para diversos lugares.
+* Como hablamos anteriormente, el dinero puede ser usado no solamente con Producto, con diversas cosas también, servicios, fuerza de trabajo, etc., asi será necesario duplicar los dos campos, moneda y valor monetário, para diversos lugares.
 * Desde diversas clases utilizando dinero tendremos dos estratégias para realizar la validación, una seria crear clases utilitarias para todo modelo que use dinero, como  ServiceUtils, GoodsUtils, etc., o una clase utilitaria que recibe cuatro parametros (el valor de la moneda de los dos para ser comparado y entonces sumado).
 
 ``` java
