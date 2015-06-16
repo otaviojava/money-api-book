@@ -44,7 +44,7 @@ public class ReduceSumMonetaryAmountError {
 }
 ```
 
-En caso sea necesario sumar y convertir para una específica moneda, Moneta da soporte para eso, basta proporcionar una implementación de `ExchangeRateProvider` y tambien la moneda en la que todos los valores serán convertidos.
+En caso sea necesario sumar y convertir para una específica moneda, Moneta da soporte para eso, basta proporcionar una implementación de `ExchangeRateProvider` y también la moneda en la que todos los valores serán convertidos.
 
 ```java
 public class ReduceSumMonetaryAmountExchange {
