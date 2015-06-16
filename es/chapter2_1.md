@@ -23,7 +23,7 @@ Para Yvi:
 ```
 
 
-La otra forma es bajando el código-fuente y compilandolo, para eso será necesario seguir algunos pasos, mas basicamente es baja el parent o instalarlo y enseguida instalar moneta. Vale recordar que para realizar ese procedimiento es necesario tener git, Java 8 y maven instalado y configurado en su maquina.
+La otra forma es bajando el código-fuente y compilandolo, para eso será necesario seguir algunos pasos, mas básicamente es baja el parent o instalarlo y enseguida instalar moneta. Vale recordar que para realizar ese procedimiento es necesario tener git, Java 8 y maven instalado y configurado en su maquina.
 
 
 Bajar el código de javamoney-parent, para esto solo ejecute el siguiente comando:
