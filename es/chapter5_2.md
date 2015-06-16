@@ -1,6 +1,6 @@
 ### Realizando la cotización a partir de una fecha especifica
 
-En algunos momentos de la aplicación es importante saber no solo el valor de la cotización actual, sino a partir de una fecha especifica, por ejemplo, al alquilar un hotel normalmente el valor de la cotización es dado a partir de la confirmación de la reserva o en el caso de la tarjeta de credito el valor de la cotización es definido solo en el cierre de la factura. Con Moneta es posible realizar tal busqueda a partir de una fecha especifica para eso se utiliza la clase ```ConversionQuery``` con esta es posible realizar busquedas de fechas diferentes o en un rango de fechas. La representación aceptada de fecha es la clase ```LocalDate```.
+En algunos momentos de la aplicación es importante saber no solo el valor de la cotización actual, sino a partir de una fecha especifica, por ejemplo, al alquilar un hotel normalmente el valor de la cotización es dado a partir de la confirmación de la reserva o en el caso de la tarjeta de crédito el valor de la cotización es definido solo en el cierre de la factura. Con Moneta es posible realizar tal busqueda a partir de una fecha especifica para eso se utiliza la clase ```ConversionQuery``` con esta es posible realizar busquedas de fechas diferentes o en un rango de fechas. La representación aceptada de fecha es la clase ```LocalDate```.
 
 
 ```java
