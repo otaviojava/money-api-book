@@ -17,8 +17,7 @@ public class MonetaryAmountFormatSymbolsExample {
 }
 ```
 
-
-Caso sea necesario configurar las informaciones como cantidad mínima, moneda, etc. Existen dos clases: 
+Cuando sea necesario configurar las informaciones como cantidad mínima, moneda, etc. Existen dos clases: 
 
 * La primera es la ```MonetaryAmountSymbols``` con esta es posible definir los simbolos que serán utilizados, por ejemplo, símbolo de la moneda, separador, etc. 
 * La clase ```MonetaryAmountNumericInformation``` cuidará de las informaciones con relación al formateo del valor numérico, por ejemplo, el número mínimo y máximo de dígitos antes y despues de la coma. 
