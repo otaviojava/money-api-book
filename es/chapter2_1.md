@@ -37,7 +37,7 @@ Enseguida accese a la carpeta:
 cd javamoney-parent
 ```
 
-Compile el código-fuente e instalelo en su repositório local, en nuestro caso tambien saltaremos las pruebas solo para que sea mas rápido:
+Compile el código-fuente e instalelo en su repositório local, en nuestro caso también saltaremos las pruebas solo para que sea mas rápido:
 
 ```
 mvn clean install -Dmaven.test.skip
@@ -57,7 +57,7 @@ Enseguida accede a la carpeta:
 cd jsr354-ri
 ```
 
-Compile el código-fuente e instalelo en su repositório local, en nuestro caso tambien saltaremos las pruebas solo para que sea mas rápido:
+Compile el código-fuente e instalelo en su repositório local, en nuestro caso también saltaremos las pruebas solo para que sea mas rápido:
 
 ```
 mvn clean install -Dmaven.test.skip
