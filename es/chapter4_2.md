@@ -1,0 +1,77 @@
+### La clase MonetaryAmountFormatSymbols
+
+Existe tambien la interface ```MonetaryAmountFormatSymbols```, que de forma semejante la clase ```DecimalFormat``` con la clase ```Number```, tiene el objetivo de realizar formateadores de dinero a partir del as configuraciones de simbolos, monedas, cantidad mínima y máxima de dígitos antes y despues la coma decimal, etc.
+
+
+```java
+public class MonetaryAmountFormatSymbolsExample {
+
+    public static void main(String[] args) {
+        CurrencyUnit currency = Monetary.getCurrency("BRL");
+        MonetaryAmount money = Money.of(12, currency);
+        MonetaryAmountFormat defafult = MonetaryAmountFormatSymbols.getDefafult();
+        String format = defafult.format(money);//R$ 12,00
+        MonetaryAmount moneyParsed = Money.parse(format, defafult);//or using defafult.parse(format);
+
+    }
+}
+```
+
+
+Caso sea necesario configurar las informaciones como cantidad mínima, moneda, etc. Existen dos clases: 
+
+* La primera es la ```MonetaryAmountSymbols``` con esta es posible definir los simbolos que serán utilizados, por ejemplo, símbolo de la moneda, separador, etc. 
+* La clase ```MonetaryAmountNumericInformation``` cuidará de las informaciones con relación al formateo del valor numérico, por ejemplo, el número mínimo y máximo de dígitos antes y despues de la coma. 
+
+```java
+public class MonetaryAmountFormatSymbolsExample2 {
+
+    public static void main(String[] args) {
+        MonetaryAmountFormatSymbols defafult = MonetaryAmountFormatSymbols.getDefafult();
+        MonetaryAmountSymbols amountSymbols = defafult.getAmountSymbols();
+        MonetaryAmountNumericInformation numericInformation = defafult.getNumericInformation();
+        
+    }
+}
+```
+
+
+
+Tambien es posible definir cual implementación será utilizada en la serialización del objeto. Para eso existe la clase funcional ```MonetaryAmountProducer```, con esta es posible definir su propia implementación a partir del numero y de la moneda. Moneta por standard ya viene con tres implementaciones:
+
+
+* ```FastMoneyProducer``` productor de ```MonetaryAmount``` con la implementación ```FastMoney```.
+* ```MoneyProducer``` productor de ```MonetaryAmount``` con la implementación ```Money```.
+* ```RoundedMoneyProducer``` productor de ```MonetaryAmount``` con la implementación ```RoundedMoney```, en esta es posible pasar un ```MonetaryOperator``` que será utilizado en la construcción de esa implementación asi no sea informado un operador de redondeo será utilizado ```MonetaryOperators.rounding()```. Recordar que ```MonetaryOperator``` dentro de la implementación ```RoundedMoney``` será utilizado como agente de redondedo, osea, para cada operación ese operador será llamado.
+
+
+
+```java
+public class MonetaryAmountFormatSymbolsExample3 {
+
+    public static void main(String[] args) {
+        MonetaryAmountSymbols symbols = new MonetaryAmountSymbols(Locale.US);// new MonetaryAmountSymbols();
+        symbols.setCurrencySymbol("Mon");
+        MonetaryAmountFormat formater = MonetaryAmountFormatSymbols.of(symbols, new MoneyProducer());
+        CurrencyUnit currency = Monetary.getCurrency("BRL");
+        String text = formater.format(Money.of(10, currency));//Mon 10.00
+
+    }
+}
+```
+
+Tambien es posible pasar un ```String``` como patrón para el formateo, ese ```String``` sigue el mismo standard de la clase ```DecimalFormat```.
+
+```java
+public class MonetaryAmountFormatSymbolsExample3 {
+
+    public static void main(String[] args) {
+        MonetaryAmountSymbols symbols = new MonetaryAmountSymbols(Locale.US);// new MonetaryAmountSymbols();
+        symbols.setCurrencySymbol("Mon");
+        MonetaryAmountFormat formater = MonetaryAmountFormatSymbols.of("¤ ###,###.00", symbols, new MoneyProducer());
+        CurrencyUnit currency = Monetary.getCurrency("BRL");
+        String text = formater.format(Money.of(10_000_00, currency));//Mon 1,000,000.00
+        System.out.println(text);
+    }
+}
+```
