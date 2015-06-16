@@ -1,7 +1,7 @@
 #### Interactuando con Predicates
 
 
-Asi como sort, tambien es posible realizar interacción con predicate, utilizando operaciones booleanas, asi tenemos los  métodos, **negate**, **and**, **or**.
+Asi como sort, también es posible realizar interacción con predicate, utilizando operaciones booleanas, asi tenemos los  métodos, **negate**, **and**, **or**.
 
 ```java
 public class PredicateMonetaryAmountMix {
