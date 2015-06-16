@@ -1,7 +1,7 @@
 ### Operaciones Aritméticas
 
 
-Con ```MonetaryAmount``` es posible realizar operaciones como substracción y suma, subrayando que las implementaciones son inmutables, osea, el resultado resultará en una nueva instancia. Al realizar operaciones que reciben un ```MonetaryAmount``` el resultado será tambien un ```MonetaryAmount```, pero de la implementación de la instancia que llamó al metodo.
+Con ```MonetaryAmount``` es posible realizar operaciones como substracción y suma, subrayando que las implementaciones son inmutables, osea, el resultado resultará en una nueva instancia. Al realizar operaciones que reciben un ```MonetaryAmount``` el resultado será también un ```MonetaryAmount```, pero de la implementación de la instancia que llamó al metodo.
 
 ```java
 public class ArithmeticOperations {
@@ -32,7 +32,7 @@ public class ArithmeticOperations2 {
 }
 ```
 
-Tambien es posible realizar operaciones de negación con ```MonetaryAmount```.
+también es posible realizar operaciones de negación con ```MonetaryAmount```.
 
 
 
