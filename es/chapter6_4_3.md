@@ -66,7 +66,7 @@ public class AggregateGroupSummaringMonetaryAmount {
 ```
 
 
-Tambien es posible resumir todos los valores convirtiendo las monedas para la moneda definida en el método, para eso basta seleccionar un `ExchangeRateProvider`.
+También es posible resumir todos los valores convirtiendo las monedas para la moneda definida en el método, para eso basta seleccionar un `ExchangeRateProvider`.
 
 
 ```java
