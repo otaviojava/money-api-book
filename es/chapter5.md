@@ -1,7 +1,7 @@
 ## Cotización
 
 
-La internacionalización es un concepto aplicado en diversas áreas, basicamente, es un intercambio de cultura, economia y política en diversos lugares del mundo. Con la internacionalización es posible, por ejemplo, saber lo que sucede del otro lado del mundo de manera instantanea, conocer lugares y culturas sin salir de casa ademas de adquirir productos. Es muy común exportar e importar diversas cosas, productos, servicios, asignaturas, etc. Siguiendo la tendencia mundial los software tambien necesitan estar preparados para una arquitetura internacionalizada, osea, permitir la interacción del usuario en diversos lugares del mundo. Com dinero no es diferente, es necesario estar listo para esto.
+La internacionalización es un concepto aplicado en diversas áreas, basicamente, es un intercambio de cultura, economia y política en diversos lugares del mundo. Con la internacionalización es posible, por ejemplo, saber lo que sucede del otro lado del mundo de manera instantanea, conocer lugares y culturas sin salir de casa ademas de adquirir productos. Es muy común exportar e importar diversas cosas, productos, servicios, asignaturas, etc. Siguiendo la tendencia mundial los software también necesitan estar preparados para una arquitetura internacionalizada, osea, permitir la interacción del usuario en diversos lugares del mundo. Com dinero no es diferente, es necesario estar listo para esto.
 
 Hablando de internacionalización y dinero es natural que necesite interactuar con diversas monedas, pero que pasa al realizar operaciones con monedas diferentes?
 
