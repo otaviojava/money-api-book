@@ -32,7 +32,7 @@ public class ArithmeticOperations2 {
 }
 ```
 
-también es posible realizar operaciones de negación con ```MonetaryAmount```.
+También es posible realizar operaciones de negación con ```MonetaryAmount```.
 
 
 
