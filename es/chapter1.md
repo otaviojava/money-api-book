@@ -1,16 +1,16 @@
 ## La motivación del tipo Dinero
 
 
-Según Wikipedia, el dinero es el medio usado en el intercambio de bienes, usado en la compra de bienes, servicios, fuerza de trabajo, divisas extranjeras o en las demás transacciones financieras, emitido y controlado por el gobierno de cada país, que es el único que tiene esa atribución. Considerando eso, muchos sistemas en Java terminan utilizando o representando ese valor monetário, pero como representar el dinero en su sistema?
+Según Wikipedia, el dinero es el medio usado en el intercambio de bienes, usado en la compra de bienes, servicios, fuerza de trabajo, divisas extranjeras o en las demás transacciones financieras, emitido y controlado por el gobierno de cada país, que es el único que tiene esa atribución. Considerando eso, muchos sistemas en Java terminan utilizando o representando ese valor monetario, pero como representar el dinero en su sistema?
 
-Para representar el dinero la primera estratégia es utilizar los tipos nativos de Java, el libro Java Efectivo no recomienda la utilización del uso de ``double`` y ``float`` cuando resultados precisos son necesarios. 
+Para representar el dinero la primera estrategia es utilizar los tipos nativos de Java, el libro Java Efectivo no recomienda la utilización del uso de ``double`` y ``float`` cuando resultados precisos son necesarios. 
 
 ``` java
 double val = 1.03 - .42;
 System.out.println(val); //0.6100000000000001
 ```
 
-Ese mismo libro recomienda dos estratégias, la primera de ellas es utilizando long e ``int``, para esto, es necesario realizar una conversión de valor para centavos, esta solución es muy recomendada cuando la velocidad y la ocupación de memoria son puntos importantes, sin embargo, es importante preocuparse con el número de lugares decimales, el libro no recomienda representación mayor que nueve lugares decimales.
+Ese mismo libro recomienda dos estrategias, la primera de ellas es utilizando long e ``int``, para esto, es necesario realizar una conversión de valor para centavos, esta solución es muy recomendada cuando la velocidad y la ocupación de memoria son puntos importantes, sin embargo, es importante preocuparse con el número de lugares decimales, el libro no recomienda representación mayor que nueve lugares decimales.
 
 ``` java
 public static void main(String[] args) {
@@ -38,10 +38,10 @@ Producto pasta = new Producto("pasta", 4_00);
 int sum = banana.getMoney() + pasta.getMoney();
 ```
 
-Pero que sucede si olvidamos convertir ese valor de dolares para centavos (es decir, dejar doce en vez de poner doce mil)? aqui el resultado seria erroneo, otro problema sería el control de redondeos de decimales.
+Pero que sucede si olvidamos convertir ese valor de dólares para centavos (es decir, dejar doce en vez de poner doce mil)? aquí el resultado sería erróneo, otro problema sería el control de redondeos de decimales.
 
 
-Además de ``int`` y ``long`` el libro Java Efectivo recomienda el uso de ``BigDecimal``, con eso, nuestro producto tendrá una llamada más intuitiva y mas común, despues de todo, es mas natural hablar de un producto que cuesta doce dolares y no mil doscientos centavos.
+Además de ``int`` y ``long`` el libro Java Efectivo recomienda el uso de ``BigDecimal``, con eso, nuestro producto tendrá una llamada más intuitiva y más común, después de todo, es mas natural hablar de un producto que cuesta doce dólares y no mil doscientos centavos.
 
 ``` java
 public class Producto {
@@ -58,9 +58,9 @@ Otro punto importante es que ``BigDecimal`` ya trata el control de redondeo de d
 
 Al ir mas allá con nuestra clase Producto, tenemos un pequeño problema con ella, no representamos la moneda! O sea, esta quedó implicita en todos los casos, si mi sistema afronta apenas con una moneda no es un problema, pero imagine que mi producto sea vendido en diversos lugares del mundo. Solo el doce no significa nada, doce puede ser cualquier cosa (reales, soles, pesos, dólares, etc.).
 
-Para representar el dinero es importante entenderlo. De forma resumida, el dinero está compuesto por dos partes, la parte del valor que es una cantidad numérica, pero solo con ese valor no conseguimos hacer mucha cosa, necesitamos de la moneda. La moneda representa el "sistema de dinero" de uso común especialmente dentro de una nación, siguiendo esa definición el real, nuevo sol, peso, dolar y el euro son tipos de monedas. Por lo tanto, tendremos que adicionar una moneda dentro del producto. Podemos representar la moneda de varias formas: 
+Para representar el dinero es importante entenderlo. De forma resumida, el dinero está compuesto por dos partes, la parte del valor que es una cantidad numérica, pero solo con ese valor no conseguimos hacer mucha cosa, necesitamos de la moneda. La moneda representa el "sistema de dinero" de uso común especialmente dentro de una nación, siguiendo esa definición el real, nuevo sol, peso, dólar y el euro son tipos de monedas. Por lo tanto, tendremos que adicionar una moneda dentro del producto. Podemos representar la moneda de varias formas: 
 
-La primera de ellas es utilizando el tipo ``String``, pero que sucede si en vez de escribir dólar se escribe “dolra” con un pequeño problema de escritura? no tenemos ningún control con el tipo String, asi puede recibir un pequeño error de escritura hasta valores ilogicos como banana, pasta, etc. Estos ultimos no serían monedas, pero serán aceptados normalmente pasados como ``String``.
+La primera de ellas es utilizando el tipo ``String``, pero que sucede si en vez de escribir dólar se escribe “dolra” con un pequeño problema de escritura? no tenemos ningún control con el tipo String, asi puede recibir un pequeño error de escritura hasta valores ilógicos como banana, pasta, etc. Estos últimos no serían monedas, pero serán aceptados normalmente pasados como ``String``.
 
 ``` java
 public class Producto {
@@ -71,7 +71,7 @@ public class Producto {
 }
 ```
 
-La segunda estratégia seria utilizar un ``enum`` para representar las monedas, de esa forma, las opciones serán estrictas. Con esta estratégia resolvemos el problema de ~~``String``,~~ solo serán posibles los valores que definiremos a partir de ``enum``, sin embargo nuestro ``enum`` necesitará quedar mas detallado una vez que tengamos que enfrentar aspectos de internacionalización, dentro de esos la ISO *4217*, un estandar para monedas.
+La segunda estrategia sería utilizar un ``enum`` para representar las monedas, de esa forma, las opciones serán estrictas. Con esta estrategia resolvemos el problema de ~~``String``,~~ solo serán posibles los valores que definiremos a partir de ``enum``, sin embargo, nuestro ``enum`` necesitará quedar más detallado una vez que tengamos que enfrentar aspectos de internacionalización, dentro de esos la ISO *4217*, un estándar para monedas.
 
 
 ``` java
@@ -101,7 +101,7 @@ public class Producto {
 }
 ```
 
-Con el manejo de dinero de distintos tipos, necesitamos validar si las monedas son las mismas a la hora de realizar la compra o hacer una suma, despues de todo, el tipo de cambio de un producto en real debe ser distinto de uno en dolar.
+Con el manejo de dinero de distintos tipos, necesitamos validar si las monedas son las mismas a la hora de realizar la compra o hacer una suma, después de todo, el tipo de cambio de un producto en real debe ser distinto de uno en dólar.
 
 ``` java
 Producto banana = //instance;
@@ -131,8 +131,8 @@ Listo, con esto resolvemos todos nuestros problemas, correcto?, Falso!, vamos a 
 
  
 * Para realizar la sumatoria de productos es necesario que la persona se acuerde de realizar la llamada a la clase utilitaria, pero que pasa con aquello que tiene que acordarse? Exacto!, desafortunadamente se olvida. 
-* Como hablamos anteriormente, el dinero puede ser usado no solamente con Producto, con diversas cosas también, servicios, fuerza de trabajo, etc., asi será necesario duplicar los dos campos, moneda y valor monetário, para diversos lugares.
-* Desde diversas clases utilizando dinero tendremos dos estratégias para realizar la validación, una seria crear clases utilitarias para todo modelo que use dinero, como  ServiceUtils, GoodsUtils, etc., o una clase utilitaria que recibe cuatro parametros (el valor de la moneda de los dos para ser comparado y entonces sumado).
+* Como hablamos anteriormente, el dinero puede ser usado no solamente con Producto, con diversas cosas también, servicios, fuerza de trabajo, etc., así será necesario duplicar los dos campos, moneda y valor monetário, para diversos lugares.
+* Desde diversas clases utilizando dinero tendremos dos estrategias para realizar la validación, una seria crear clases utilitarias para todo modelo que use dinero, como  ServiceUtils, GoodsUtils, etc., o una clase utilitaria que recibe cuatro parámetros (el valor de la moneda de los dos para ser comparado y entonces sumado).
 
 ``` java
 public class MoneyUtils {
@@ -143,18 +143,18 @@ public class ServiceUtils {}
 public class WorkerUtils {}
 ```
 
-* Que pasa si solo definimos un único item de dinero, valor o moneda? Tiene sentido decir que el producto vale doce? o que vale dólar? Definitivamente no, este vale doce dólares y eso necesita ser validado.
+* Que pasa si solo definimos un único ítem de dinero, valor o moneda? Tiene sentido decir que el producto vale doce? o que vale dólar? Definitivamente no, este vale doce dólares y eso necesita ser validado.
 * Es de responsabilidad de la clase producto, o cualquier otra que necesite trabajar con dinero, cuidar de la creación y del estado de dinero? 
-* Una vez utilizado clases utilitarias para realizar esa validación no estamos aminorando encapsulamiento? Despues de todo es posible realizar la sumatoria de dos valores ignorando la validación de la moneda generando asi un error. Mirando la definición de Wikipédia sobre el encapsulamiento: Permite esconder propiedades y métodos de un objeto para proteger el código de acceso directos y efectos secundarios accidentales.
+* Una vez utilizado clases utilitarias para realizar esa validación no estamos aminorando encapsulamiento? Después de todo es posible realizar la sumatoria de dos valores ignorando la validación de la moneda generando así un error. Mirando la definición de Wikipedia sobre el encapsulamiento: Permite esconder propiedades y métodos de un objeto para proteger el código de acceso directos y efectos secundarios accidentales.
 
 
 Además de esos problemas, usando como referencia el libro Clean Code, tenemos una optima definición entre estructura de datos y un objeto, básicamente el objeto esconde los datos para exponer un comportamiento, o sea, no estamos programando orientado a objetos de esa forma.
 
-Una solución para resolver ese problema vendrá de un articulo de Martin Fowler, en el cual el cita un ejemplo de tipo dinero como su favorito, asi será creado el tipo dinero. con eso resolveremos:
+Una solución para resolver ese problema vendrá de un artículo de Martin Fowler, en el cual el cita un ejemplo de tipo dinero como su favorito, asi será creado el tipo dinero. con eso resolveremos:
 
 * Centralización de código, todo el comportamiento de dinero estará en la clase dinero.
 * Eliminaremos la responsabilidad de las otras clases, no será necesario, por ejemplo, tener el control a la hora de crear valores dentro de la clase Producto citada anteriormente.
-* Adiós a las clases utilitarias, una vez que la validación dentro de la clase dinero, las clases utilitarias no serán mas necesarias, para ya no pensar en el clasico problema de olvidarnos de usarlas. 
+* Adiós a las clases utilitarias, una vez que la validación dentro de la clase dinero, las clases utilitarias no serán más necesarias, para ya no pensar en el clásico problema de olvidarnos de usarlas. 
 
 ``` java
 public class Money {

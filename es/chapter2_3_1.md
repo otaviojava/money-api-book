@@ -2,7 +2,7 @@
 
 
 
-Además de los métodos comunes de construcción la clase ```RoundedMoney```, posee otras formas de parámetros para que sea posible informar a ```MonetaryOperator``` para ser ejecutado despues de cada operación de ```MonetaryAmount```, vale recordar, la principal característica de esa clase es realizar ese tipo de operación, asi no sea necesario, otra implementación es recomendada.
+Además de los métodos comunes de construcción la clase ```RoundedMoney```, posee otras formas de parámetros para que sea posible informar a ```MonetaryOperator``` para ser ejecutado después de cada operación de ```MonetaryAmount```, vale recordar, la principal característica de esa clase es realizar ese tipo de operación, asi no sea necesario, otra implementación es recomendada.
 
 
 ```java

@@ -20,7 +20,7 @@ public class MonetaryAmountFormatSymbolsExample {
 Cuando sea necesario configurar las informaciones como cantidad mínima, moneda, etc. Existen dos clases: 
 
 * La primera es la ```MonetaryAmountSymbols``` con esta es posible definir los simbolos que serán utilizados, por ejemplo, símbolo de la moneda, separador, etc. 
-* La clase ```MonetaryAmountNumericInformation``` cuidará de las informaciones con relación al formateo del valor numérico, por ejemplo, el número mínimo y máximo de dígitos antes y despues de la coma. 
+* La clase ```MonetaryAmountNumericInformation``` cuidará de las informaciones con relación al formateo del valor numérico, por ejemplo, el número mínimo y máximo de dígitos antes y después de la coma. 
 
 ```java
 public class MonetaryAmountFormatSymbolsExample2 {
@@ -36,7 +36,7 @@ public class MonetaryAmountFormatSymbolsExample2 {
 
 
 
-También es posible definir cual implementación será utilizada en la serialización del objeto. Para eso existe la clase funcional ```MonetaryAmountProducer```, con esta es posible definir su propia implementación a partir del numero y de la moneda. Moneta por standard ya viene con tres implementaciones:
+También es posible definir cual implementación será utilizada en la serialización del objeto. Para eso existe la clase funcional ```MonetaryAmountProducer```, con esta es posible definir su propia implementación a partir del número y de la moneda. Moneta por estándar ya viene con tres implementaciones:
 
 
 * ```FastMoneyProducer``` productor de ```MonetaryAmount``` con la implementación ```FastMoney```.

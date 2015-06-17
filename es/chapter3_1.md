@@ -36,7 +36,7 @@ public class HelloMonetaryOperator {
 ```
 
 
-Moneta trae por standard algunas implementaciones de ```MonetaryOperator```, la clase ```MonetaryOperators```. esta es una clase utilitária que trae algunas funcionalidades importantes y algunas veces muy cotidiano dentro de la vida de un desarrollador Java, como:
+Moneta trae por estándar algunas implementaciones de ```MonetaryOperator```, la clase ```MonetaryOperators```. esta es una clase utilitaria que trae algunas funcionalidades importantes y algunas veces muy cotidiano dentro de la vida de un desarrollador Java, como:
 
 
 

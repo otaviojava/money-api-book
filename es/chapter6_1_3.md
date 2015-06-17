@@ -1,7 +1,7 @@
 #### Realizando ordenación teniendo en consideración la cotización
 
 
-También es posible realizar una ordenación de forma creciente y decreciente teniendo en consideración la cotización de la moneda. Para esto basta pasar una implementación de `ExchangeRateProvider`. Por ejemplo, dado una lista com diez dolares, once reales y nueve euros, retornará de forma ascendente el valor de once reales, diez dólares y nueve euros teniendo en consideración que por la cotización el dolar es más valioso que el real y menos valioso que el euro.
+También es posible realizar una ordenación de forma creciente y decreciente teniendo en consideración la cotización de la moneda. Para esto basta pasar una implementación de `ExchangeRateProvider`. Por ejemplo, dado una lista con diez dolares, once reales y nueve euros, retornará de forma ascendente el valor de once reales, diez dólares y nueve euros teniendo en consideración que por la cotización el dólar es más valioso que el real y menos valioso que el euro.
 
 
 ```java
