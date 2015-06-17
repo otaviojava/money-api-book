@@ -6,6 +6,8 @@ Técnico en Analisis y Desarrollo de Sistemas Alumno de Post-Grado en Desarrollo
 
 
 **Eudris Cabrera**
+Graduado de Ingeniería Telemática. Entusiasta de la tecnología y el software libre, con experiencia en el desarrollo de aplicaciones basadas en Java y otras tecnologías abiertas. Ganador de la beca Linux Training Scholarship 2014 en la categoría Developer Do-Gooder.  Co-fundador de la comunidad Java Dominicano.
+Un apasionado del aprendizaje que cree en la cultura de compartir conocimientos, enseñar y aprender de los demás.
 
 **Rene Enriquez**
 
