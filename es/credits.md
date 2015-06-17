@@ -6,3 +6,5 @@ Técnico en Analisis y Desarrollo de Sistemas Alumno de Post-Grado en Desarrollo
 
 
 **Eudris Cabrera**
+
+**Rene Enriquez**
