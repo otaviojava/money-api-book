@@ -16,6 +16,6 @@ Si, ahora estamos preparados para Java 8!: Conozca las funciones construidas ya 
 
 Convertiendo valores: Que sucede cuando probamos realizar sumas de dinero con monedas diferentes? Claramente lanzará una excepción verdad? En este punto será demostrado como realizar conversión con cotizaciones de valores, además de realizar la busqueda de cotización a partir de datos especificos.
 
-Trabajando con Java EE: Conversores de JSF, CDI y Spring, en este capítulo mostraremos clases utilitarias para trabajar con esas tecnologias.
+Trabajando con Java EE: Convertidores de JSF, CDI y Spring, en este capítulo mostraremos clases utilitarias para trabajar con esas tecnologias.
 
 Esperamos que los lectores gusten bastante del proyecto realizado en conjunto con toda la comunidad Java.
