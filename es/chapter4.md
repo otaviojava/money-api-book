@@ -2,7 +2,7 @@
 
 
 
-La interacción con el usuario en la mayoria de los software es una parte fundamental, y asi es necesario pensar en la forma de presentar la información para el usuario además de la interacción con software. Dinero es una parte importante de esos softwares, asi es importante exhibir el gasto total por un servicio, importe total de productos que el usuario desea comprar. Sin hablar en la forma de interacción, por ejemplo, informar el dinero que será transferido por otra cuenta via banca por internet. Para trabajar con el formateo de un ```MonetaryAmount``` existe la interface ```MonetaryAmountFormat``` que básicamente muestra ```MonetaryAmount``` como ```String``` y recupera un ```MonetaryAmount``` a partir de un ```String```. 
+La interacción con el usuario en la mayoría de sistemas es una parte fundamental, y asi es necesario pensar en la forma de presentar la información para el usuario además de la interacción con el software. Dinero es una parte importante de esos softwares, asi es importante exhibir el gasto total por un servicio, importe total de productos que el usuario desea comprar. Sin hablar en la forma de interacción, por ejemplo, informar el dinero que será transferido por otra cuenta via banca por internet. Para trabajar con el formateo de un ```MonetaryAmount``` existe la interface ```MonetaryAmountFormat``` que básicamente muestra ```MonetaryAmount``` como ```String``` y recupera un ```MonetaryAmount``` a partir de un ```String```. 
 
 
 ```java
