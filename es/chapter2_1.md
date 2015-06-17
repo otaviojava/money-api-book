@@ -64,7 +64,7 @@ mvn clean install -Dmaven.test.skip
 ```
 
 
-Listo, código-fuente instalado y podrá ser utilizado tranquilamente. En el caso del libro estamos utilizando como base un master del repositório, osea, es recomendable que baje el código-fuente y lo instale localmente. Para tener acceso al código-fuente del ejemplo basta con accesar:
+Listo, código-fuente instalado y podrá ser utilizado tranquilamente. En el caso del libro estamos utilizando como base un master del repositorio, osea, es recomendable que baje el código-fuente y lo instale localmente. Para tener acceso al código-fuente del ejemplo basta ingresar a:
 
 * [https://github.com/otaviojava/money-api-book-samples](https://github.com/otaviojava/money-api-book-samples)
 
