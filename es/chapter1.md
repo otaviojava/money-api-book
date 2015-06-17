@@ -168,4 +168,4 @@ Money money = banana.getMoney().add(abacaxi.getMoney());
 ```
 
 
-Con eso se trajo la motivación para la creación de un API de tipo dinero. Además de evitar problemas, por ejemplo, de olvidarse de validar dinero, codigo verboso y desencapsulado se garantiza mayor calidad de código como responsabilidad única, dinero como objeto y no solo como estructura de datos, traemos dinero para el dominio de nuestra aplicación como un API.
+Con eso se trajo la motivación para la creación de un API de tipo dinero. Además de evitar problemas, por ejemplo, de olvidarse de validar dinero, código repetitivo y desencapsulado se garantiza mayor calidad de código como responsabilidad única, dinero como objeto y no solo como estructura de datos, traemos dinero para el dominio de nuestra aplicación como un API.
