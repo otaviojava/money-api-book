@@ -60,7 +60,7 @@ Al ir mas allá con nuestra clase Producto, tenemos un pequeño problema con ell
 
 Para representar el dinero es importante entenderlo. De forma resumida, el dinero está compuesto por dos partes, la parte del valor que es una cantidad numérica, pero solo con ese valor no conseguimos hacer mucha cosa, necesitamos de la moneda. La moneda representa el "sistema de dinero" de uso común especialmente dentro de una nación, siguiendo esa definición el real, nuevo sol, peso, dolar y el euro son tipos de monedas. Por lo tanto, tendremos que adicionar una moneda dentro del producto. Podemos representar la moneda de varias formas: 
 
-La primera de ellas es utilizando el tipo ``String``, pero que sucede si en vez de escribir dólar se escribe “dolra” con un pequeño problema de escritura? no tenemos ningun control con el tipo String, asi puede recibir un pequeño error de escritura hasta valores ilogicos como banana, pasta, etc. Estos ultimos no serian monedas, pero serán aceptados normalmente pasados como ``String``.
+La primera de ellas es utilizando el tipo ``String``, pero que sucede si en vez de escribir dólar se escribe “dolra” con un pequeño problema de escritura? no tenemos ningún control con el tipo String, asi puede recibir un pequeño error de escritura hasta valores ilogicos como banana, pasta, etc. Estos ultimos no serían monedas, pero serán aceptados normalmente pasados como ``String``.
 
 ``` java
 public class Producto {
