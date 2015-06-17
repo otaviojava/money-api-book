@@ -1,6 +1,6 @@
 ### Ignorando la cotización
 
-En algunos momentos es necesario realizar un intercambio de moneda sin realizar cotización, para eso existe el método **exchange** dentro de ```MonetaryOperator```.
+En algunos momentos es necesario realizar un intercambio de moneda sin realizar la cotización, para eso existe el método **exchange** dentro de ```MonetaryOperator```.
 
 ```java
 public class ExchangeRateProviderExample5 {
