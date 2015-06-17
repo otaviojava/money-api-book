@@ -65,7 +65,7 @@ Definido la representación de moneda el próximo paso será la representación 
 |```MonetaryAmount multiply(Number multiplicand)```|Realiza la multiplicación y retorna el resultado|
 |```MonetaryAmount divide(Number divisor)```|Realiza a división|
 |```MonetaryAmount remainder(Number divisor)```|Realiza la división y retorna el resto|
-|```MonetaryAmount negate()```|Realiza la negación del importe monetário, osea, -este.
+|```MonetaryAmount negate()```|Realiza la negación del importe monetario, osea, -este.
 |```getCurrency()```|Retorna dinero de moneda.|
 
 Dentro de moneta existen tres implementaciones para la interface ```MonetaryAmount```:
