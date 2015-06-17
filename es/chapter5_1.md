@@ -22,7 +22,7 @@ public class ExchangeRateProviderExample {
 Dentro de Moneta existen cuatro implementaciones de ```ExchangeRateProvider```:
 
 * **ECB** implementación que recupera información reciente del Banco Central Europeo.
-* **IMF** implementación que recupera las cotizaciones mas recientes del Fondo Internacional Monetário.
+* **IMF** implementación que recupera las cotizaciones mas recientes del Fondo Internacional Monetario.
 * **IMF_HIST** implementación que permite recuperar cotización de una fecha específica a partir del IMF.
 * **ECB_HIST90** implementación que recupera los últimos noventa dias del Banco Central Europeo.
 * **ECB_HIST** implementación que recupera las cotizaciones desde 1999 del Banco Central Europeo.
