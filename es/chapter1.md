@@ -101,7 +101,7 @@ public class Producto {
 }
 ```
 
-Con el manejo de dinero de distintos tipos, necesitamos validar si las monedas son las mismas a la hora de realizar la compra o hacer una suma, despues de todo, la tipo de cambio de un producto en real debe ser distinto de uno en dolar.
+Con el manejo de dinero de distintos tipos, necesitamos validar si las monedas son las mismas a la hora de realizar la compra o hacer una suma, despues de todo, el tipo de cambio de un producto en real debe ser distinto de uno en dolar.
 
 ``` java
 Producto banana = //instance;
