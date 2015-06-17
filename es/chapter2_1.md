@@ -32,7 +32,7 @@ Bajar el código de javamoney-parent, para esto solo ejecute el siguiente comand
 git clone https://github.com/JavaMoney/javamoney-parent.git
 ```
 
-Enseguida accese a la carpeta:
+A continuacion ingrese al directorio:
 ```
 cd javamoney-parent
 ```
@@ -43,7 +43,7 @@ Compile el código-fuente e instalelo en su repositório local, en nuestro caso 
 mvn clean install -Dmaven.test.skip
 ```
 
-Listo, una vez hecho todo eso el proximo paso será realizar la instalación de moneta.
+Listo, una vez hecho todo eso el próximo paso será realizar la instalación de moneta.
 
 Bajar el código de moneta, para esto solo ejecute el siguiente comando:
 
@@ -51,7 +51,7 @@ Bajar el código de moneta, para esto solo ejecute el siguiente comando:
 git clone git@github.com:JavaMoney/jsr354-ri.git
 ```
 
-Enseguida accede a la carpeta:
+Ingrese al directorio:
 
 ```
 cd jsr354-ri
