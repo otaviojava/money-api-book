@@ -36,7 +36,7 @@ public class HelloMonetaryQuery {
 Moneta trae como estándar algunas implementaciones de ```MonetaryQuery```, la clase ```MonetaryQueries```. Esta es una clase utilitaria que trae algunas funcionalidades importantes y algunas veces muy cotidianas dentro de la vida de un desarrollador Java, como:
 
 * **MonetaryQuery<Long> extractMajorPart()** recupera la mayor parte de dinero, por ejemplo, `EUR 2.35` retornará `2`.
-* **MonetaryQuery<Long> convertMinorPart()** recupera el valor monetário, o convirtiendo para la menor parte, centavos de dinero, por ejemplo, `USD 2.35` será retornado `235`.
+* **MonetaryQuery<Long> convertMinorPart()** recupera el valor monetario, o convirtiendo para la menor parte, centavos de dinero, por ejemplo, `USD 2.35` será retornado `235`.
 
 
 ```java
