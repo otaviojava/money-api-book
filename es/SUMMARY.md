@@ -41,4 +41,3 @@
    * [Particionamiento](chapter6_4_2.md)
    * [Resumiendo monedas](chapter6_4_3.md)
 * [Bibliografia](bibliography.md)
-
