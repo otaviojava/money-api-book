@@ -38,7 +38,7 @@ Producto pasta = new Producto("pasta", 4_00);
 int sum = banana.getMoney() + pasta.getMoney();
 ```
 
-Pero que sucede si olvidamos convertir ese valor de dolares para centavos (es decir, dejar doce en vez de poner doce mil)? aqui el resultado seria erroneo, otro problema seria el control de redondeos de decimales.
+Pero que sucede si olvidamos convertir ese valor de dolares para centavos (es decir, dejar doce en vez de poner doce mil)? aqui el resultado seria erroneo, otro problema sería el control de redondeos de decimales.
 
 
 Además de ``int`` y ``long`` el libro Java Efectivo recomienda el uso de ``BigDecimal``, con eso, nuestro producto tendrá una llamada más intuitiva y mas común, despues de todo, es mas natural hablar de un producto que cuesta doce dolares y no mil doscientos centavos.
