@@ -72,9 +72,9 @@ Dentro de moneta existen tres implementaciones para la interface ```MonetaryAmou
 
 
 1. 
-Money: la implementación standard, ésta representa el valor numérico con BigDecimal.
+Money: la implementación estándar, ésta representa el valor numérico con BigDecimal.
 1. 
-RoundedMoney: asi como la implementación Money, representa el valor numérico con BigDecimal, la diferencia entre ellos es que con RoundedMoney es posible recibir un MonetaryOperator para ser llamada a cada operación, por ejemplo, a cada operación aritmética realizar una operación de redondeo.
+RoundedMoney: así como la implementación Money, representa el valor numérico con BigDecimal, la diferencia entre ellos es que con RoundedMoney es posible recibir un MonetaryOperator para ser llamada a cada operación, por ejemplo, a cada operación aritmética realizar una operación de redondeo.
 
 1. 
-FastMoney: la implementación que representa el valor número con primitivo long, de las implementaciones presentadas ésta es la mas rápida, cerca de quince veces mas rápidas que las otras dos, además de ser mas ligero en la creación. Sin embargo esta posee una mayor limitación en relación a la precisión, si es necesario trabajar con esa precisión, las operaciones no puede exceder de 5 puntos decimales.
+FastMoney: la implementación que representa el valor número con primitivo long, de las implementaciones presentadas ésta es la más rápida, cerca de quince veces más rápidas que las otras dos, además de ser más ligero en la creación. Sin embargo, esta posee una mayor limitación en relación a la precisión, si es necesario trabajar con esa precisión, las operaciones no puede exceder de 5 puntos decimales.
