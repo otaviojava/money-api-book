@@ -1,6 +1,6 @@
 ### Operaciones booleanas
 
-Con MonetaryAmount es posible realizar comparaciones en relaciones a otros ```MonetaryAmount```, con este es posible, por ejemplo, verificar si un dinero es mayor, menor o igual a otro.
+Con MonetaryAmount es posible realizar comparaciones en relaciones a otros ```MonetaryAmount```, con este ésto posible, por ejemplo, verificar si un dinero es mayor, menor o igual a otro.
 
 
 ```java
