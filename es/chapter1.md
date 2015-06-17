@@ -143,7 +143,7 @@ public class ServiceUtils {}
 public class WorkerUtils {}
 ```
 
-* Que pasa si solo definimos un unico item de dinero, valor o moneda? Tiene sentido decir que el producto vale doce? o que vale dólar? Definitivamente no, este vale doce dólares y eso necesita ser validado.
+* Que pasa si solo definimos un único item de dinero, valor o moneda? Tiene sentido decir que el producto vale doce? o que vale dólar? Definitivamente no, este vale doce dólares y eso necesita ser validado.
 * Es de responsabilidad de la clase producto, o cualquier otra que necesite trabajar con dinero, cuidar de la creación y del estado de dinero? 
 * Una vez utilizado clases utilitarias para realizar esa validación no estamos aminorando encapsulamiento? Despues de todo es posible realizar la sumatoria de dos valores ignorando la validación de la moneda generando asi un error. Mirando la definición de Wikipédia sobre el encapsulamiento: Permite esconder propiedades y métodos de un objeto para proteger el código de acceso directos y efectos secundarios accidentales.
 
