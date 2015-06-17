@@ -11,7 +11,7 @@ En money-api, será usado ese nombre en vez de JSR 354, también será necesario
 |``` int getDefaultFractionDigits()``` |Retorna el número de dígitos normalmente utilizado por la moneda.|BRL tiene dos y JPY no tiene.|
 
 
-En este material la implementación utilizada será **moneta**, la implementación de referencia para esa especificación. Con este es posible crear una instancia de monedas de dos formas. La primera de ellas es utilizando el codigo de la moneda, si la moneda que siga el patrón de moneda será un ```String``` com tres letras.
+En este material la implementación utilizada será **moneta**, la implementación de referencia para esa especificación. Con este es posible crear una instancia de monedas de dos formas. La primera de ellas es utilizando el código de la moneda, si la moneda que siga el patrón de moneda será un ```String``` con tres letras.
 
 
 ```java
@@ -28,7 +28,7 @@ public class CurrencyExample1 {
 }
 ```
 
-Otra forma simple es utilizando la clase ```Locale```, esa creación es muy interesante, por ejemplo, en una aplicación web de compras en que a partir de ```Locale``` de la solicitud será posible saber cual es la moneda del usuario que está accesando a la aplicación.
+Otra forma simple es utilizando la clase ```Locale```, esa creación es muy interesante, por ejemplo, en una aplicación web de compras en que a partir de ```Locale``` de la solicitud será posible saber cual es la moneda del usuario que está accediendo a la aplicación.
 
 ```java
 
@@ -51,7 +51,7 @@ Definido la representación de moneda el próximo paso será la representación 
 |```<R> R query(MonetaryQuery<R> query)```|Realiza query con valor monetário.|
 |```MonetaryAmount with(MonetaryOperator operator)```|Realiza operaciones con el importe monetário.|
 |```boolean isGreaterThan(MonetaryAmount amount)```|Retorna verdadero si la instancia es mayor que el valor pasado en el  parametro, asi sean iguales este retorna falso.|
-|```boolean   isGreaterThanOrEqualTo(MonetaryAmount amount)```|Retorna verdadero si la instância es mayor o igual que el valor pasado en el parametro, asi sean iguales este retorna verdadero.|
+|```boolean   isGreaterThanOrEqualTo(MonetaryAmount amount)```|Retorna verdadero si la instancia es mayor o igual que el valor pasado en el parametro, asi sean iguales este retorna verdadero.|
 |```boolean isLessThan(MonetaryAmount amount)```|Retorna verdadero si una instancia es menor que el valor pasado en el  parametro, asi sean iguales este retorna falso.|
 |```isLessThanOrEqualTo(MonetaryAmount amt)```|Retorna verdadero si una instancia es menor o igual que el valor pasado en el parametro, asi sean iguales este retorna verdadero.|
 |```boolean isEqualTo(MonetaryAmount amount)```|Retorna verdadero si una instancia es igual al valor monetário pasado en el parametro.|
