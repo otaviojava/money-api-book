@@ -8,11 +8,11 @@ En el primer capítulo se discutirá la motivación para utilizar un tipo Dinero
 
 Creación de un tipo Dinero, pero será que nunca nadie tuvo ese problema? esa pregunta será contestada en el segundo capítulo, hablando de la motivación de la especificación junto con el uso básico del API.
 
-Extraer valores y realizar pequeñas operaciones a partir de un valor monetário, ese es el principal objetivo de las operaciones com query y operador: Será demostrando el funcionamiento de las clases ```MonetaryOperator``` y ```MonetaryQuery```, diferencias entre ellas, las clases utilitarias ```MonetaryOperators``` y ```MonetaryQueries``` y como crear una query u operación en el Dinero.
+Extraer valores y realizar pequeñas operaciones a partir de un valor monetário, ese es el principal objetivo de las operaciones como query y operador: Será demostrando el funcionamiento de las clases ```MonetaryOperator``` y ```MonetaryQuery```, diferencias entre ellas, las clases utilitarias ```MonetaryOperators``` y ```MonetaryQueries``` y como crear una query u operación en el Dinero.
 
-Dale formato a una cantidad monetaria: Será demostrado aqui la forma de exhibir el formato de dinero con clases ya soportadas por la API, incluso de como crear un formateador para el cero.
+Dar formato a una cantidad monetaria: Será demostrado aqui la forma de exhibir el formato de dinero con clases ya soportadas por la API, incluso de como crear un formateador para el cero.
 
-Si, ahora estamos preparados para Java 8!: Conozca las funciones construidas ya existentes en las implementaciones hechas para trabajar con Streams de sumas monetárias.
+Si, ahora estamos preparados para Java 8!: Conozca las funciones construidas ya existentes en las implementaciones hechas para trabajar con Streams de sumas monetarias.
 
 Convertiendo valores: Que sucede cuando probamos realizar sumas de dinero con monedas diferentes? Claramente lanzará una excepción verdad? En este punto será demostrado como realizar conversión con cotizaciones de valores, además de realizar la busqueda de cotización a partir de datos especificos.
 
