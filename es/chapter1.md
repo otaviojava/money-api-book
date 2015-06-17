@@ -1,7 +1,7 @@
 ## La motivación del tipo Dinero
 
 
-Según Wikipedia, el dinero es el medio usado en el intercambio de bienes, usado en la compra de bienes, servicios, fuerza de trabajo, divisas extranjeras o en las demás transacciones financieras, emitido y controlado por el gobierno de cada país, que es el unico que tiene esa atribución. Considerando eso, muchos sistemas en Java terminan utilizando o representando ese valor monetário, pero como representar el dinero en su sistema?
+Según Wikipedia, el dinero es el medio usado en el intercambio de bienes, usado en la compra de bienes, servicios, fuerza de trabajo, divisas extranjeras o en las demás transacciones financieras, emitido y controlado por el gobierno de cada país, que es el único que tiene esa atribución. Considerando eso, muchos sistemas en Java terminan utilizando o representando ese valor monetário, pero como representar el dinero en su sistema?
 
 Para representar el dinero la primera estratégia es utilizar los tipos nativos de Java, el libro Java Efectivo no recomienda la utilización del uso de ``double`` y ``float`` cuando resultados precisos son necesarios. 
 
@@ -10,7 +10,7 @@ double val = 1.03 - .42;
 System.out.println(val); //0.6100000000000001
 ```
 
-Ese mismo libro recomienda dos estratégias, la primera de ellas es utilizando long e ``int``, para esto, es necesario realizar una conversión de valor para centavos, esta solución es muy recomendada cuando la velocidad y la ocupación de memoria son puntos importantes, sin embargo, es importante preocuparse con el numero de lugares decimales, el libro no recomienda representación mayor que nueve lugares decimales.
+Ese mismo libro recomienda dos estratégias, la primera de ellas es utilizando long e ``int``, para esto, es necesario realizar una conversión de valor para centavos, esta solución es muy recomendada cuando la velocidad y la ocupación de memoria son puntos importantes, sin embargo, es importante preocuparse con el número de lugares decimales, el libro no recomienda representación mayor que nueve lugares decimales.
 
 ``` java
 public static void main(String[] args) {
