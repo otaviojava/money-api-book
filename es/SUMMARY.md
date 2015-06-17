@@ -1,7 +1,7 @@
 # Indice
 
 * [Una especificación de Dinero, realmente vale la pena?](introduction.md)
-* [Créditos](credicts.md)
+* [Créditos](credits.md)
 * [Sobre el Autor](about_me.md)
 * [La motivación del tipo Dinero](chapter1.md)
 * [Alguien pasó por esto antes? Conocimiento del API](chapter2.md)
