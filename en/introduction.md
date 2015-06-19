@@ -2,7 +2,7 @@
 
 Money is the main way to exchange goods, purchase products and services etc. It is used in several Java programs. But after all, does it make sense to define a money type? I mean why not just use types that are already in Java such as `Double`, `Float`, `String`, `BigDecimal`, etc.? Aren't there any better solutions? What happens to encapsulation if the choice is a type that already exists? The utility is really useful, but forces the developer to remember to do something, but, human-memory should not be heavily relied upon. Once we speak about the Money concerns, then and there is born the first question: Did no one ever encounter this problem? Is it worth reinventing the wheel? To solve these problems the Money specification was born.
 
-The **JSR 354**, is a specification whose the goal is to take care of Money, solve some general problems and make the life of the Java developer easier. From this specification there will be more obvious work with money in a standardised way. To understand the API better, this cook book will be divided into some parts:
+The **JSR 354**, is a specification whose the goal is to take care of Money, solve some general problems and make the life of the Java developer easier. From this specification there will be more obvious work with money in a standardised way. To understand the API better, this cook book will be divided into the following parts:
 
 In the first chapter we will discuss the motivation behind defining a Money type in the system, the benefits of its design, its lack of code-clutter,  ease-of-maintenance and object-oriented design.
 
