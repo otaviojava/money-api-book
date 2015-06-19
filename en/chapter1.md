@@ -14,7 +14,7 @@ The same book highlights two strategies for dealing with money:
 The first is using the ``long`` and ``int`` for that, it is necessary to perform the conversion value for cents, this solution is highly recommended when the speed and memory occupation are important points, however it is important to worry about the number of decimal places, the book does not recommend greater representation that nine decimal places
 
 ``` java
-public static void main(String[] args) {
+  public static void main(String[] args) {
     int itemsBought = 0;
     int funds = 100;
     for (int price = 10; funds >= price; price += 10) {
@@ -23,7 +23,7 @@ public static void main(String[] args) {
     }
     System.out.println(itemsBought + " items bought.");
     System.out.println("Money left over: "+ funds + " cents");
-}
+  }
 ```
 
 A problem to use the representation of money with ``int`` and ``long`` is the readability of representing monetary values that way. As an example, a product has a price in the amount of twelve US dollars, how to represent in cents,  we put the value of twelve hundred cents.
