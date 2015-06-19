@@ -1,8 +1,8 @@
 ## The motivation behind the money type
 
-According to Wikipedia, the money is the means used to exchange goods, used in the purchase of goods, services, workforce, foreign currencies or in other financial transactions, issued and controlled by the government of each country, which is the only one this assignment. Considering this, many systems in Java end up using or representing this monetary value, but how to represent the money in your system?
+According to Wikipedia, money is the means used to exchange goods, used in the purchase of goods, services, workforce, foreign currencies or in other financial transactions, issued and controlled by the government of each country, which is the only one this assignment. Considering this, many Java systems end up having to represent this monetary value. How should you depict it in your system?
 
-To represent the money the first strategy is to use the types already coming from Java, Java Effective book does not recommend the use of the ``double`` and ``float`` when precise answers are necessary. 
+The first strategy is to use the types already coming from Java, Java Effective book does not recommend the use of the ``double`` and ``float`` when precise answers are necessary. 
 
 ``` java
 double val = 1.03 - .42;
