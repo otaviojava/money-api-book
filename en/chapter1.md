@@ -9,7 +9,7 @@ double val = 1.03 - .42;
 System.out.println(val); //0.6100000000000001
 ```
 
-This same book recommends two strategies, the first is using the ``long`` and ``int`` for that, it is necessary to perform the conversion value for cents, this solution is highly recommended when the speed and memory occupation are important points, however it is important to worry about the number of decimal places, the book does not recommend greater representation that nine decimal places
+The same book highlights two strategies for dealing with money: the first is using the ``long`` and ``int`` for that, it is necessary to perform the conversion value for cents, this solution is highly recommended when the speed and memory occupation are important points, however it is important to worry about the number of decimal places, the book does not recommend greater representation that nine decimal places
 
 ``` java
 public static void main(String[] args) {
