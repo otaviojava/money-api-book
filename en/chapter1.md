@@ -22,6 +22,7 @@ The first is using the ``long`` and ``int`` for that, it is necessary to perform
          itemsBought++;
          funds -= price;
     }
+    
     System.out.println(itemsBought + " items bought.");
     System.out.println("Money left over: "+ funds + " cents");
   }
