@@ -15,6 +15,7 @@ The first is using the ``long`` and ``int`` for that, it is necessary to perform
 
 ``` java
   public static void main(String[] args) {
+  
     int itemsBought = 0;
     int funds = 100;
     for (int price = 10; funds >= price; price += 10) {
