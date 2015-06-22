@@ -29,5 +29,5 @@ Es una persona apasionada por el desarollo de Software, especialmente en Tecnolo
 Se le puede contactar en los siguientes enlaces:
 
 * Email:	 	kalerguiz@gmail.com
-* Twitter: 	@jromanz
+* Twitter: 	[@jromanz](https://twitter.com/jromanz)
 * Github:		[https://github.com/jromanz](https://github.com/jromanz)
