@@ -25,3 +25,9 @@ Over the past few years, he has worked as a software consultant on various proje
 
 Julio Román es un Ingeniero en Sistemas e Informática de la Universidad Nacional Mayor de San Marcos, Lima Perú. 
 Es una persona apasionada por el desarollo de Software, especialmente en Tecnologia Java, Spring y J2EE, es certificado en Java Programmer y ha cursado Diplomado en Dirección de Proyectos, se ha desempeñado en trabajos sobre infraestructura en sistemas como responsable técnico y en el Sector Financiero, actualmente trabaja de manera independiente y vinculado siempre en diversas comunidades de Java aportando su conocimiento e innovandose con las nuevas tendencias tecnologicas.
+
+Se le puede contactar en los siguientes enlaces:
+
+* Email:	 	kalerguiz@gmail.com
+* Twitter: 	@jromanz
+* Github:		[https://github.com/jromanz](https://github.com/jromanz)
