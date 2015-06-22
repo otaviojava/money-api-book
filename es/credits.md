@@ -19,3 +19,9 @@ René Enríquez is currently a software architect for a RedHat partner company h
 * Cisco Network Operating Systems
 
 Over the past few years, he has worked as a software consultant on various projects for private and government companies and as an instructor of courses to build enterprise and mobile applications, and is the Author of RESTful Java Web Services Security book published by PacktPub.
+
+
+**Julio Román**
+
+Julio Román es un Ingeniero en Sistemas e Informática de la Universidad Nacional Mayor de San Marcos, Lima Perú. 
+Es una persona apasionada por el desarollo de Software, especialmente en Tecnologia Java, Spring y J2EE, es certificado en Java Programmer y ha cursado Diplomado en Dirección de Proyectos, se ha desempeñado en trabajos sobre infraestructura en sistemas como responsable técnico y en el Sector Financiero, actualmente trabaja de manera independiente y vinculado siempre en diversas comunidades de Java aportando su conocimiento e innovandose con las nuevas tendencias tecnologicas.
