@@ -1,5 +1,5 @@
 # Introduction
 
-Many systems of information work with monetary values. However, funnily, concerns about money and currency calculations are just delegated to primitives types like `Float`, `Double` and `BigDecimal`. Some systems with a thorough design have their own implementation of money and currency. But when its a common problem why not have a common solution?
+Most software projects deal with monetary values. Primitive types like `Float` and `Double` or richer types like `BigDecimal` are sometimes used to represent monetary values. On the other hand, we often develop or use third-party APIs that offer abstraction for representing money. So clearly it's a very common problem that requires a common standard.
 
-The JSR 354 (Money and Currency API) is a work towards defining an API for this and provides representation about the approach around money and currency.
+The JSR 354 (Money and Currency API) is a work towards defining an API that provides abstraction for  money and currency.
