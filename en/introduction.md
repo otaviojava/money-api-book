@@ -10,9 +10,9 @@ Creating a money type - but did anybody have this problem before? This chapter w
 
 Extracting values and doing some operations from a monetary amount, is the style of operations with query and operator: Here we will see how the `MonetaryOperator` and `MonetaryQuery` classes work, the differences between them, and the `MonetaryOperators` and `MonetaryQueries` utility classes and how to create a query and operation on money.
 
-The objective of the Formating Money chapter is to highlight how you can retrieve the value from a String without the creation of a custom formatter
+The objective of the Formatting Money chapter is to highlight how you can retrieve the value from a String without the creation of a custom formatter
 
-Yes! there are support to Java 8. Know the functions that exist on the reference implementation to work with **Stream**'s on monetary amounts.
+Yes! There is Java 8 support. Know the functions that exist on the reference implementation to work with **Stream**'s on monetary amounts.
 
 Exchange rate and sum  money with different currencies will return an exception. At this point we will show you how to do an exchange rate of a monetary amount and find a rate from a specific date.
 
