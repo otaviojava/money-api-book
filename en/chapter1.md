@@ -31,7 +31,7 @@ We could  use a ``long`` and an ``int`` where it is necessary to perform the con
   }
 ```
 
-One problem with this solution is readability and the other is flexibility. For example, we have to use the value 1200 cents to represent a product that cost 12 USD 
+One problem with this solution is readability and the other is flexibility. For example, we have to use the value 1200 cents to represent a product that costs 12 USD 
 ``` java
 public class Product {
      private final String name;
@@ -167,4 +167,4 @@ Product pasta = new Product("pasta", new Money(4, dollar))
 Money money = banana.getMoney().add(pineapple.getMoney());
 ```
 
-This was main motivation behind introducing a specification for a standard API that abstracts the was we deal with money in our Java programs. 
+This was the main motivation behind introducing a specification for a standard API that abstracts the way we deal with money in our Java programs. 
