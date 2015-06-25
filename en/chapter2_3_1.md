@@ -1,8 +1,6 @@
-#### Creations methods to RoundedMoney
+#### RoundedMoney Factory methods
 
-
-Beyond the same creation methods, the `RoundedMoney` class has others ways, mainly adding the `MonetaryOperator` to be used as “*rounding agent*”, just to remember, this rounding is the only reason to this implementation exists, if doesn't need it, the recommendation is to use another implementation.
-
+In the following example, we show some static factory methods that could be used instantiate  `RoundedMoney`.  One of the overloads expects a `MonetaryOperator` which is used as a “*rounding agent*”. Keep in mind that rounding is what`RoundedMoney` provides.
 
 ```java
 public class RoundedMoneyCreation2 {
