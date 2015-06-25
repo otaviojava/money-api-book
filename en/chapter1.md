@@ -67,7 +67,7 @@ Product banana = new Product("banana", BigDecimal.valueOf(12D));
 Product pasta = new Product("pasta", BigDecimal.valueOf(4D));
 BigDecimal sum = banana.getMoney().add(paste.getMoney());
 ```
-Things are getting better, but there is a very important factor missing in our design which is currency. If we our program deals with a single currency then we are totally fine, however, this is not the case most of the item. Therefore, the number 12 has no meaning without a currency. 
+Things are getting better, but there is a very important factor missing in our design which is currency. If we our program deals with a single currency then we are totally fine, however, this is not the case most of the time. Therefore, the number 12 has no meaning without a currency. 
 
 So lets add a field of type ``String`` to hold the value of the currency.
 
@@ -81,7 +81,7 @@ public class Product {
 ```
 Well, this is clearly not a good design because it's not type-safe. The String is not validated and could be anything that is not a valid currency.
 
-Lets make it type-safe by introducing an ``enum`` of currencies. However, we need to keep various aspects of internationalisation like  **ISO-4217** in mind.
+Lets make it type-safe by introducing an ``enum`` of currencies. However, we need to keep various aspects of internationalisation, like  **ISO-4217**, in mind.
 
 ``` java
 public class Product {
@@ -134,7 +134,7 @@ BigDecimal sum = ProductUtils.sum(pasta, banana);
 
 So would this solve all our problems? No it wouldn't, too many things could go wrong here.
 
-* We have to force ourselves and our colleagues  to always use the utility class, and we never forget to do so.
+* We have to force ourselves and our colleagues  to always use the utility class, and never forget to do so.
 * We have to define utility classes for different services or introduce a general  abstraction.
 
 ``` java
@@ -151,7 +151,7 @@ public class WorkerUtils {
 }
 ```
 
-So adding an abstraction for representing money becomes more and more obvious after we try all this tricks. Martin Fowler wrote an article describing an abstraction for representing money that solves the following issues: 
+So adding an abstraction for representing money becomes more and more obvious after we try all these tricks. Martin Fowler wrote an article describing an abstraction for representing money that solves the following issues: 
 
 * Single responsibility , the money class is the only type that is responsible for dealing with money.
 * No need for the utility classes because the money class will be the only class responsible for this kind of validation.
