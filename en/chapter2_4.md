@@ -1,7 +1,7 @@
-### Arithmetics operations
+### Arithmetic Operations
 
-
-The `MonetaryAmount` can does arithmetics operation such subtract and sum, just to remember, all implementation must be immutable, in other words, the result of the operation will be the return, another instance, once the `MonetaryAmount` implementations are unchanged and the implementation that will chosen will the instance that called the method. 
+`MonetaryAmount` provides arithmetic operations such as sum and subtract. 
+Implementations of `MonetaryAmount` are required to be immutable and hence these operations will create new instances holding the result when applied without mutating the instance. 
 
 ```java
 public class ArithmeticOperations {
