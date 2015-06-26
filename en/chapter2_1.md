@@ -2,8 +2,13 @@
 
 The API provides a reference implementation which will be the base to all future implementations. On JSR 354, Money-Api, the reference implementation is **Moneta**. For more information about the project see [https://github.com/JavaMoney/jsr354-ri](https://github.com/JavaMoney/jsr354-ri).
 
-The first one is accessing the dependency's repository from maven ([http://mvnrepository.com/artifact/org.javamoney/moneta](http://mvnrepository.com/artifact/org.javamoney/moneta)), so if the project use the maven, for example, just adds a Moneta's dependency on project.
+You could either add it to your project as a dependency from the maven repository or install it from source. 
 
+The maven repo could be found here:
+[http://mvnrepository.com/artifact/org.javamoney/moneta](http://mvnrepository.com/artifact/org.javamoney/moneta).
+
+
+Maven
 
 ```xml
         <dependency>
@@ -13,16 +18,18 @@ The first one is accessing the dependency's repository from maven ([http://mvnre
         </dependency>
 ```
 
-To gradle:
+Gradle:
 ```
 'org.javamoney:moneta:moneta_version'
 ```
 
-To Yvi:
+Ivy:
 
 ```
 <dependency org="org.javamoney" name="moneta" rev="moneta_version"/>
 ```
+
+Now you are ready to go and use the API in your project.
 
 
 The last one is downloading the source and compiling, for do this, will necessary to follow some steps, to do it just is necessary download and install the parent and install and then install **Moneta**. Just to remember the minimum requisites is git, Java 8 and maven installed and configured on the machine.
