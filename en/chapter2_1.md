@@ -1,4 +1,4 @@
-### Access source and install
+### Source code and Installation
 
 How all specification on Java, JSR, beyond the  API it has a reference implementation, this implementation will serve as base to all next implementations. On JSR 354, money-api, the reference implementation is the Moneta (To access more information the source of the project see [https://github.com/JavaMoney/jsr354-ri](https://github.com/JavaMoney/jsr354-ri)). Basically, is possible to use the money of two ways:
 
