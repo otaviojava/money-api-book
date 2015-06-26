@@ -87,6 +87,7 @@ Compile the source and install it, the tests will be skipped in this case:
 ```
 mvn clean install -Dmaven.test.skip
 ```
+
 Done, the code was compiled and installed on local repository. On this book Done, the code was compiled and installed on your local machine. In this book we will be using the master from Github repository, so we recommend  installing locally. The source of  samples used in this book is available on Github [https://github.com/otaviojava/money-api-book-samples](https://github.com/otaviojava/money-api-book-samples).
 
 
