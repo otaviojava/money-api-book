@@ -3,7 +3,7 @@
 * [One specification to money, is it really worth it?](introduction.md)
 * [Credit](credits.md)
 * [About the Author](about_me.md)
-* [The motivation behind the money type](chapter1.md)
+* [The Motivation behind the API](chapter1.md)
 * [But nobody else thought it before? Knowing the API](chapter2.md)
  * [Access source and install](chapter2_1.md)
  * [Representing money and currency with money-api](chapter2_2.md)
