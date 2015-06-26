@@ -1,4 +1,4 @@
-### Booleans operations
+### Boolean Operations
 
 The `MonetaryAmount` has comparatives methods with another `MonetaryAmount`, with this method is possible, for example, verify it's one is greater, lesser, equals, etc.
 
