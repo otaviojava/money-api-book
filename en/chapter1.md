@@ -135,7 +135,7 @@ BigDecimal sum = ProductUtils.sum(pasta, banana);
 
 
 
-Ready, With that solve all our problems, right? Wrong! We will list some possible problems:
+So would this solve all our problems? No it wouldn't, too many things could go wrong here.
 
  
 * To perform the product sum is necessary that the person remember to make the call of the utility class, but what about what you have to remember ? Accurate , inevitably forget. 
