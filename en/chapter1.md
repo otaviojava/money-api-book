@@ -72,7 +72,9 @@ public class Product {
 }
 ```
 
-The second strategy would be to use a``enum`` to represent the coins, therefore, the options are limited. With this strategy we solve the problem of ~~``String`` ~~, will only be possible to define the values from ``enum``,  but our ``enum`` need to get richer since we have to deal with various aspects of internationalization among them ISO *4217*, standard for currency.
+Well, this is clearly not a good design because it's not **type-safe**. The `String` is not validated and could be anything that is not a valid currency.
+
+Lets make it type-safe by introducing an ``enum`` of currencies. However, we need to keep various aspects of internationalisation, like  **ISO-4217**, in mind.
 
 
 ``` java
