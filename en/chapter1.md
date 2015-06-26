@@ -89,7 +89,8 @@ enum Currency {
 }
 ```
 
-To resolve this, you can use an existing class within the JDK the *java.util.Currency* class, she managed to solve two problems:
+There is something similar available in the JDK called *java.util.Currency*
+that works with **ISO-4217** and solves these two problems:
 
 * Just enter values **Currency** kind in the setter.
 * This class has been working with the ISO 4217.
