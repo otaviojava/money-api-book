@@ -9,6 +9,8 @@ double val = 1.03 - .42;
 System.out.println(val); //0.6100000000000001
 ```
 
+As you can see, the result wasn't something that the user would expect. One might ask, is floating point arithmetic broken in Java? No it's not, but Java uses native floating point types and this how **IEEE-754** floating point numbers work, we can't precisely represent base-10 numbers that we as humans tend to use.
+
 The same book highlights two strategies for dealing with money: 
 
 The first is using the ``long`` and ``int`` for that, it is necessary to perform the conversion value for cents, this solution is highly recommended when the speed and memory occupation are important points, however it is important to worry about the number of decimal places, the book does not recommend greater representation that nine decimal places
