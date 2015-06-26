@@ -7,12 +7,12 @@ As we mentioned before, money is represented with a numeric value and a currency
 
 |Method's name| Description |Example|
 | -- | -- | -- |
-|```String getCurrencyCode()```|Returns the currency code, to currency that follows the ISO will be returned three words.|BRL to Brazilian Real and USD dollar.
-|```int getNumericCode()```|Returns the numeric code of the currency, similar to currency code it has three digits.|986 to Brazilian Real and 840 to dollar.|
-|``` int getDefaultFractionDigits()``` |Returns the number of digits normally used by currency.|BRL has two digits and JPY hasn't.|
+|```String getCurrencyCode()```|Returns the currency code, to currency that follows the ISO will be returned as three characters.|BRL for Brazilian Real and USD for US Dollars.
+|```int getNumericCode()```|Returns the numeric code of the currency, similar to currency code that consists of three digits.|986 for Brazilian Real and 840 for US Dollars.|
+|``` int getDefaultFractionDigits()``` |Returns the number of digits normally used by currency.|BRL has two digits|
 
 
-This book will use the **Moneta** implementation, the reference implementation to this specification. Using the **Moneta** is possible have the currency's instance on two ways. The first way is using the currency code, so will use the ```String``` with three words.
+We will be using  **Moneta**'s implementation in this book, the reference implementation for this specification. There are two ways for creating instances of `CurrencyUnit` in  **Moneta**. The first way is to construct it from the currency code,  a three characters ```String```.
 
 
 ```java
@@ -29,7 +29,7 @@ public class CurrencyExample1 {
 }
 ```
 
-The simplest way is using the `Locale` class, this option is very interesting when, for example, a web application knows, from `Locale` on request, the currency of the user that is accessing the application.
+The second option is passing the `Locale` as a parameter, this option could be quite handy in web applications where the `Locale` could be retrieved from the request.
 
 ```java
 
@@ -45,34 +45,34 @@ public class CurrencyExample2 {
 
 ```
 
-Once was discussed about the currency the next step will talk about the representation of the monetary amount, for this, there is the `MonetaryAmount`'s interface, an important behavior is all implementation must be immutable and thread-safe.
+Now we will discuss how do we represent monetary amounts. The `MonetaryAmount` interface is responsible for that. Implementations of this interface are required to be immutable and thread-safe.
 
 ||Method|Description|
 | -- | -- |
-|`<R> R query(MonetaryQuery<R> query)`|Does query with monetary amount|
-|`MonetaryAmount with(MonetaryOperator operator)`|Does operations with monetary amount.|
-|`boolean isGreaterThan(MonetaryAmount amount)`|Returns true if this instance is greater than the monetary in parameter, so if they are equal will return false.|
-|`boolean   isGreaterThanOrEqualTo(MonetaryAmount amount)`|Returns true if this instance is greater or equals than the monetary amount passed on parameter.|
-|`boolean isLessThan(MonetaryAmount amount)`|Returns true if this instance is lesser than the value passed on parameter, so if they are equal will return false.|
-|`isLessThanOrEqualTo(MonetaryAmount amt)`|Returns true if this instance is lesser than the value passed on parameter or equals.|
-|`boolean isEqualTo(MonetaryAmount amount)`|Returns true if this instance is equals to the monetary value passed on parameter.|
-|`boolean isNegative()`|Returns true if this instance is negative.|
-|`boolean isNegativeOrZero()`|Returns true if this instance is negative or zero.|
-|`isPositive()`|Returns true if this instance is positive.|
-|`boolean isPositiveOrZero()`|Returns true if this instance is positive or zero.|
-|`isZero()`|Returns true if this instance is zero.|
-|`MonetaryAmount add(MonetaryAmount amount)`|Does the add with this instance and the monetary passed on parameter and the return will the result of the operation.|
-|`MonetaryAmount subtract(MonetaryAmount amount)`|Does the subtract with this instance and the monetary passed on parameter and the return will the result of the operation.|
-|`MonetaryAmount multiply(Number multiplicand)`|Does the multiply with this instance and the number passed on parameter and the return will the result of the operation.|
-|`MonetaryAmount divide(Number divisor)`|Does the divide with this instance and the number passed on parameter and the return will the result of the operation.|
-|`MonetaryAmount remainder(Number divisor)`|Does the divide with this instance and the number passed on parameter and the return will the remainder of the operation.|
-|`MonetaryAmount negate()`|Does the negation operation, so the return will the -this.|
+|`<R> R query(MonetaryQuery<R> query)`|Queries the monetary amount|
+|`MonetaryAmount with(MonetaryOperator operator)`|Applies operations on the monetary amount.|
+|`boolean isGreaterThan(MonetaryAmount amount)`|Returns true if the instance is strictly greater than the value of the passed monetary amount.|
+|`boolean   isGreaterThanOrEqualTo(MonetaryAmount amount)`|Returns true if the instance is greater or equals than the value of the passed monetary amount.|
+|`boolean isLessThan(MonetaryAmount amount)`|Returns true if the instance is strictly less than the value of the passed monetary amount.|
+|`isLessThanOrEqualTo(MonetaryAmount amt)`|Returns true if the instance is less than or equal to the value of the passed monetary amount.|
+|`boolean isEqualTo(MonetaryAmount amount)`|Returns true if the instance is strictly equal to the value of the passed monetary amount.||
+|`boolean isNegative()`|Returns true if the instance is negative.|
+|`boolean isNegativeOrZero()`|Returns true if the instance is negative or zero.|
+|`isPositive()`|Returns true if the instance is positive.|
+|`boolean isPositiveOrZero()`|Returns true if the instance is positive or zero.|
+|`isZero()`|Returns true if the instance is zero.|
+|`MonetaryAmount add(MonetaryAmount amount)`|Adds the value of the instance and the monetary parameter and returns the addition.|
+|`MonetaryAmount subtract(MonetaryAmount amount)`|Subtracts the value of the instance and the monetary parameter and returns the subtraction.|
+|`MonetaryAmount multiply(Number multiplicand)`|Multiplies the value of the instance by the monetary parameter and returns the multiplication.|
+|`MonetaryAmount divide(Number divisor)`|Divides the value of the instance by the monetary parameter and returns the multiplication.|
+|`MonetaryAmount remainder(Number divisor)`|Divides the value of the instance by the monetary parameter and returns the remainder.|
+|`MonetaryAmount negate()`|Negates the monetary value of the instance.|
 |`getCurrency()`| Returns the currency of the monetary amount.|
 
 
-Inside the **Moneta** there are three implementation to `MonetaryAmount`'s interface:
+Within **Moneta** there are three implementations for the `MonetaryAmount` interface:
 
 
 1. **Money**: The default implementation, it represents the numeric value using BigDecimal.
-1. **RoundedMoney**: Look like the Money implementation, it represents the numeric value with BigDecimal, but with RoundedMoney is possible to receive a MonetaryOperator to be called on each operation, for exemplo, to do rounding operation after each arithmetic process. 
-1. **FastMoney**: An implementation which represents the numeric value with long primitive, it is the fastest implementation on Moneta, around fifteen time faster than the others implementations. However it has a precision limitation, if need work with precision with this implementation, it cannot be longer than five decimal digits.
+1. **RoundedMoney**: Similar to **Money**, it represents the numeric value with BigDecimal, however, RoundedMoney allows you to apply a MonetaryOperator on every operation. For example, applying a rounding operation on each arithmetic operation. 
+1. **FastMoney**: An implementation which represents the numeric value with a long primitive, it is the fastest implementation on **Moneta**, almost fifteen times faster than the previous implementations. However, it has a precision limitation, the precision is limited to five decimal digits.
