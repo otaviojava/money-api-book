@@ -43,7 +43,7 @@ Product pasta = new Product("pasta", 4_00);
 int sum = banana.getMoney() + pasta.getMoney();
 ```
 
- But what would happen if we forget to convert this amount of dollars to cents (in the case  twelve, instead of twelve hundred)? Certainly the result would be disastrous, another problem would be in control of rounding.
+It is very easy to go wrong with this design where we could easily forget the fact that we have to convert dollars into cents...
 
 
 Besides the use of ``int`` and ``long`` effective Java recommends using ``BigDecimal``, with that, our product will have a much more intuitive and more common call, after all, it is more natural to say that a product is twelve dollars and not twelve hundred cents.
