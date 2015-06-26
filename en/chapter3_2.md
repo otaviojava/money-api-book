@@ -1,7 +1,7 @@
 ### MonetaryQuery
 
 
-The `MonetaryQuery` similar to `MonetaryOperator` is a funcional interface that receives a `MonetaryOperator`, the difference is on return, the `MonetaryQuery` can return anything, using generics. With the `MonetaryQuery` is possible retrieve some information such the currency code, just the number on `long` or `BigDecimal` format.
+Similar to `MonetaryOperator`, `MonetaryQuery` is a functional interface that accepts a  `MonetaryOperator` and returns a generic type-parameter. With `MonetaryQuery` you can perform some queries on the monetary value such as getting currency code or the numeric value as shown in the example below.
 
 ```java
 public class MonetaryQueryExamples {
@@ -15,9 +15,7 @@ public class MonetaryQueryExamples {
     }
 }
 ```
-
-To execute the `MonetaryQuery` there are two ways, either call the **queryFrom** method on `MonetaryQuery` interface or call the **query** method on `MonetaryAmount`.
-
+There are two ways for applying `MonetaryQuery`, you could either call `MonetaryQuery.queryFrom` or `MonetaryAmount.query` as shown below 
 
 ```java
 public class HelloMonetaryQuery {
@@ -32,11 +30,10 @@ public class HelloMonetaryQuery {
 }
 ```
 
+Moneta provides implementations of `MonetaryQuery`, `MonetaryQueries` provides factory methods for creating instances of type `MonetaryQuery`:
 
-The Moneta provides some implementations of MonetaryQuery, the MonetaryQueries. It is an utilitarian class that has some queries which make the Java developer life easier, such:
-
-* `MonetaryQuery<Long> extractMajorPart()` retrieves the major part of a money , for example, EUR 2.35 returns 2.
-* `MonetaryQuery<Long> convertMinorPart()` Recupera o valor monetário, o convertendo para a menor parte, centavos de um dinheiro, por exemplo, `USD 2.35` será retornado o `235`.
+* `MonetaryQuery<Long> extractMajorPart()` returns the major part of a money , for example, EUR 2.35 returns 2.
+* `MonetaryQuery<Long> convertMinorPart()` converts the money amount into its full value in cents, for example  `USD 2.35` will be `235`.
 
 
 ```java
