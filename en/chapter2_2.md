@@ -2,7 +2,8 @@
 
 
 
-On money-api, will used this name instead of JSR 354, also will be necessary to represent both the numeric value and currency. To represents the currency there is the CurrencyUnit interface all implementation must be immutable and thread-safe.
+As we mentioned before, money is represented with a numeric value and a currency. In order to represent currencies, implementations of JSR-354 have to implement the  `CurrencyUnit` interface. The following table summarises the methods available in the `CurrencyUnit` interface.  Implementations are required to be immutable and thread-safe.
+
 
 |Method's name| Description |Example|
 | -- | -- | -- |
