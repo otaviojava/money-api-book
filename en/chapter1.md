@@ -130,7 +130,7 @@ public static BigDecimal sum(Product pA, Product pB) {
    }
 
 }
-BigDecimal sum = ProdutoUtils.sum(pasta, banana);
+BigDecimal sum = ProductUtils.sum(pasta, banana);
 ```
 
 
