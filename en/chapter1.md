@@ -30,7 +30,7 @@ The first is using the ``long`` and ``int`` for that, it is necessary to perform
   }
 ```
 
-A problem to use the representation of money with ``int`` and ``long`` is the readability of representing monetary values that way. As an example, a product has a price in the amount of twelve US dollars, how to represent in cents,  we put the value of twelve hundred cents.
+One problem with this solution is readability and the other is flexibility. For example, we have to use the value `1200 cents` to represent a product that costs `12 USD`. 
 
 ``` java
 public class Product {
