@@ -161,7 +161,7 @@ A solução para resolver esse problema virá de um artigo do Martin Fowler, na 
 public class Money {
    private  Currency currency;
    private  BigDecimal value;
-   //behavior here
+   //behaviour goes here ...
 }
 Product banana = new Product("banana", new Money(12, dollar));
 Product pasta = new Product("pasta", new Money(4, dollar))
