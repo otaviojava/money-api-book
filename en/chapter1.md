@@ -138,9 +138,8 @@ BigDecimal sum = ProductUtils.sum(pasta, banana);
 So would this solve all our problems? No it wouldn't, too many things could go wrong here.
 
  
-* To perform the product sum is necessary that the person remember to make the call of the utility class, but what about what you have to remember ? Accurate , inevitably forget. 
-* As we mentioned above, the money can be used not only with the product but with different things, services, labor, etc., so it will be necessary to duplicate the two camps, currency and monetary value, for several points.
-* Once with several classes using the money we have two strategies to perform validation, one would create utility classes for every model that uses money, ServiceUtils, GoodsUtils, etc., or a utility class that receives four parameters (the amount and the currency of two to be compared and then added).
+* We have to force ourselves and our colleagues  to always use the utility class, and never forget to do so.
+* We have to define utility classes for different services or introduce a general  abstraction.
 
 ``` java
 public class MoneyUtils {
