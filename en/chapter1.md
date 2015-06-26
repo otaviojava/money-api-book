@@ -171,4 +171,4 @@ Money money = banana.getMoney().add(pineapple.getMoney());
 ```
 
 
-With that it brought the motivation behind the kind of money creation. In addition to avoiding problems, for example, forgetting the money validation, mirrored and decapsulated code also guarantee higher quality code as sole responsibility money as an object and not just as data structure and bring the money to the domain of your application.
+This was the main motivation behind introducing a specification for a standard API that abstracts the way we deal with money in our Java programs.
