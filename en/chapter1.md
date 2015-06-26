@@ -58,6 +58,7 @@ Product banana = new Product("banana", BigDecimal.valueOf(12D));
 Product pasta = new Product("pasta", BigDecimal.valueOf(4D));
 BigDecimal sum = banana.getMoney().add(paste.getMoney());
 ```
+
 Things are getting better, but there is a very important factor missing in our design which is currency. If we our program deals with a single currency then we are totally fine, however, this is not the case most of the time. Therefore, the number 12 has no meaning without a currency. 
 
 So lets add a field of type ``String`` to hold the value of the currency.
@@ -116,17 +117,18 @@ if(banana.getCurrency().equals(pasta.getCurrency())) {
  }//exception
 ```
 
-Perhaps we will have to perform a validation in various parts of our code in this way will create a utility class.
+We could introduce a utility class that is responsible for this sort of validation.
 
 
 ``` java
 public class ProductUtils {
 public static BigDecimal sum(Product pA, Product pB) {
-    		if(pA.getCurrency().equals(pB.getCurrency())) {
-return pA.getValue().add(pB.getValue());
-  	}
-return null;
-    	}
+    if(pA.getCurrency().equals(pB.getCurrency())) {
+      return pA.getValue().add(pB.getValue());
+    }
+    throw new IllegalArgumentException("Currency mismatch");
+   }
+
 }
 BigDecimal sum = ProdutoUtils.sum(pasta, banana);
 ```
