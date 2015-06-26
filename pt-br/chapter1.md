@@ -117,11 +117,11 @@ Possivelmente teremos que realizar essa validação em diversos pontos do nosso 
 ``` java
 public class ProductUtils {
 public static BigDecimal sum(Product pA, Product pB) {
-    		if(pA.getCurrency().equals(pB.getCurrency())) {
-return pA.getValue().add(pB.getValue());
-  	}
-return null;
-    	}
+    if(pA.getCurrency().equals(pB.getCurrency())) {
+      return pA.getValue().add(pB.getValue());
+    }
+    throw new IllegalArgumentException("Currency mismatch");
+   }
 }
 BigDecimal sum = ProdutoUtils.sum(pasta, banana);
 ```
