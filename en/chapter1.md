@@ -1,6 +1,6 @@
-## The motivation behind the money type
+## The Motivation behind the API
 
-According to Wikipedia, money is the means used to exchange goods, used in the purchase of goods, services, workforce, foreign currencies or in other financial transactions, issued and controlled by the government of each country, which is the only one this assignment. Considering this, many Java systems end up having to represent this monetary value. How should you depict it in your system?
+According to Wikipedia, *Money is any item or verifiable record that is generally accepted as payment for goods and services and repayment of debts in a particular country or socio-economic context*. Money is represented by two parts: A numerical value and a currency. We clearly deal with money in our programs everyday, but the JDK doesn't provide a standard representation of money. What we need to know as developers is what data type is suitable to represent  money.
 
 The first strategy is to use the types already coming from Java, Java Effective book does not recommend the use of the ``double`` and ``float`` when precise answers are necessary. 
 
