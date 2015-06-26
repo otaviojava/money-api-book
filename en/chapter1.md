@@ -144,11 +144,15 @@ So would this solve all our problems? No it wouldn't, too many things could go w
 
 ``` java
 public class MoneyUtils {
-public static BigDecimal sum(Currency currencyA, BigDecimal valueA, Currency currencyB, BigDecimal valueB) {
+public BigDecimal sum(Currency currencyA, BigDecimal valueA, Currency currencyB, BigDecimal valueB) {
    //...
 }
-public class ServiceUtils {}
-public class WorkerUtils {}
+public class ServiceUtils {
+...
+}
+public class WorkerUtils {
+...
+}
 ```
 
 * What happens if I only just set a single item of money, value or currency? It makes sense to say that the product is worth twelve? Or he's worth dollar? Absolutely not, it is worth twelve US dollars and this needs to be validated.
