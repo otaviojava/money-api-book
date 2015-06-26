@@ -51,42 +51,43 @@ Now you are ready to go and use the API in your project.
 Another option is to install the project from source. This requires having Git and maven installed as well as Java 8.
 
 
-Download the source of  javamoney-parent, to do it run this command:
+Clone the source of  javamoney-parent using the following command:
 
 ```
 git clone https://github.com/JavaMoney/javamoney-parent.git
 ```
 
-Get in the folder:
+Switch to the containing folder:
 
 ```
 cd javamoney-parent
 ```
-Compile the source and install, in this case the test will skipped:
+
+Compile the source and install it, the tests will be skipped in this case:
 
 ```
 mvn clean install -Dmaven.test.skip
 ```
 
-Done, the next step will install the Moneta from source.
+Done! The next step will be to install **Moneta** from source.
 
-Download the source of  Moneta, to do it run this command:
+Clone Moneta's source to your local machine:
 
 ```
 git clone git@github.com:JavaMoney/jsr354-ri.git
 ```
 
-Get in the folder:
+Switch to the containing folder:
 ```
 cd jsr354-ri
 ```
 
-Compile the source and install, in this case the test will skipped:
+Compile the source and install it, the tests will be skipped in this case:
 
 ```
 mvn clean install -Dmaven.test.skip
 ```
-Done, the code was compiled and installed on local repository. On this book will use the master from github repository, so is recommend be installed locally. To get the source used as sample on this cook book access:  [https://github.com/otaviojava/money-api-book-samples](https://github.com/otaviojava/money-api-book-samples).
+Done, the code was compiled and installed on local repository. On this book Done, the code was compiled and installed on your local machine. In this book we will be using the master from Github repository, so we recommend  installing locally. The source of  samples used in this book is available on Github [https://github.com/otaviojava/money-api-book-samples](https://github.com/otaviojava/money-api-book-samples).
 
 
 
