@@ -2,11 +2,21 @@
 
 The API provides a reference implementation which will be the base to all future implementations. On JSR 354, Money-Api, the reference implementation is **Moneta**. For more information about the project see [https://github.com/JavaMoney/jsr354-ri](https://github.com/JavaMoney/jsr354-ri).
 
+---
+
+####Installing the Project
+
 You could either add it to your project as a dependency from the maven repository or install it from source. 
 
 The maven repo could be found here:
 [http://mvnrepository.com/artifact/org.javamoney/moneta](http://mvnrepository.com/artifact/org.javamoney/moneta).
 
+
+
+---
+
+
+#####Adding the dependencies 
 
 Maven
 
