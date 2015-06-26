@@ -5,7 +5,7 @@
 * [About the Author](about_me.md)
 * [The Motivation behind the API](chapter1.md)
 * [But nobody else thought it before? Knowing the API](chapter2.md)
- * [Access source and install](chapter2_1.md)
+ * [Source code and Installation](chapter2_1.md)
  * [Representing money and currency with money-api](chapter2_2.md)
  * [Creation Methods](chapter2_3.md)
    * [Creations methods to RoundedMoney](chapter2_3_1.md)
