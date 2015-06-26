@@ -154,17 +154,10 @@ public class WorkerUtils {
 }
 ```
 
-* What happens if I only just set a single item of money, value or currency? It makes sense to say that the product is worth twelve? Or he's worth dollar? Absolutely not, it is worth twelve US dollars and this needs to be validated.
-* It is the product liability class, or any that need to work with money, care for creation and the money the state? 
-* Once using utility classes to perform this validation we are not leaking package? After all it is possible to the sum of both values ignoring the currency of generating validation error. Looking at the Wikipedia definition of encapsulation: Allows hide properties and methods of an object to protect the code from accidental corruption.
+So adding an abstraction for representing money becomes more and more obvious after we try all these tricks. Martin Fowler wrote an article describing an abstraction for representing money that solves the following issues:
 
-In addition to these problems, using as reference the Clean Code, we have a great definition of data structure and an object, the object basically hides the data to exhibit a behavior, that is, we are not object-oriented programming that way.
-
-The solution to this problem will come from an article by Martin Fowler, in which he cites the example of money as your favorite, so the kind of money is created. With that solve:
-
-* Centralization of code, all the money behavior is the money class.
-* Remove the liability of the other classes, you do not need, for example, have control when creating values within the class product mentioned above.
-* Goodbye the utility classes, once the validation in the money class, the utility classes are not needed anymore, not to mention the classic problem of forgetting to use them.
+* Single responsibility , the money class is the only type that is responsible for dealing with money.
+* No need for the utility classes because the money class will be the only class responsible for this kind of validation.
 
 ``` java
 public class Money {
