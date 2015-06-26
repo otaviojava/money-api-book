@@ -6,7 +6,7 @@
 * [The Motivation behind the API](chapter1.md)
 * [But nobody else thought it before? Knowing the API](chapter2.md)
  * [Source code and Installation](chapter2_1.md)
- * [Representing money and currency with money-api](chapter2_2.md)
+ * [Representing Money and Currency with Money-API](chapter2_2.md)
  * [Creation Methods](chapter2_3.md)
    * [Creations methods to RoundedMoney](chapter2_3_1.md)
  * [Arithmetics operations](chapter2_4.md)
