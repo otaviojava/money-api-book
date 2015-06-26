@@ -58,14 +58,10 @@ Product banana = new Product("banana", BigDecimal.valueOf(12D));
 Product pasta = new Product("pasta", BigDecimal.valueOf(4D));
 BigDecimal sum = banana.getMoney().add(paste.getMoney());
 ```
+Things are getting better, but there is a very important factor missing in our design which is currency. If we our program deals with a single currency then we are totally fine, however, this is not the case most of the time. Therefore, the number 12 has no meaning without a currency. 
 
-Another important point that the ``BigDecimal`` already addresses quiet way is the rounding control.
+So lets add a field of type ``String`` to hold the value of the currency.
 
-Going beyond with our product class, we have a little problem with it, do not represent the currency! That is, it was implied in all cases, if my system only deal with a currency that is not a problem, but imagine that my product is sold in various parts of the world. Only the twelve did not mean anything, twelve can be anything (real, pesos, dollars, etc.).
-
-To represent money is important to understand it. Briefly, the money consists of two parts, the part of the value that is the numeric quantity, but only this amount can not do a lot, we need the money. The currency is the "money system" in common use, especially within a nation, following this definition the real ,weight, dollar and euro are types of currencies. Therefore, we have to add the currency within the product. We can represent currency in some ways: 
-
-The first is using the type ``String``,but what if instead of writing dollar write "dolra" with a little trouble writing? We have no control with the type String, so it can receive from a small clerical error until illogical values such as bananas, pasta, etc. Although the latter are not coins will normally be accepted if they are passed as ``String``.
 
 ``` java
 public class Product {
