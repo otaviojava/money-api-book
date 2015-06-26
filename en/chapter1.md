@@ -171,4 +171,4 @@ Money money = banana.getMoney().add(pineapple.getMoney());
 ```
 
 
-This was the main motivation behind introducing a specification for a standard API that abstracts the way we deal with money in our Java programs.
+This was the main motivation behind introducing a specification for a standard **API** that abstracts the way we deal with money in our Java programs.
