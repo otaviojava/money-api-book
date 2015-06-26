@@ -1,23 +1,18 @@
-## Manipulate and extract information from MonetaryAmount
+## Querying/Operation on MonetaryAmount
 
-
-Also beyond do basic operations such arithmetic operations, some time is important can extract and convert some money informations, for example, extract just the little part of the money, the cents, or just the value on the right of comma. To do operations like those, there are the `MonetaryOperator` and `MonetaryQuery` interfaces. Both has just one method to be implemented, so they are functional interface.
-
+`MonetaryOperator` and `MonetaryQuery` are functional interfaces, they provide abstraction for querying and operating on monetary values like conversions and retrieving the fractional parts (cents).    
 
 ```java
 
 @FunctionalInterface
 public interface MonetaryOperator{
-
-    MonetaryAmount apply(MonetaryAmount amount);
+  MonetaryAmount apply(MonetaryAmount amount);
 }
 
 
 @FunctionalInterface
 public interface MonetaryQuery<R>{
-
-    R queryFrom(MonetaryAmount amount);
+  R queryFrom(MonetaryAmount amount);
 }
 
 ```
-
