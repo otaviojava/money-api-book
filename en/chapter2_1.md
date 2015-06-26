@@ -42,7 +42,13 @@ Ivy:
 Now you are ready to go and use the API in your project.
 
 
-The last one is downloading the source and compiling, for do this, will necessary to follow some steps, to do it just is necessary download and install the parent and install and then install **Moneta**. Just to remember the minimum requisites is git, Java 8 and maven installed and configured on the machine.
+
+---
+
+
+#####Installing from Source
+
+Another option is to install the project from source. This requires having Git and maven installed as well as Java 8.
 
 
 Download the source of  javamoney-parent, to do it run this command:
