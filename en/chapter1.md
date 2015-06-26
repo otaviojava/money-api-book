@@ -105,7 +105,8 @@ public class Product {
 }
 ```
 
-With our money made must validate that the coins are the same time to make a purchase or perform the sum, after all, the price of a real product must be different than a dollar.
+Validation is essential here when we do arithmetics like sums or discounts. For example we can't sum up prices of products that have different currencies.
+
 
 ``` java
 Product banana = //instance;
