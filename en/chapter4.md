@@ -1,9 +1,6 @@
-## Formating money
+## Money Formatting
 
-
-The user's iteration in the software is a fundamental part, so is necessary think the way to show the information to the user besides interacting with the software. The money is a significant part of a software, so is vital show the total cost of a service or the total of products that will be purchased or the money that will be borrowed using an Internet bank. To work with formatting of a `MonetaryAmount` exist a `MonetaryAmountFormat`'s interface that basically given a `MonetaryAmount` convert to `String` and given the `String` returns a `MonetaryAmount`.
-
-
+`MonetaryAmountFormat` is the interface responsible for formatting the textual representation  of`MonetaryAmount` values. So given a `MonetaryAmount`, `MonetaryAmountFormat.format` is responsible for working out the conversion to a `String` value .
 
 ```java
 public interface MonetaryAmountFormat extends MonetaryQuery<String>{
@@ -19,11 +16,11 @@ public interface MonetaryAmountFormat extends MonetaryQuery<String>{
 }
 ```
 
-A simple example is the **toString** method and the parse inside of all implementation of `MonetaryAmount` on **Moneta**.
+A simple example is the **toString** and **parse** methods in **Moneta**'s implementation of `MonetaryAmount`.
 
 
 ```java
-public class ToStrimgExample {
+public class ToStringExample {
 
     public static void main(String[] args) {
         CurrencyUnit currency = Monetary.getCurrency(Locale.US);
@@ -41,8 +38,7 @@ public class ToStrimgExample {
 }
 ```
 
-
-The reference implementation has two ways to create money formatter. The first option is with the `MonetaryFormat` with it may create a formatter from a query builder or just using `Locale`. The second one is using the `MonetaryAmountFormatSymbols` that has its behavior look like the `DecimalFormat` class. Further the parse without parameters on implementations of `MonetaryAmount`, also exist the parse method which accept the `MonetaryAmountFormat`.
+The reference implementation specifies two ways for creating a formatter. The first option is  creating it through a query builder or `Locale`, and the second option is `MonetaryAmountFormatSymbols` which is similar to `java.text.DecimalFormat`. `MonetaryAmount.parse` method provides an overload that accepts `MonetaryAmountFormat` as a parameter as shown below. 
 
 
 ```java
