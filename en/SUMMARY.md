@@ -16,7 +16,7 @@
  * [MonetaryOperator](chapter3_1.md)
  * [MonetaryQuery](chapter3_2.md)
  * [MonetaryQuery vs MonetaryOperator](chapter3_3.md)
-* [Formating money](chapter4.md)
+* [Money Formatting](chapter4.md)
  * [The class MonetaryAmountFormat](chapter4_1.md)
  * [The class MonetaryAmountFormat](chapter4_2.md)
 * [Exchange Rate](chapter5.md)
