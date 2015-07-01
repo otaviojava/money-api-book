@@ -1,10 +1,9 @@
 ## Exchange Rate
 
+Internationalization is the process of increasing involvement of enterprises in international markets. This can have an impact on multiple levels, in culture, economy or politics. It affects the daily life as it is easy to find out what is happening across the world, to discover cultures just by surfing the Internet or to just buy products or services from other countries. Software needs to follow this trend, it needs to easily allow users to interact with each other all across the globe. It is exactly the case of money, software has the obligation to support different currencies.
 
-The internationalization is the approach applied on several areas, basically, is a change of culture, economy and politics on considerable places on the world. With internalization may to know what is happening in across the world instantaneously, know cultures just surfing in the Internet as well as buy products or services in other countries. The software needs to follow this trend, in other words, allow interaction with users in all globe. With money it isn't different, the software has the obligation to be ready to it.
 
-Talking about money and internationalization is trivial think the interaction between currencies, but what happen when try do operation with different currencies?
-
+Talking about money and internationalization will lead you to think about the interaction between different currencies. What would happen if we'd try to do the following operation?
 
 ```java
 public class MistakeExample {
@@ -20,5 +19,4 @@ public class MistakeExample {
 }
 ```
 
-
-Using the **Moneta**, will happen an exception with the error to try sum money with currencies distinct. It is a “right error” once the dollar, not necessarily, has the value of one Brazilian real. To do this operation of sum among currencies, it needs first do the exchange rate. The exchange rate is the rate at which one currency will be exchanged for another.
+Using **Moneta**, you will get an exception with the error informing you that you are trying to sum money with distinct currencies. It is a “correct error” even if the dollar has the exact same value as one Brazilian real. In order for this summing operation to succeed, it first needs to use the exchange rate between the two currencies. The exchange rate is the rate at which one currency will be exchanged for another.
