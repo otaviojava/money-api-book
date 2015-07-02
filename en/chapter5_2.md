@@ -1,6 +1,6 @@
 ### Exchange rate from a specific data
 
-For some reasons in the application is important to know not just the exchange rate most recent, but an exchange rate from a distinct date, from example, when rent a room in the hotel, normally will be used the rate when the room was reserved or in the credit card that use the rate when the bill was closed. **Moneta** gives support to do it, just use the `ConversationQuery` class, it is possible find out with defined date or a range of dates. The representation that is accepted for date is the `LocalDate` class.
+Applications may need to know not only the most recent exchange rate, but exchange rates from specific dates. For example: when renting a room in a hotel, in order to create the bill the exchange rate from the date when the room was booked would be needed. **Moneta** supports this, by using the `ConversationQuery` class it is possible find out the exchange rate for a defined date or for a range of dates. `LocalDate` class should be used to represent dates.
 
 
 ```java
@@ -29,7 +29,7 @@ public class ExchangeRateProviderExample2 {
 }
 ```
 
-If **Moneta** doesn't find the date, will return an exception, for example, will not possible find a rate from January 9th of 2011, once this date was on Sunday and almost always providers of this information doesn't work on this day.
+If **Moneta** cannot find the date, it will throw an exception. An example, it will not possible to find a rate for the 9th of January, 2011. This date represents a Sunday and almost always providers will not have an entry for this day.
 
 
 ```java
@@ -58,7 +58,7 @@ public class ExchangeRateProviderExample3 {
 }
 ```
 
-A possible solution to this problem is inform a range of dates, this way, the implementation will find out for all dates, if it doesn't find all will return an exception, worth pointing out, the implementation will find out by the same order that was informed.
+A possible solution to this problem is to use a range of dates. This way, the call has a higher chance of succeeding. The implementation will attempt to find out the rates for all provided dates. It will return the rates in the same order the dates were given. If it doesn't find any rates for the provided dates it will throw an exception.
 
 ```java
 public class ExchangeRateProviderExample4 {
