@@ -1,6 +1,6 @@
 ### The class MonetaryAmountFormat
 
-Using the `MonetaryFormats` may to create from a query builder or just using from `Locale` with the `CurrencyStyle` `enum` may put informations that will show on formatter. 
+The `MonetaryFormats` class allows the creation of `MonetaryAmountFormats` objects by using either a query builders or by using `Locale`s with the `CurrencyStyle` `enum`.
 
 
 ```java
@@ -18,8 +18,7 @@ public class MonetaryFormatsExampleQuery {
     }
 }
 ```
-
-With `AmountFormatQueryBuilder` custom formats can be created.
+As shown the previous and following examples the `AmountFormatQueryBuilder` allows the creation of custom formats.
 
 ```java
 public class MonetaryFormatsExampleQueryCustom {
@@ -30,7 +29,7 @@ public class MonetaryFormatsExampleQueryCustom {
     			AmountFormatQueryBuilder.of(Locale.US)
     			.set(CurrencyStyle.NAME)
     			.set("pattern", "00,00,00,00.00 ¤")
-    			.build()); 
+          .build());
 
     			String formatted = customFormat.format(amount); //00,01,23,45.67 US Dollar
     }
