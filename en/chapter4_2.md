@@ -1,6 +1,6 @@
 ### The class MonetaryAmountFormatSymbols
 
-The `MonetaryAmountFormatSymbols`  that has the behavior look like `DecimalFormat` with the Number class, the goal is formating the money from some configurations such currency, minimum and maximum digits quantities after and before the comma, etc.
+`MonetaryAmountFormatSymbols`s function is similar to `DecimalFormat` with regards to the Number class. The goal is formating moneys object using a specific configuration. The configuration can take into account currency, minimum and maximum digits, quantities before and after the comma and other properties.
 
 ```java
 public class MonetaryAmountFormatSymbolsExample {
@@ -8,40 +8,38 @@ public class MonetaryAmountFormatSymbolsExample {
     public static void main(String[] args) {
         CurrencyUnit currency = Monetary.getCurrency("BRL");
         MonetaryAmount money = Money.of(12, currency);
-        MonetaryAmountFormat defafult = MonetaryAmountFormatSymbols.getDefafult();
-        String format = defafult.format(money);//R$ 12,00
-        MonetaryAmount moneyParsed = Money.parse(format, defafult);//or using defafult.parse(format);
+        MonetaryAmountFormat defaultFormat = MonetaryAmountFormatSymbols.getdefaultFormat();
+        String format = defaultFormat.format(money);//R$ 12,00
+        MonetaryAmount moneyParsed = Money.parse(format, defaultFormat);//or using defaultFormat.parse(format);
 
     }
 }
 ```
 
 
-Using this class may change the settings about minimum quantity, currency, etc. there are two classes to do that:
+There are two classes that allow the configuration of the currency or the minimum number of digits to be displayed:
 
-* The first is `MonetaryAmountSymbols` with it is may to define the symbols that will be used, for example, currency symbols, separator symbols. 
-* The `MonetaryAmountNumericInformation` takes care of the informations about the numeric value like minimum and maximum digits after and before the comma.
+* The first is the `MonetaryAmountSymbols` class,  used to define the configured symbols; for example currency symbols or separator symbols.
+* The second is the `MonetaryAmountNumericInformation` class which contains information about numeric values. An example of this would be minimum and maximum number of digits that can appear before and after the comma.
 
 ```java
 public class MonetaryAmountFormatSymbolsExample2 {
 
     public static void main(String[] args) {
-        MonetaryAmountFormatSymbols defafult = MonetaryAmountFormatSymbols.getDefafult();
-        MonetaryAmountSymbols amountSymbols = defafult.getAmountSymbols();
-        MonetaryAmountNumericInformation numericInformation = defafult.getNumericInformation();
-        
+        MonetaryAmountFormatSymbols defaultFormat = MonetaryAmountFormatSymbols.getdefaultFormat();
+        MonetaryAmountSymbols amountSymbols = defaultFormat.getAmountSymbols();
+        MonetaryAmountNumericInformation numericInformation = defaultFormat.getNumericInformation();
+
     }
 }
 ```
 
+The functional interface `MonetaryAmountProducer` allows the creation of `MonetaryAmount`s using a `Number` and a `Currency`. **Moneta** provides three producers, one for each implementation:
 
 
-There is the possibility to define which implementation will be used to serialization. To do it, exist the functional class `MonetaryAmountProduce`, it may define own implementation from `Number` and `Currency`. The **Moneta** provides three producer one to each implementation that it already has:
-
-
-* `FastMoneyProducer` producer of `MonetaryAmount` using the `FastMoney` implementation.
-* `MoneyProducer` producer of `MonetaryAmount` using the `Money` implementation.
-* `RoundedMoneyProducer` producer of `MonetaryAmount` using the `RoundedMoney` implementation. This class has two constructors: the first one has the `MonetaryOperator` as parameter, this parameter will be used on creation of all `RoundedMoney` created in this class. The second is the default constructor, without parameter, so will use `MonetaryOperators.rounding()` as `MonetaryOperator` that will use on all of `MonetaryAmount` creation using the `RoundedMoney` implementation.
+* The `FastMoneyProducer` producer, for `MonetaryAmount`s using the `FastMoney` implementation.
+* The `MoneyProducer` producer, for `MonetaryAmount`s using the `Money` implementation.
+* The `RoundedMoneyProducer` producer, for `MonetaryAmount`s using the `RoundedMoney` implementation. This class has two constructors: the first one has the `MonetaryOperator` as a parameter; parameter  which will be used in the creation of all `RoundedMoney` objects. The second is the default constructor; it will use `MonetaryOperators.rounding()`, as the `MonetaryOperator`, for object creation.
 
 
 
@@ -51,26 +49,25 @@ public class MonetaryAmountFormatSymbolsExample3 {
     public static void main(String[] args) {
         MonetaryAmountSymbols symbols = new MonetaryAmountSymbols(Locale.US);// new MonetaryAmountSymbols();
         symbols.setCurrencySymbol("Mon");
-        MonetaryAmountFormat formater = MonetaryAmountFormatSymbols.of(symbols, new MoneyProducer());
+        MonetaryAmountFormat formatter = MonetaryAmountFormatSymbols.of(symbols, new MoneyProducer());
         CurrencyUnit currency = Monetary.getCurrency("BRL");
-        String text = formater.format(Money.of(10, currency));//Mon 10.00
+        String text = formatter.format(Money.of(10, currency));//Mon 10.00
 
     }
 }
 ```
 
-As on `DecimalFormat` class, it may to use a `String` as formating pattern, the regex follows the same standardization of [DecimalFormat](http://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html).
+Similarly to the `DecimalFormat` class, `MonetaryAmountFormatSymbols` can use a `String` as formating pattern. The regex follows the same standardization as in [DecimalFormat](http://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html).
 
 ```java
-public class MonetaryAmountFormatSymbolsExample3 {
+public class MonetaryAmountFormatSymbolsExample4 {
 
     public static void main(String[] args) {
         MonetaryAmountSymbols symbols = new MonetaryAmountSymbols(Locale.US);// new MonetaryAmountSymbols();
         symbols.setCurrencySymbol("Mon");
-        MonetaryAmountFormat formater = MonetaryAmountFormatSymbols.of("¤ ###,###.00", symbols, new MoneyProducer());
+        MonetaryAmountFormat formatter = MonetaryAmountFormatSymbols.of("¤ ###,###.00", symbols, new MoneyProducer());
         CurrencyUnit currency = Monetary.getCurrency("BRL");
-        String text = formater.format(Money.of(10_000_00, currency));//Mon 1,000,000.00
-        System.out.println(text);
+        String text = formatter.format(Money.of(10_000_00, currency));//Mon 1,000,000.00
     }
 }
 ```
