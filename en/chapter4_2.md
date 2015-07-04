@@ -34,7 +34,7 @@ public class MonetaryAmountFormatSymbolsExample2 {
 }
 ```
 
-The functional interface `MonetaryAmountProducer` allows the creation of `MonetaryAmount`s using a `Number` and a `Currency`. **Moneta** provides three producers, one for each implementation:
+There is the possibility to define which implementation will be used to serialization. The functional interface `MonetaryAmountProducer` allows the creation of `MonetaryAmount`s using a `Number` and a `Currency`. **Moneta** provides three producers, one for each implementation:
 
 
 * The `FastMoneyProducer` producer, for `MonetaryAmount`s using the `FastMoney` implementation.
