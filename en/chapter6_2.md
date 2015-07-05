@@ -1,4 +1,3 @@
 ### Reduction methods
 
-
-The reduction is the process that, given a list of values it should returns one or no output, basically, from a list turn it to only one element, or the lack of it.
+Reduce, aka `fold` is a higher order function that when applied on a stream results into a value or none. Ex: sum, average, min, max, etc ...
