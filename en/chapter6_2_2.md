@@ -1,8 +1,6 @@
-#### Maximum and minimum value
+#### Maximum and Minimum
 
-
-**Moneta** supports the maximum and minimum reduction, so given a list will return the biggest or the lowest value.
-
+**Moneta** provides maximum and minimum reductions. Given a stream on monetary values, you could easily get the maximum or minimum values. Here's an example. 
 
 ```java
 public class ReduceMaxMinMonetaryAmount {
@@ -28,9 +26,7 @@ public class ReduceMaxMinMonetaryAmount {
     }
 }
 ```
-
-If a list has different currencies is possible to do exchange rate before the comparison. If don't do that, the comparison with different currencies will launch an exception.
-
+An exception will be thrown if a currency mismatch occurs. To avoid that, an `ExchangeRateProvider` must be provided as shown below. 
 
 ```java
 public class ReduceMaxMinMonetaryAmountExchange {
