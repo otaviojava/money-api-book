@@ -1,7 +1,7 @@
-#### Sorting using exchange rate
+#### Sorting by the Exchange Rate
 
-
-Also may to do a sort on ascending and descending way looking to exchange rate. To do this, need to inform an `ExhcnageRateProvider` implementation. For example, given a list with ten dollars, eleven Brazilian real and nine euro, will return on ascending way the values of eleven Brazilian real, ten dollars and nine euros, just because, for example, the dollar is more valuable than real and lesser valuable than euro.
+Sorting can be applied on the exchange rate, but this requires providing an implementation of `ExhcnageRateProvider`. For example given a list of `[10 USD,11 BRL,9 EUR]`, sorting them by the ascending order will result 
+in `[11 BRL,10 USD,9 EUR]` and that's because BRL has a lower exchange rate than USD and USD has a lower exchange rate than EUR.
 
 
 ```java
