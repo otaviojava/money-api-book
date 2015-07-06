@@ -25,7 +25,7 @@
  * [Ignoring the exchange rate](chapter5_3.md)
 * [Working with Streams](chapter6.md)
  * [Sorting a List of Monetary Values](chapter6_1.md)
-   * [Sorting by currency](chapter6_1_1.md)
+   * [Sorting by Currency](chapter6_1_1.md)
    * [Sorting using the numeric value](chapter6_1_2.md)
    * [Sorting using exchange rate](chapter6_1_3.md)
    * [Mixing the sorters](chapter6_1_4.md)
