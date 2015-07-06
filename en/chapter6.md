@@ -1,8 +1,3 @@
-## Working with Stream
+## Working with Streams
 
-
-Once this API was born after the Java 8, is really common that API has support for some specific resources of Java 8, how as viewed in the last chapter, to find out an exchange rate from specific date is used a LocalDate, other important stuff is the support to work Stream. Work with list is important, for example, given a list of products a sum of these products. To work with Stream the **Moneta** provides the `MonetaryFunctions`.
-
-
-
-
+This API was developed under Java 8, and hence it's Java 8 idiomatic. For instance, `java.time.LocalDate` is used to retrieve the exchange rate at a specific time. **Moneta** provides some higher order functions in `MonetaryFunctions` class that help you working with Streams.

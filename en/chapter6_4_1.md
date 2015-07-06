@@ -1,7 +1,7 @@
-#### Grouping by currency
+#### Grouping by Currency
 
 
-The **Moneta** provides functions to group the `MonetaryAmount` from the currency.
+**Moneta** provides functions for grouping `MonetaryAmount` by their currencies. Here's an example.
 
 
 ```java

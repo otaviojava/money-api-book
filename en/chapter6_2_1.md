@@ -1,7 +1,5 @@
 #### Sum
-
-The sum or reducing by sum is defined on: given a list of `MonetaryAmount` it will return an element with the sum of all values.
-
+Sum is a reduction method. Given a stream of `MonetaryAmount`, it returns the sum of its elements. Here's an example. 
 
 ```java
 public class ReduceSumMonetaryAmount {
@@ -21,9 +19,7 @@ public class ReduceSumMonetaryAmount {
     }
 }
 ```
-
-Remember, it the list has different currency the sum will return an exception.
-
+Notice that the operation will throw an exception if applied on a stream of money with different currencies as shown below.   
 ```java
 public class ReduceSumMonetaryAmountError {
 
@@ -43,9 +39,7 @@ public class ReduceSumMonetaryAmountError {
     }
 }
 ```
-
-The **Moneta** provides the sum using the exchange rate, to do that just need to inform the `ExchangeRateProvider` and the currency whose the money will converted.
-
+In **Moneta**, you can provide an implementation of `ExchangeRateProvider` in order to perform currency conversions for monetary values  with different currencies as shown below. 
 ```java
 public class ReduceSumMonetaryAmountExchange {
 

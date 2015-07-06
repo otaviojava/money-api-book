@@ -1,8 +1,6 @@
-#### Summarizing the money
+#### Summarizing Money
 
-
-Summarizing the money is given the list of money, will return a `MonetarySummaryStatistics`, the object that has informations of the list such minimum and maximum value, average, sum and the number of elements in the list. To do this just need inform the currency, if the `MonetaryAmount` has a different currency, it will be ignored. 
-
+A utility that provides some useful statistics for a given stream of monetary values. This results into an object of type `MonetarySummaryStatistics`, this object contains some statistical  information such as the minimum and maximum values, average, sum, and the number of elements in the stream. A currency must be provided and amounts with different currencies will be ignored. Here's an example.
 
 
 ```java
@@ -32,8 +30,7 @@ public class AggregateSummaringMonetaryAmount {
     }
 }
 ```
-
-The **Moneta** provides also a grouping of `MonetarySummaryStatistics`  from the currencies.
+ **Moneta** provides grouping of `MonetarySummaryStatistics`  from the currencies.
 
 ```java
 public class AggregateGroupSummaringMonetaryAmount {
@@ -64,8 +61,7 @@ public class AggregateGroupSummaringMonetaryAmount {
     }
 }
 ```
-
-Also is possible convert all currencies to just one on `MonetarySummaryStatistics`, to do this just inform an `ExchangeRateProvider`.
+Currency conversions could be applied to `MonetarySummaryStatistics`if  an `ExchangeRateProvider`is provided. 
 
 ```java
 public class AggregateSummaringExchangeRateMonetaryAmount {

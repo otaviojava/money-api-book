@@ -1,7 +1,6 @@
 ### Predicates
 
-
-The predicate operations is when given an input will return a boolean value, true or false. Within Stream the predicate may be used as filter such filter by a currency, or to match, verify if any or all elements match with this condition.
+A predicate is a higher order function that when applied to an element in the stream, it returns true if the condition holds or false otherwise. Predicates could be used for filtering (ex: filtering by currency). Here's an example.
 
 
 ```java

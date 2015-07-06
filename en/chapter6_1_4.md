@@ -1,9 +1,6 @@
-#### Mixing the sorters
+#### Multiple Sorters 
 
-
-
-Just to remember, because this feature isn't of the money-api but from Java 8, it may mix two or more sorter, to do it just uses the **thenComparing** method. Basically it does a sort operation and when returns zero, it will use the other sorter, so the way it is putted the sorter will change the sort result.
-
+The `Comparator.thenComparing` method could be used to chain multiple sorting comparators. Essentially, the secondary comparator will be applied when two values are equal according to the first comparator. This method was added in Java 8. Here's an example.
 
 ```java
 public class SortMixMonetaryAmountNumberCurrency {

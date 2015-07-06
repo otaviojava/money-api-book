@@ -1,5 +1,3 @@
-### Sorting a monetary list
+### Sorting a List of Monetary Values
 
-
-Using the `MonetaryFunctions` may sort by currency, numeric value, just looking to numeric value and looking to a money using exchange rate using ascending and descending way.
- 
+`MonetaryFunctions` provides functions for sorting monetary values by currencies or numerical values and using exchange rates for applying conversions. Sorting can be by ascending or descending order. 
