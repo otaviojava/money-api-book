@@ -39,5 +39,5 @@
  * [Grouping MonetaryAmount](chapter6_4.md)
    * [Grouping by Currency](chapter6_4_1.md)
    * [Partitioning](chapter6_4_2.md)
-   * [Summarizing the money](chapter6_4_3.md)
+   * [Summarizing Money](chapter6_4_3.md)
 * [Bibliography](bibliography.md)
