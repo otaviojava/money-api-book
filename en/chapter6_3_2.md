@@ -1,8 +1,6 @@
-#### Predicates with numeric values
+#### Predicates on Numeric Values
 
-
-The moneta provides predicates with numeric values on MonetaryAmount, the methods have the same behavior of the `MonetaryAmount` interface:
-
+**Moneta** provides predciate that operate on the numeric value of the `MonetaryAmount`. These predicates are: 
 
 * `MonetaryFunctions.isLessThanOrEqualTo(monetaryAmount)`
 * `MonetaryFunctions.isLessThan(monetaryAmount)`
