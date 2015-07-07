@@ -1,9 +1,6 @@
-## But nobody else thought it before? Knowing the API
+## What has been done? Knowing the API
 
+In the last chapter we discussed the advantages of introducing the money type. 
+A lot of smart Java developers have tackled this problem previously and developed dedicated APIs to deal with money. There are lot of APIs out there including decent open source and proprietary projects but unfortunately the efforts weren't standardised in a specification. **JSR 354** is a specification to standardise all these appreciated and decent APIs.
 
-On the last chapter was discussed about the advantages when we became the money as type class instead work just as primitive value. But does no one lived it before? The art of “*re-invent wheel*”, spend time a lot, beyond be dangerous once the developer beginner will live the same trouble that a advanced developer already lived.  A famous phrase from Clarice Lispector says “Who walks alone might even get faster, but one that is accompanied surely goes further.”, in other words, the best strategy is join to more people, community, this way is possible share experience, do not repeat the same errors, contribute to these tools, getting this tool more mature and stronger. Is possible joint to favorite solution to solve the money's type, but what happen when does everyone want to use your own solution? When the software has lock on it's not a good thing. With this goal was born the specification to take money the **JSR 354**. 
-
-
-Once the interface was already defined, each company, community, developers can chose your favorite solution or just can change easily to other implementation on his application, to do it just need which the money representation implements this API. This behavior is similar to change data base on Java's world, if the developers follows or uses the JDBC's interfaces. Is possible to change the database easily, just change the driver, the implementation, and everything will running normally.
-
-To remember the money's approach briefly, the money has two parts, the part of value is the number quantity, so it is represented numerically, but just with the number value is not possible do many things, is necessary also the coin, The coin represents the “system of money” on trivial use, specially within on a country, this way the Brazilian real, dollar and euro are kind of currency.
+Once we get a standard interface, communities, enterprises, and developers can pick an implementation and use it in their projects. The common interface will make the code more portable and maintainable. Think of how easy it is to change your underlying  SQL database if you are using JDBC, just change the driver and everything else will remain unchanged. 
