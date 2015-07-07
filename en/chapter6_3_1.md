@@ -1,10 +1,8 @@
-#### Predicates using currencies
+#### Currency Predicates 
+**Moneta** Provides currency predicates that help in filtering based on the currency.  These predicates could be inclusive or exclusive as we will so through the examples. 
 
-With **Moneta** may do predicates from currencies using inclusive and exclusive, both uses varargs, in other words, is possible add n elements:
-
-
-* `isCurrency(CurrencyUnit... currencies)`: Returns true if the `MonetaryAmount` has one of these currencies.	
-* `filterByExcludingCurrency(CurrencyUnit... currencies)`: Returns true if `MonetaryAmount` hasn't the currencies specified.
+* `isCurrency(CurrencyUnit... currencies)`: Returns true if the `MonetaryAmount` has one of these currencies.   
+* `filterByExcludingCurrency(CurrencyUnit... currencies)`: Returns true if `MonetaryAmount` doesn't have the passed currencies.
 
 
 ```java
