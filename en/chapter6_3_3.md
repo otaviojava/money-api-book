@@ -1,7 +1,6 @@
-#### Mixing with predicates
+#### Chaining Predicates
 
-
-As well as sort, also is possible interact with predicates, using boolean operations, so the predicate has the methods **negate**, **and** and **or**.
+Predicates are quite powerful, they provide convenient methods like **negate**, **and** and **or** and hence it is easy to chain them. Here's an example.
 
 ```java
 public class PredicateMonetaryAmountMix {
