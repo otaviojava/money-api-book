@@ -1,7 +1,7 @@
 #### Predicates with numeric values
 
 
-The moneta provides predicates with numeric values on MonetaryAmount, the methods have the same behavior of the `MonetaryAmount` interface:
+ **Moneta** provides predicates with numeric values for `MonetaryAmount`s, the methods have the same behavior as the interface:
 
 
 * `MonetaryFunctions.isLessThanOrEqualTo(monetaryAmount)`
@@ -18,7 +18,6 @@ public class PredicateMonetaryAmountNumberValue {
         CurrencyUnit dollar = Monetary.getCurrency("USD");
 
 
-
         MonetaryAmount money = Money.of(10, dollar);
         MonetaryAmount money2 = Money.of(10, dollar);
         MonetaryAmount money3 = Money.of(10, dollar);
@@ -32,7 +31,7 @@ public class PredicateMonetaryAmountNumberValue {
         boolean hasAnyGreaterThanZero = Stream.of(money, money2, money3, money4, money5)
                 .anyMatch(MonetaryFunctions.isGreaterThan(Money.zero(dollar)));//true
 
-        boolean allBetweenAndTen = Stream.of(money, money2, money3, money4, money5)
+        boolean allBetweenZeroAndTen = Stream.of(money, money2, money3, money4, money5)
                 .allMatch(MonetaryFunctions.isBetween(Money.zero(dollar),
                         Money.of(BigDecimal.TEN, dollar)));//true
 
