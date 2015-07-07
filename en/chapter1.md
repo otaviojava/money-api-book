@@ -2,18 +2,18 @@
 
 According to Wikipedia, *Money is any item or verifiable record that is generally accepted as payment for goods and services and repayment of debts in a particular country or socio-economic context*. Money is represented by two parts: A numerical value and a currency. We clearly deal with money in our programs everyday, but the JDK doesn't provide a standard representation of money. What we need to know as developers is what data type is suitable to represent  money.
 
-The first strategy is to use the types already coming from Java, Java Effective book does not recommend the use of the ``double`` and ``float`` when precise answers are necessary. 
-
+The first attempt would be to use the primitive floating point types (`double`and `float`) that are available in the language. The author of *Effective Java*  doesn't recommend using these types when precise values are required.
+ 
 ``` java
 double val = 1.03 - .42;
 System.out.println(val); //0.6100000000000001
 ```
 
-As you can see, the result wasn't something that the user would expect. One might ask, is floating point arithmetic broken in Java? No it's not, but Java uses native floating point types and this how **IEEE-754** floating point numbers work, we can't precisely represent base-10 numbers that we as humans tend to use.
+As you can see, the result wasn't something that the user would expect. One might ask, is floating point arithmetic broken in Java? No it's not, but Java uses native floating point types and this how **IEEE-754** floating point numbers work, we can't precisely represent base-10 numbers that we as humans tend to use. `Double` and `float` in Java are double-precision 64-bit IEEE-754 floating point and single-precision 32-bit IEEE-754 floating point respectively. 
 
-The same book highlights two strategies for dealing with money: 
+The same book mentions two ways for dealing with money: 
 
-The first is using the ``long`` and ``int`` for that, it is necessary to perform the conversion value for cents, this solution is highly recommended when the speed and memory occupation are important points, however it is important to worry about the number of decimal places, the book does not recommend greater representation that nine decimal places.
+The first is using the a ``long`` and  an``int`` , but this requires converting the value to its lower primitive units (ex: cents). This solution is highly recommended when performance is an issue. However it is important to worry about the number of decimal places, the book does not recommend greater representation than nine decimal places.
 
 ``` java
   public static void main(String[] args) {
@@ -46,7 +46,7 @@ int sum = banana.getMoney() + pasta.getMoney();
 It is very easy to go wrong with this design where we could easily forget the fact that we have to convert dollars into cents...
 
 
-Besides the use of ``int`` and ``long`` effective Java recommends using ``BigDecimal``, with that, our product will have a much more intuitive and more common call, after all, it is more natural to say that a product is twelve dollars and not twelve hundred cents.
+Besides the use of ``int`` and ``long`` Effective Java recommends using ``BigDecimal`` and this makes our lives easier  because it sounds  more natural to say that a product is worth twelve dollars rather than twelve hundred cents.
 
 ``` java
 public class Product {
@@ -59,7 +59,7 @@ Product pasta = new Product("pasta", BigDecimal.valueOf(4D));
 BigDecimal sum = banana.getMoney().add(paste.getMoney());
 ```
 
-Things are getting better, but there is a very important factor missing in our design which is currency. If we our program deals with a single currency then we are totally fine, however, this is not the case most of the time. Therefore, the number 12 has no meaning without a currency. 
+Things are getting better, but there is a very important factor missing in our design, which is currency. If we our program deals with a single currency then we are totally fine, however, this is not the case most of the time. Therefore, the number 12 has no meaning without a currency. 
 
 So lets add a field of type ``String`` to hold the value of the currency.
 
@@ -86,15 +86,15 @@ public class Product {
      //getter and setter
 }
 enum Currency {
-    	REAL, DOLLAR, EURO;
+      REAL, DOLLAR, EURO;
 }
 ```
 
 There is something similar available in the JDK called *java.util.Currency*
 that works with **ISO-4217** and solves these two problems:
 
-* Just enter values **Currency** kind in the setter.
-* This class has been working with the ISO 4217.
+* It is simple,  we just need to provide  a **Currency**.
+* This type supports  ISO 4217.
 
 
 ``` java
