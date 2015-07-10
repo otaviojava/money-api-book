@@ -1,4 +1,4 @@
-#### Mixing with predicates
+#### Chaining Predicates
 
 
 It is also possible interact with predicates by using the following boolean operations: **negate**, **and** and **or**.
