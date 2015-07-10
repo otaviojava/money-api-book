@@ -3,8 +3,8 @@
 **Moneta** Provides currency predicates that help in filtering based on the currency.  These predicates could be inclusive or exclusive as we will so through the examples.
 
 
-* `isCurrency(CurrencyUnit... currencies)`: Returns true if the `MonetaryAmount` has one of the specified currencies.
-* `filterByExcludingCurrency(CurrencyUnit... currencies)`: Returns true if the `MonetaryAmount` does not have one of specified currencies.
+* `isCurrency(CurrencyUnit... currencies)`: Returns true if the `MonetaryAmount` has one of these currencies.   
+* `filterByExcludingCurrency(CurrencyUnit... currencies)`: Returns true if `MonetaryAmount` doesn't have the passed currencies.
 
 
 ```java
