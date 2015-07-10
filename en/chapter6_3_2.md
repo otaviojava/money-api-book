@@ -1,4 +1,4 @@
-#### Predicates with numeric values
+#### Predicates on Numeric Values
 
 
  **Moneta** provides predicates with numeric values for `MonetaryAmount`s, the methods have the same behavior as the interface:
