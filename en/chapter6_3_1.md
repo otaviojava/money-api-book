@@ -1,4 +1,4 @@
-#### Predicates using currencies
+#### Currency Predicates 
 
 With **Moneta** you may create predicates using currencies to check if a `MonetaryAmount` is included or excluded from a varargs.
 
