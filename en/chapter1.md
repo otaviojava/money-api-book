@@ -62,7 +62,7 @@ Product pasta = new Product("pasta", BigDecimal.valueOf(4D));
 BigDecimal sum = banana.getMoney().add(paste.getMoney());
 ```
 
-Things are getting better, but there is a very important factor missing in our design which is currency. If we our program deals with a single currency then we are totally fine, however, this is not the case most of the time. Therefore, the number 12 has no meaning without a currency. 
+Things are getting better, but there is a very important factor missing in our design, which is currency. If we our program deals with a single currency then we are totally fine, however, this is not the case most of the time. Therefore, the number 12 has no meaning without a currency.  
 
 So lets add a field of type ``String`` to hold the value of the currency.
 
