@@ -15,7 +15,8 @@ As you can see, the result wasn't something that the user would expect. One migh
 
 The same book mentions two ways for dealing with money:
 
-The first is using the ``long`` and ``int`` for that, it is necessary to perform the conversion value for cents, this solution is highly recommended when the speed and memory occupation are important points, however it is important to worry about the number of decimal places, the book does not recommend greater representation that nine decimal places.
+The first is using the a ``long`` and  an``int`` , but this requires converting the value to its lower primitive units (ex: cents). This solution is highly recommended when performance is an issue. However it is important to worry about the number of decimal places, the book does not recommend greater representation than nine decimal places.
+
 
 ``` java
   public static void main(String[] args) {
