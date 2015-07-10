@@ -11,7 +11,7 @@ double val = 1.03 - .42;
 System.out.println(val); //0.6100000000000001
 ```
 
-As you can see, the result wasn't something that the user would expect. One might ask, is floating point arithmetic broken in Java? No it's not, but Java uses native floating point types and this how **IEEE-754** floating point numbers work, we can't precisely represent base-10 numbers that we as humans tend to use.
+As you can see, the result wasn't something that the user would expect. One might ask, is floating point arithmetic broken in Java? No it's not, but Java uses native floating point types and this how **IEEE-754** floating point numbers work, we can't precisely represent base-10 numbers that we as humans tend to use. `Double` and `float` in Java are double-precision 64-bit IEEE-754 floating point and single-precision 32-bit IEEE-754 floating point respectively. 
 
 The same book highlights two strategies for dealing with money: 
 
