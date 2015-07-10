@@ -33,7 +33,7 @@
    * [Sum](chapter6_2_1.md)
    * [Maximum and Minimum](chapter6_2_2.md)
  * [Predicates](chapter6_3.md)
-   * [Predicates using currencies](chapter6_3_1.md)
+   * [Currency Predicates ](chapter6_3_1.md)
    * [Predicates with numeric values](chapter6_3_2.md)
    * [Mixing with predicates](chapter6_3_3.md)
  * [Grouping MonetaryAmount](chapter6_4.md)
