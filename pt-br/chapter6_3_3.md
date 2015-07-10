@@ -23,7 +23,7 @@ public class PredicateMonetaryAmountMix {
 				.filter(MonetaryFunctions.isGreaterThan(Money.zero(dollar))
 						.and(MonetaryFunctions.isCurrency(real)))
 				.collect(Collectors.toList());//[]
-		List<MonetaryAmount> greaterThanZeroOrDollar = Stream
+		List<MonetaryAmount> greaterThanZeroOrIsReal = Stream
 				.of(money, money2, money3, money4, money5, money6)
 				.filter(MonetaryFunctions.isGreaterThan(Money.zero(dollar))
 						.or(MonetaryFunctions.isCurrency(real)))
