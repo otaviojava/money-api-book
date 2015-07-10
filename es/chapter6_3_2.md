@@ -32,7 +32,7 @@ public class PredicateMonetaryAmountNumberValue {
         boolean hasAnyGreaterThanZero = Stream.of(money, money2, money3, money4, money5)
                 .anyMatch(MonetaryFunctions.isGreaterThan(Money.zero(dollar)));//true
 
-        boolean allBetweenAndTen = Stream.of(money, money2, money3, money4, money5)
+        boolean allBetweenZeroAndTen = Stream.of(money, money2, money3, money4, money5)
                 .allMatch(MonetaryFunctions.isBetween(Money.zero(dollar),
                         Money.of(BigDecimal.TEN, dollar)));//true
 
