@@ -1,7 +1,7 @@
 #### Mixing with predicates
 
 
-As well as sort, also is possible interact with predicates, using boolean operations, so the predicate has the methods **negate**, **and** and **or**.
+It is also possible interact with predicates by using the following boolean operations: **negate**, **and** and **or**.
 
 ```java
 public class PredicateMonetaryAmountMix {
@@ -18,24 +18,25 @@ public class PredicateMonetaryAmountMix {
         MonetaryAmount money5 = Money.of(8, dollar);
         MonetaryAmount money6 = Money.of(8, dollar);
 
-		List<MonetaryAmount> greaterThanZeroAndDollar = Stream
+		List<MonetaryAmount> greaterThanZeroAndIsReal = Stream
 				.of(money, money2, money3, money4, money5, money6)
 				.filter(MonetaryFunctions.isGreaterThan(Money.zero(dollar))
 						.and(MonetaryFunctions.isCurrency(real)))
 				.collect(Collectors.toList());//[]
-		List<MonetaryAmount> greaterThanZeroOrDollar = Stream
+
+		List<MonetaryAmount> greaterThanZeroOrIsReal = Stream
 				.of(money, money2, money3, money4, money5, money6)
 				.filter(MonetaryFunctions.isGreaterThan(Money.zero(dollar))
 						.or(MonetaryFunctions.isCurrency(real)))
 				.collect(Collectors.toList());//[USD 10, USD 10, USD 10, USD 9, USD 8, USD 8]
 
-		
 		List<MonetaryAmount> notGreaterThan = Stream
 				.of(money, money2, money3, money4, money5, money6)
 				.distinct()
 				.filter(MonetaryFunctions.isGreaterThan(Money.of(9, dollar))
 						.negate())
 				.collect(Collectors.toList());//[USD 9, USD 8]
+
     }
 }
 ```

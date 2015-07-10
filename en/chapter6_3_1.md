@@ -1,10 +1,10 @@
 #### Predicates using currencies
 
-With **Moneta** may do predicates from currencies using inclusive and exclusive, both uses varargs, in other words, is possible add n elements:
+With **Moneta** you may create predicates using currencies to check if a `MonetaryAmount` is included or excluded from a varargs.
 
 
-* `isCurrency(CurrencyUnit... currencies)`: Returns true if the `MonetaryAmount` has one of these currencies.	
-* `filterByExcludingCurrency(CurrencyUnit... currencies)`: Returns true if `MonetaryAmount` hasn't the currencies specified.
+* `isCurrency(CurrencyUnit... currencies)`: Returns true if the `MonetaryAmount` has one of the specified currencies.
+* `filterByExcludingCurrency(CurrencyUnit... currencies)`: Returns true if the `MonetaryAmount` does not have one of specified currencies.
 
 
 ```java
@@ -40,7 +40,7 @@ public class PredicateMonetaryAmountCurrency {
         boolean allMatch = Stream.of(money, money2, money3, money4, money5)
                 .allMatch(MonetaryFunctions.filterByExcludingCurrency(euro));//true
 
-       
+
     }
 }
 ```
