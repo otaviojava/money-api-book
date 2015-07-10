@@ -1,4 +1,4 @@
-## But nobody else thought it before? Knowing the API
+## What has been done? Knowing the API
 
 
 On the last chapter was discussed about the advantages when we became the money as type class instead work just as primitive value. But does no one lived it before? The art of “*re-invent wheel*”, spend time a lot, beyond be dangerous once the developer beginner will live the same trouble that a advanced developer already lived.  A famous phrase from Clarice Lispector says “Who walks alone might even get faster, but one that is accompanied surely goes further.”, in other words, the best strategy is join to more people, community, this way is possible share experience, do not repeat the same errors, contribute to these tools, getting this tool more mature and stronger. Is possible joint to favorite solution to solve the money's type, but what happen when does everyone want to use your own solution? When the software has lock on it's not a good thing. With this goal was born the specification to take money the **JSR 354**. 
