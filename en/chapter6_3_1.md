@@ -1,6 +1,6 @@
 #### Currency Predicates
 
-With **Moneta** you may create predicates using currencies to check if a `MonetaryAmount` is included or excluded from a varargs.
+**Moneta** Provides currency predicates that help in filtering based on the currency.  These predicates could be inclusive or exclusive as we will so through the examples.
 
 
 * `isCurrency(CurrencyUnit... currencies)`: Returns true if the `MonetaryAmount` has one of the specified currencies.
