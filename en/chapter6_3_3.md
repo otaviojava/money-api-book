@@ -1,7 +1,7 @@
 #### Chaining Predicates
 
 
-It is also possible interact with predicates by using the following boolean operations: **negate**, **and** and **or**.
+Predicates are quite powerful, they provide convenient methods like **negate**, **and** and **or** and hence it is easy to chain them. Here's an example.
 
 ```java
 public class PredicateMonetaryAmountMix {
