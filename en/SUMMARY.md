@@ -35,7 +35,7 @@
  * [Predicates](chapter6_3.md)
    * [Currency Predicates ](chapter6_3_1.md)
    * [Predicates on Numeric Values](chapter6_3_2.md)
-   * [Mixing with predicates](chapter6_3_3.md)
+   * [Chaining Predicates](chapter6_3_3.md)
  * [Grouping MonetaryAmount](chapter6_4.md)
    * [Grouping by Currency](chapter6_4_1.md)
    * [Partitioning](chapter6_4_2.md)
