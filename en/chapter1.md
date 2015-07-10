@@ -2,7 +2,9 @@
 
 According to Wikipedia, *Money is any item or verifiable record that is generally accepted as payment for goods and services and repayment of debts in a particular country or socio-economic context*. Money is represented by two parts: A numerical value and a currency. We clearly deal with money in our programs everyday, but the JDK doesn't provide a standard representation of money. What we need to know as developers is what data type is suitable to represent  money.
 
-The first strategy is to use the types already coming from Java, Java Effective book does not recommend the use of the ``double`` and ``float`` when precise answers are necessary. 
+The first attempt would be to use the primitive floating point types (`double`and `float`) that are available in the language. The author of *Effective Java*  doesn't recommend using these types when precise values are required.
+
+
 
 ``` java
 double val = 1.03 - .42;
