@@ -4,7 +4,7 @@
 * [Credit](credits.md)
 * [About the Author](about_me.md)
 * [The Motivation behind the API](chapter1.md)
-* [But nobody else thought it before? Knowing the API](chapter2.md)
+* [What has been done? Knowing the API](chapter2.md)
  * [Source code and Installation](chapter2_1.md)
  * [Representing Money and Currency with Money-API](chapter2_2.md)
  * [Creation Methods](chapter2_3.md)
