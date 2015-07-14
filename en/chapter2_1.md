@@ -1,14 +1,14 @@
 ### Source code and Installation
 
-The API provides a reference implementation which will be the base to all future implementations. On JSR 354, Money-Api, the reference implementation is **Moneta**. For more information about the project see [https://github.com/JavaMoney/jsr354-ri](https://github.com/JavaMoney/jsr354-ri).
+The API provides a reference implementation that will be the base to all future implementations. On JSR 354, Money-Api, the reference implementation is **Moneta**. For more information about the project see [https://github.com/JavaMoney/jsr354-ri](https://github.com/JavaMoney/jsr354-ri).
 
 ---
 
 ####Installing the Project
 
-You could either add it to your project as a dependency from the maven repository or install it from source. 
+You can either add it to your project as a dependency from the Maven repository or install it from source. 
 
-The maven repo could be found here:
+The Maven repo can be found here:
 [http://mvnrepository.com/artifact/org.javamoney/moneta](http://mvnrepository.com/artifact/org.javamoney/moneta).
 
 
@@ -39,7 +39,7 @@ Ivy:
 <dependency org="org.javamoney" name="moneta" rev="moneta_version"/>
 ```
 
-Now you are ready to go and use the API in your project.
+Now you are ready to use the API in your project.
 
 
 
@@ -48,10 +48,10 @@ Now you are ready to go and use the API in your project.
 
 #####Installing from Source
 
-Another option is to install the project from source. This requires having Git and maven installed as well as Java 8.
+Another option is to install the project from source. This requires having Git and Maven installed as well as Java 8.
 
 
-Clone the source of  javamoney-parent using the following command:
+Clone the source of javamoney-parent using the following command:
 
 ```
 git clone https://github.com/JavaMoney/javamoney-parent.git
@@ -69,7 +69,7 @@ Compile the source and install it, the tests will be skipped in this case:
 mvn clean install -Dmaven.test.skip
 ```
 
-Done! The next step will be to install **Moneta** from source.
+The next step will be to install **Moneta** from source.
 
 Clone Moneta's source to your local machine:
 
@@ -88,7 +88,7 @@ Compile the source and install it, the tests will be skipped in this case:
 mvn clean install -Dmaven.test.skip
 ```
 
-Done, the code was compiled and installed on local repository. On this book Done, the code was compiled and installed on your local machine. In this book we will be using the master from Github repository, so we recommend  installing locally. The source of  samples used in this book is available on Github [https://github.com/otaviojava/money-api-book-samples](https://github.com/otaviojava/money-api-book-samples).
+You're Ready! The source code was compiled and installed on a local repository on your machine. In this book we will be using the master from the Github repository, so we recommend installing locally. The source for the samples used in this book is available on Github: [https://github.com/otaviojava/money-api-book-samples](https://github.com/otaviojava/money-api-book-samples).
 
 
 
