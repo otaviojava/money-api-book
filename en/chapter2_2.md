@@ -2,7 +2,7 @@
 
 
 
-As we mentioned before, money is represented with a numeric value and a currency. In order to represent currencies, implementations of JSR-354 have to implement the  `CurrencyUnit` interface. The following table summarises the methods available in the `CurrencyUnit` interface.  Implementations are required to be immutable and thread-safe.
+As we mentioned before, money is represented with a numeric value and a currency. In order to represent currencies, implementations of JSR-354 have to implement the `CurrencyUnit` interface. The following table summarises the methods available in the `CurrencyUnit` interface. Implementations are required to be immutable and thread-safe.
 
 
 |Method's name| Description |Example|
@@ -12,7 +12,7 @@ As we mentioned before, money is represented with a numeric value and a currency
 |``` int getDefaultFractionDigits()``` |Returns the number of digits normally used by currency.|BRL has two digits|
 
 
-We will be using  **Moneta**'s implementation in this book, the reference implementation for this specification. There are two ways for creating instances of `CurrencyUnit` in  **Moneta**. The first way is to construct it from the currency code,  a three characters ```String```.
+We will be using  **Moneta**'s implementation in this book, the reference implementation for this specification. There are two ways for creating instances of `CurrencyUnit` in  **Moneta**. The first way is to construct it from the currency code, a three character `String`.
 
 
 ```java
@@ -29,7 +29,7 @@ public class CurrencyExample1 {
 }
 ```
 
-The second option is passing the `Locale` as a parameter, this option could be quite handy in web applications where the `Locale` could be retrieved from the request.
+The second option is passing the `Locale` as a parameter, this option could be quite handy in web applications where the `Locale` can be retrieved from the request.
 
 ```java
 
@@ -45,14 +45,14 @@ public class CurrencyExample2 {
 
 ```
 
-Now we will discuss how do we represent monetary amounts. The `MonetaryAmount` interface is responsible for that. Implementations of this interface are required to be immutable and thread-safe.
+Now we will discuss how we represent monetary amounts. The `MonetaryAmount` interface is responsible for this. Implementations of this interface are required to be immutable and thread-safe.
 
 ||Method|Description|
 | -- | -- |
 |`<R> R query(MonetaryQuery<R> query)`|Queries the monetary amount|
 |`MonetaryAmount with(MonetaryOperator operator)`|Applies operations on the monetary amount.|
 |`boolean isGreaterThan(MonetaryAmount amount)`|Returns true if the instance is strictly greater than the value of the passed monetary amount.|
-|`boolean   isGreaterThanOrEqualTo(MonetaryAmount amount)`|Returns true if the instance is greater or equals than the value of the passed monetary amount.|
+|`boolean   isGreaterThanOrEqualTo(MonetaryAmount amount)`|Returns true if the instance is greater than or equals than the value of the passed monetary amount.|
 |`boolean isLessThan(MonetaryAmount amount)`|Returns true if the instance is strictly less than the value of the passed monetary amount.|
 |`isLessThanOrEqualTo(MonetaryAmount amt)`|Returns true if the instance is less than or equal to the value of the passed monetary amount.|
 |`boolean isEqualTo(MonetaryAmount amount)`|Returns true if the instance is strictly equal to the value of the passed monetary amount.||
@@ -74,5 +74,5 @@ Within **Moneta** there are three implementations for the `MonetaryAmount` inter
 
 
 1. **Money**: The default implementation, it represents the numeric value using BigDecimal.
-1. **RoundedMoney**: Similar to **Money**, it represents the numeric value with BigDecimal, however, RoundedMoney allows you to apply a MonetaryOperator on every operation. For example, applying a rounding operation on each arithmetic operation. 
-1. **FastMoney**: An implementation which represents the numeric value with a long primitive, it is the fastest implementation on **Moneta**, almost fifteen times faster than the previous implementations. However, it has a precision limitation, the precision is limited to five decimal digits.
+2. **RoundedMoney**: Similar to **Money**, it represents the numeric value with BigDecimal, however, RoundedMoney allows you to apply a MonetaryOperator on every operation. For example, applying a rounding operation on each arithmetic operation. 
+3. **FastMoney**: An implementation which represents the numeric value with a long primitive, it is the fastest implementation on **Moneta**, almost fifteen times faster than the previous implementations. However, it has a precision limitation, the precision is limited to five decimal digits.
