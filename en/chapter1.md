@@ -49,7 +49,7 @@ int sum = banana.getMoney() + pasta.getMoney();
 It is very easy to go wrong with this design where we could easily forget the fact that we have to convert dollars into cents.
 
 
-Besides the use of `int` and `long`, effective Java recommends using `BigDecimal`. This makes our lives easier  because it sounds  more natural to say that a product is worth twelve dollars rather than twelve hundred cents.
+Besides the use of `int` and `long`, *Effective Java* recommends using `BigDecimal`. This makes our lives easier  because it sounds  more natural to say that a product is worth twelve dollars rather than twelve hundred cents.
 
 ``` java
 public class Product {
