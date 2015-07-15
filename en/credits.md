@@ -20,3 +20,7 @@ Over the past few years, he has worked as a software consultant on various proje
 
 Technologist in Analysis and systems development and Post-Graduate in Java Development from the University Estacio de Sa. A Carioca passionate about technology, games, anime and mangas.Interested and perfecting ever
 More on Java technology, currently I am Java Group Administrator of my Graduate, columnist in PTI (IT professionals) and participant GUJ responding on java and disclosing the magazine  the Portugal's community  programming.
+
+**Helen Scott**
+
+I am a Technical Writer with over ten years experience and I have a keen interest in Java technologies. I'm passionate about using clear and concise English to improve the readability of technical documentation for all audiences. 
