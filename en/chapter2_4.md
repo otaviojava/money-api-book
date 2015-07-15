@@ -1,8 +1,7 @@
 ### Arithmetic Operations
 
 
-`MonetaryAmount` provides arithmetic operations such as sum and subtract. 
-Implementations of `MonetaryAmount` are required to be immutable and hence these operations will create new instances holding the result when applied without mutating the instance. 
+Implementations of `MonetaryAmount` are required to be immutable and as such those operations will create new instances holding the result when applied without mutating the original instance.
 
 
 ```java
@@ -18,7 +17,7 @@ public class ArithmeticOperations {
 }
 ```
 
-To do multiplication, division and remain operation is necessary to pass a `Number` instance parameter.
+To do multiplication or division, a remainder operation is necessary to pass a `Number` instance parameter.
 
 ```java
 public class ArithmeticOperations2 {
@@ -34,9 +33,7 @@ public class ArithmeticOperations2 {
 }
 ```
 
-Also is possible do operation just using signal on `MonetaryAmount`.
-
-
+Also, it is possible to do an operation just using signs on `MonetaryAmount`.
 
 ```java
 public class ArithmeticOperations3 {
