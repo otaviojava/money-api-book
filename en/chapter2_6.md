@@ -1,6 +1,6 @@
 ### NumberValue: The Numerical Part
 
-It is possible to retrieve the numeric value of a money amount as well as its currency. The methods `getCurrency` and `getNumber`return `CurrencyUnit`and  `NumberValue` respectively. `NumberValue` extends `java.lang.Number` and hence it is easily convertible to primitive  numerical types (`int`, `long`, `float`, `double`,`short`,`byte`).
+It is possible to retrieve the numeric value of a money amount as well as its currency. The methods `getCurrency` and `getNumber`return `CurrencyUnit`and `NumberValue` do this respectively. The method `NumberValue` extends `java.lang.Number` and as a result it can easily be converted to primitive numerical types (e.g. `int`, `long`, `float`, `double`,`short`,`byte`).
 
 ```java
 public class RetrieveInformationMethods {
@@ -14,7 +14,8 @@ public class RetrieveInformationMethods {
     }
 }
 ```
-In the example below we show some methods that `NumberValue` provides, ex:   `getPrecision`,`getScale`,`getNumberType`, etc..
+In the example below we show some methods that `NumberValue` provides. E.g. `getPrecision`,`getScale` 
+and `getNumberType`.
 
 
 ```java
