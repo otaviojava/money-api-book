@@ -1,11 +1,12 @@
 ### Creation Methods
 
 
-To create a `MonetaryAmount` instance, all implementations follow the same standard for nomenclature, with a little exception on `RoundedMoney` once it can receive a `MonetaryOperator` to work as rounding agent on each operation. Listing the most important methods have:
+To create a `MonetaryAmount` instance, all implementations follow the same standard for nomenclature, with one 
+exception for `RoundedMoney`. `RoundedMoney` can receive a `MonetaryOperator` to work as a rounding agent on each operation. The most important methods here are:
 
 * The method “**of**” with a number and the `CurrencyUnit`.
-The method “**zero**” with a `CurrencyUnit`.
-The method “**ofMinor**” with a long and a `CurrencyUnit`, this `long` will take as cents and will converted considering the currency fraction digits, for example, 200 cents of dollar will two dollars.
+* The method “**zero**” with a `CurrencyUnit`.
+* The method “**ofMinor**” with a long and a `CurrencyUnit`. The `long` will take the cents and convert them using the currency fraction digits, for example, 200 cents is two dollars.
 
 
 
