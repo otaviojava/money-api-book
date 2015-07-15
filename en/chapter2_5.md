@@ -1,6 +1,6 @@
 ### Boolean Operations
 
-`MonetaryAmount` provides equality, relational, and other convenience  methods as shown in the following examples.
+`MonetaryAmount` provides equality, relational, and other convenience methods as shown in the following examples.
 
 
 ```java
