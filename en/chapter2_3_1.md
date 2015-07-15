@@ -1,7 +1,7 @@
 #### RoundedMoney Factory methods
 
 
-In the following example, we show some static factory methods that could be used instantiate  `RoundedMoney`.  One of the overloads expects a `MonetaryOperator` which is used as a “*rounding agent*”. Keep in mind that rounding is what`RoundedMoney` provides.
+In the following example, we show some static factory methods that could be used instantiate `RoundedMoney`.  One of the overloads expects a `MonetaryOperator` that is used as a “*rounding agent*”. Keep in mind that rounding is what`RoundedMoney` provides.
 
 
 ```java
