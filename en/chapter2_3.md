@@ -6,7 +6,7 @@ exception for `RoundedMoney`. `RoundedMoney` can receive a `MonetaryOperator` to
 
 * The method “**of**” with a number and the `CurrencyUnit`.
 * The method “**zero**” with a `CurrencyUnit`.
-* The method “**ofMinor**” with a long and a `CurrencyUnit`. The `long` will take the cents and convert them using the currency fraction digits, for example, 200 cents is two dollars.
+* The method “**ofMinor**” with a `long` and a `CurrencyUnit`. The `long` will take the cents and convert them using the currency fraction digits, for example, 200 cents becomes 2 dollars.
 
 
 
