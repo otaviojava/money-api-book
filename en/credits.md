@@ -24,3 +24,7 @@ More on Java technology, currently I am Java Group Administrator of my Graduate,
 **Helen Scott**
 
 I am a Technical Writer with over ten years experience and I have a keen interest in Java technologies. I'm passionate about using clear and concise English to improve the readability of technical documentation for all audiences. 
+
+**Sleiman Jneidi**
+
+I am software engineer and a member of the London Java Community (LJC), based in London and working as a Java developer. I am interested in concurrent programming and distributed systems. In my free time I write code for fun or read languages' specifications. I still go out though. At least occasionally.
