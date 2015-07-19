@@ -1,6 +1,6 @@
 ## Querying/Operation on MonetaryAmount
 
-`MonetaryOperator` and `MonetaryQuery` are functional interfaces, they provide abstraction for querying and operating on monetary values like conversions and retrieving the fractional parts (cents).    
+`MonetaryOperator` and `MonetaryQuery` are functional interfaces. They provide abstraction for querying and operating on monetary values like conversions and retrieving the fractional parts (cents).    
 
 ```java
 
