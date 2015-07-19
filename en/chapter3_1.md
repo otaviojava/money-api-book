@@ -1,7 +1,7 @@
 ### MonetaryOperator
 
 `MonetaryOperator` is a functional interface that accepts a `MonetaryAmount` and produces another `MonetaryAmount`.
-We mentioned this interface when we discussed `RoundedMoney`implementation. With this interface it is possible to do rounding operations, return parts of the money amount, doubles its value, etc.
+We mentioned this interface when we discussed `RoundedMoney`implementation. With this interface it is possible to do rounding operations, return parts of the money amount, doubles its value, and more.
 
 ```java
 public class MonetaryOperatorExamples {
@@ -14,11 +14,12 @@ public class MonetaryOperatorExamples {
                 return m.multiply(2);
             }
             return m.divide(2);
-        };
+        }
     }
 }
 ```
-There are two ways for applying the operator, we could either call  `MonetaryOperator.apply` or `MonetaryAmount.with` as shown in the example below.
+There are two ways to apply the operator. We could either call `MonetaryOperator.apply` or `MonetaryAmount.with` as 
+shown in the example below.
 
 ```java
 public class HelloMonetaryOperator {
@@ -35,13 +36,14 @@ public class HelloMonetaryOperator {
 
  **Moneta** provides implementations of `MonetaryOperator`. `MonetaryOperators` provides factory methods for getting instances of  `MonetaryOperator`. These methods are: 
 
-* **reciprocal()** returns the money as reciprocal, multiply this value by inverse (1/n).
-* **permil(Number number)** returns the permil value , for example, permil(10) of `EUR 2.35` returns `EUR 0.0235`.
-* **percent(Number number)** returns the percentage , for example, the `percent(10)` of `EUR 200.00` returns `EUR 20.00`.
-* **minorPart()** returns the minor part, the value of the fractions, for example, the minor part of `EUR 2.35` is `EUR 0.35`.
-* **majorPart()** returns the integral part, for example, the major part of `EUR 2.35` is `EUR 2`.
-* **rounding()** it applies rounding, to know how much the decimal digits the rounding will use, see the **getDefacultFractionDigits** from `CurrencyUnit`.
-* **exchange(CurrencyUnit currency)** Given a money this operator just exchange the currency, in other words, just change the currency, but it isn't an exchange rate, for example, the `exchange('BRL')` of `EUR 2.35` returns `BRL 2.35`.
+* **reciprocal()** returns the money as reciprocal. Multiply this value by inverse (1/n).
+* **permil(Number number)** returns the permil value. For example, permil(10) of `EUR 2.35` returns `EUR 0.0235`.
+* **percent(Number number)** returns the percentage. For example, the `percent(10)` of `EUR 200.00` returns `EUR 20.00`.
+* **minorPart()** returns the minor part, the value of the fractions. For example, the minor part of `EUR 2.35` is 
+`EUR 0.35`.
+* **majorPart()** returns the integral part. For example, the major part of `EUR 2.35` is `EUR 2`.
+* **rounding()** applies rounding. To see how many decimal digits the rounding will use, see the **getDefaultFractionDigits** from `CurrencyUnit`.
+* **exchange(CurrencyUnit currency)** swaps the currency. This operator just change the currency, but it isn't an exchange rate, for example, the `exchange('BRL')` of `EUR 2.35` returns `BRL 2.35`.
 
 ```java
 
@@ -53,7 +55,7 @@ public class MonetaryOperatorsExample {
         
         MonetaryAmount money = Money.of(120.231, currency);
         
-        MonetaryAmount majorParteResult = money.with(MonetaryOperators.majorPart());//BRL 120
+        MonetaryAmount majorPartResult = money.with(MonetaryOperators.majorPart());//BRL 120
         MonetaryAmount minorPartResult = money.with(MonetaryOperators.minorPart());//BRL 0.231
         MonetaryAmount percentResult = money.with(MonetaryOperators.percent(20));//BRL 24.0462
         MonetaryAmount permilResult = money.with(MonetaryOperators.permil(100));//BRL 12.0231
