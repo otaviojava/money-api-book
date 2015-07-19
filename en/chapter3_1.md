@@ -14,7 +14,7 @@ public class MonetaryOperatorExamples {
                 return m.multiply(2);
             }
             return m.divide(2);
-        }
+        };
     }
 }
 ```
