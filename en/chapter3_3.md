@@ -1,6 +1,6 @@
 ### MonetaryQuery vs MonetaryOperator 
 
-Operations done through `MonetaryQuery` and `MonetaryOperator` might be equivalent. The reason why we have them is separate interfaces is that we need to keep the concerns separate.  `MonetaryQuery` is responsible for retrieving information about the  `MonetaryAmount` where `MonetaryOperator` is responsible for applying operations on `MonetaryAmount`. 
+Operations done using `MonetaryQuery` and `MonetaryOperator` might be equivalent. The reason why we have them as separate interfaces is to keep their fuctions separate. `MonetaryQuery` is responsible for retrieving information about the `MonetaryAmount` whereas `MonetaryOperator` is responsible for applying operations on the `MonetaryAmount`. 
 
 ```java
 public class DifferenceMonetaryQueryMonetaryOperator {
