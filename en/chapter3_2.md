@@ -1,7 +1,7 @@
 ### MonetaryQuery
 
 
-Similar to `MonetaryOperator`, `MonetaryQuery` is a functional interface that accepts a  `MonetaryOperator` and returns a generic type-parameter. With `MonetaryQuery` you can perform some queries on the monetary value such as getting currency code or the numeric value as shown in the example below.
+Similar to `MonetaryOperator`, `MonetaryQuery` is a functional interface that accepts a  `MonetaryOperator` and returns a generic type-parameter. With `MonetaryQuery` you can perform some queries on the monetary value such as getting the currency code or the numeric value as shown in the example below.
 
 ```java
 public class MonetaryQueryExamples {
@@ -30,10 +30,11 @@ public class HelloMonetaryQuery {
 }
 ```
 
-Moneta provides implementations of `MonetaryQuery`, `MonetaryQueries` provides factory methods for creating instances of type `MonetaryQuery`:
+Moneta provides implementations of `MonetaryQuery` and `MonetaryQueries` provide factory methods for creating instances of type `MonetaryQuery`:
 
 * `MonetaryQuery<Long> extractMajorPart()` returns the major part of a money , for example, EUR 2.35 returns 2.
-* `MonetaryQuery<Long> convertMinorPart()` converts the money amount into its full value in cents, for example  `USD 2.35` will be `235`.
+* `MonetaryQuery<Long> convertMinorPart()` converts the money amount into its full value in cents, for example  `USD 
+2.35` becomes `235`.
 
 
 ```java
