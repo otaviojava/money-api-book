@@ -1,6 +1,6 @@
 ## Money Formatting
 
-`MonetaryAmountFormat` is the interface responsible for formatting the textual representation  of`MonetaryAmount` values. So given a `MonetaryAmount`, `MonetaryAmountFormat.format` is responsible for working out the conversion to a `String` value .
+`MonetaryAmountFormat` is the interface responsible for formatting the textual representation  of `MonetaryAmount` values. So given a `MonetaryAmount`, `MonetaryAmountFormat.format` is responsible for working out the conversion to a `String` value.
 
 ```java
 public interface MonetaryAmountFormat extends MonetaryQuery<String>{
@@ -38,7 +38,9 @@ public class ToStringExample {
 }
 ```
 
-The reference implementation specifies two ways for creating a formatter. The first option is  creating it through a query builder or `Locale`, and the second option is `MonetaryAmountFormatSymbols` which is similar to `java.text.DecimalFormat`. `MonetaryAmount.parse` method provides an overload that accepts `MonetaryAmountFormat` as a parameter as shown below. 
+The reference implementation specifies two ways for creating a formatter. The first option is to create it through a query builder or `Locale`, and the second option is `MonetaryAmountFormatSymbols` which is similar to `java.text.DecimalFormat`. The `MonetaryAmount.parse` method provides an overload that accepts `MonetaryAmountFormat` as a parameter
+ as 
+shown below. 
 
 
 ```java
