@@ -39,8 +39,7 @@ public class ToStringExample {
 ```
 
 The reference implementation specifies two ways for creating a formatter. The first option is to create it through a query builder or `Locale`, and the second option is `MonetaryAmountFormatSymbols` which is similar to `java.text.DecimalFormat`. The `MonetaryAmount.parse` method provides an overload that accepts `MonetaryAmountFormat` as a parameter
- as 
-shown below. 
+ as sshown below. 
 
 
 ```java
