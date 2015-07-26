@@ -1,6 +1,6 @@
 ### The class MonetaryAmountFormatSymbols
 
-`MonetaryAmountFormatSymbols`s function is similar to `DecimalFormat` with regards to the Number class. The goal is formating moneys object using a specific configuration. The configuration can take into account currency, minimum and maximum digits, quantities before and after the comma and other properties.
+The `MonetaryAmountFormatSymbols`s function is similar to `DecimalFormat` with regards to the Number class. The goal is to format the moneys object using a specific configuration. The configuration can take into account currency, minimum and maximum digits, quantities before and after the comma and other properties.
 
 ```java
 public class MonetaryAmountFormatSymbolsExample {
@@ -19,8 +19,9 @@ public class MonetaryAmountFormatSymbolsExample {
 
 There are two classes that allow the configuration of the currency or the minimum number of digits to be displayed:
 
-* The first is the `MonetaryAmountSymbols` class,  used to define the configured symbols; for example currency symbols or separator symbols.
-* The second is the `MonetaryAmountNumericInformation` class which contains information about numeric values. An example of this would be minimum and maximum number of digits that can appear before and after the comma.
+* The first is the `MonetaryAmountSymbols` class. This is used to define the configured symbols; for example currency 
+symbols or separator symbols.
+* The second is the `MonetaryAmountNumericInformation` class . This contains information about numeric values. An example of this is the minimum and maximum number of digits that can appear before and after the comma.
 
 ```java
 public class MonetaryAmountFormatSymbolsExample2 {
@@ -39,7 +40,7 @@ There is the possibility to define which implementation will be used to serializ
 
 * The `FastMoneyProducer` producer, for `MonetaryAmount`s using the `FastMoney` implementation.
 * The `MoneyProducer` producer, for `MonetaryAmount`s using the `Money` implementation.
-* The `RoundedMoneyProducer` producer, for `MonetaryAmount`s using the `RoundedMoney` implementation. This class has two constructors: the first one has the `MonetaryOperator` as a parameter; parameter  which will be used in the creation of all `RoundedMoney` objects. The second is the default constructor; it will use `MonetaryOperators.rounding()`, as the `MonetaryOperator`, for object creation.
+* The `RoundedMoneyProducer` producer, for `MonetaryAmount`s using the `RoundedMoney` implementation. This class has two constructors: the first one has the `MonetaryOperator` as a parameter which will be used in the creation of all `RoundedMoney` objects. The second is the default constructor; it will use `MonetaryOperators.rounding()` as the `MonetaryOperator` for object creation.
 
 
 
@@ -57,7 +58,7 @@ public class MonetaryAmountFormatSymbolsExample3 {
 }
 ```
 
-Similarly to the `DecimalFormat` class, `MonetaryAmountFormatSymbols` can use a `String` as formating pattern. The regex follows the same standardization as in [DecimalFormat](http://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html).
+Similarly to the `DecimalFormat` class, `MonetaryAmountFormatSymbols` can use a `String` as a formatting pattern. The regex follows the same standardization as in [DecimalFormat](http://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html).
 
 ```java
 public class MonetaryAmountFormatSymbolsExample4 {
