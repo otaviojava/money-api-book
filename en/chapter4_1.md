@@ -1,6 +1,6 @@
 ### The class MonetaryAmountFormat
 
-The `MonetaryFormats` class allows the creation of `MonetaryAmountFormats` objects by using either a query builders or by using `Locale`s with the `CurrencyStyle` `enum`.
+The `MonetaryFormats` class allows the creation of `MonetaryAmountFormats` objects by using either a query builder or by using `Locale`s with the `CurrencyStyle` `enum`.
 
 
 ```java
