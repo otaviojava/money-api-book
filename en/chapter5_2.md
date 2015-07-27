@@ -1,6 +1,6 @@
 ### Exchange rate from a specific data
 
-Applications may need to know not only the most recent exchange rate, but exchange rates from specific dates. For example: when renting a room in a hotel, in order to create the bill the exchange rate from the date when the room was booked would be needed. **Moneta** supports this, by using the `ConversationQuery` class it is possible find out the exchange rate for a defined date or for a range of dates. `LocalDate` class should be used to represent dates.
+Applications may need to know not only the most recent exchange rate, but exchange rates from specific dates. For example: when renting a room in a hotel, the exchange rate from the date when the room was booked would be needed to create the bill. **Moneta** supports this. By using the `ConversationQuery` class, it is possible find out the exchange rate for a defined date or for a range of dates. `LocalDate` class should be used to represent dates.
 
 
 ```java
@@ -29,7 +29,7 @@ public class ExchangeRateProviderExample2 {
 }
 ```
 
-If **Moneta** cannot find the date, it will throw an exception. An example, it will not possible to find a rate for the 9th of January, 2011. This date represents a Sunday and almost always providers will not have an entry for this day.
+If **Moneta** cannot find the date, it will throw an exception. For example, it will not be possible to find a rate for the 9th of January, 2011. This date is a Sunday and as such almost all providers will not have an entry for this day.
 
 
 ```java
