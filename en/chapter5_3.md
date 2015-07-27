@@ -1,6 +1,7 @@
 ### Ignoring the exchange rate
 
-In order to just the change currency, ignoring the rate, the method exchange from the `MonetaryOperators` class can be used.
+In order to just change the currency whilst ignoring the rate, the method exchange from the `MonetaryOperators` class
+ can be used.
 
 ```java
 public class ExchangeRateProviderExample5 {
