@@ -1,9 +1,9 @@
 ## Exchange Rate
 
-Internationalization is the process of increasing involvement of enterprises in international markets. This can have an impact on multiple levels, in culture, economy or politics. It affects the daily life as it is easy to find out what is happening across the world, to discover cultures just by surfing the Internet or to just buy products or services from other countries. Software needs to follow this trend, it needs to easily allow users to interact with each other all across the globe. It is exactly the case of money, software has the obligation to support different currencies.
+Internationalization is the process of increasing the involvement of enterprises in international markets. This can have an impact on multiple levels in culture, economy or politics. It affects daily life in that it's easy to find out what is happening across the world, to discover cultures just by surfing the Internet or to simply buy products or services from other countries. Software needs to follow this trend, it needs to allow users to easily interact with each other across the globe. It is exactly the same case with money; software has an obligation to support different currencies.
 
 
-Talking about money and internationalization will lead you to think about the interaction between different currencies. What would happen if we'd try to do the following operation?
+Talking about money and internationalization will lead you to think about the interaction between different currencies. What would happen if we tried to do the following operation?
 
 ```java
 public class MistakeExample {
