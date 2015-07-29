@@ -1,6 +1,6 @@
 #### Maximum and Minimum
 
-**Moneta** provides maximum and minimum reductions. Given a stream on monetary values, you could easily get the maximum or minimum values. Here's an example. 
+**Moneta** provides maximum and minimum reductions. Given a stream of monetary values, you could easily get the maximum or minimum values. Here's an example. 
 
 ```java
 public class ReduceMaxMinMonetaryAmount {
