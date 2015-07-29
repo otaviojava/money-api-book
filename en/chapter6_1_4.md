@@ -1,6 +1,6 @@
 #### Multiple Sorters 
 
-The `Comparator.thenComparing` method could be used to chain multiple sorting comparators. Essentially, the secondary comparator will be applied when two values are equal according to the first comparator. This method was added in Java 8. Here's an example.
+The `Comparator.thenComparing` method can be used to chain multiple sorting comparators. Essentially, the secondary comparator will be applied when two values are equal according to the first comparator. This method was added in Java 8. Here's an example.
 
 ```java
 public class SortMixMonetaryAmountNumberCurrency {
