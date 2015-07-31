@@ -1,6 +1,7 @@
 #### Sorting by the Numerical Value
 
-When you sort by the numerical value, the currency will be ignored and only the numerical value will be used in the comparisons. Note that this sorting will not apply any exchange rates, in other words, ten Brazilian Real will be considered  equal to ten US Dollars. Sorting can be in ascending or descending order. Here's an example.
+When you sort by the numerical value, the currency will be ignored and only the numerical value will be used in the comparisons. Note that this sorting will not factor in exchange rates. In other words, ten Brazilian Real will be considered equal to ten US Dollars. Sorting can be in ascending or descending order. Here's an example.
+
 ```java
 public class SortMonetaryAmountNumber {
 
