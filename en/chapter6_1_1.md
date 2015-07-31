@@ -1,5 +1,5 @@
 #### Sorting by Currency
-When you sort by currency, **Moneta** sorts the list based on the lexicographical order of the currency code. For example, a list of money with the currencies  `USD`, `EUR`, `BRL` will be sorted to `BRL`, `EUR` and `USD` when sorted by ascending order or `USD`, `EUR`, `BRL` when sorted by descending order. Here's an example. 
+When you sort by currency, **Moneta** sorts the list based on the lexicographical order of the currency code. For example, a list of money with the currencies `USD`, `EUR`, `BRL` will be sorted to `BRL`, `EUR` and `USD` when sorted in ascending order or `USD`, `EUR`, `BRL` when sorted in descending order. Here's an example. 
 
 
 ```java
