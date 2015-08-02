@@ -1,6 +1,6 @@
 #### Currency Predicates
 
-**Moneta** Provides currency predicates that help in filtering based on the currency.  These predicates could be inclusive or exclusive as we will so through the examples.
+**Moneta** Provides currency predicates that help in filtering based on the currency. These predicates could be inclusive or exclusive as we will show through the examples.
 
 
 * `isCurrency(CurrencyUnit... currencies)`: Returns true if the `MonetaryAmount` has one of these currencies.   
