@@ -1,7 +1,7 @@
 #### Chaining Predicates
 
 
-Predicates are quite powerful, they provide convenient methods like **negate**, **and** and **or** and hence it is easy to chain them. Here's an example.
+Predicates are quite powerful. They provide convenient methods like **negate**, **and** and **or** and hence it is easy to chain them. Here's an example.
 
 ```java
 public class PredicateMonetaryAmountMix {
