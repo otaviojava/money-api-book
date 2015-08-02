@@ -1,7 +1,7 @@
 #### Predicates on Numeric Values
 
 
-**Moneta** provides predciate that operate on the numeric value of the `MonetaryAmount`. These predicates are:
+**Moneta** provides predicates that operate on the numeric value of the `MonetaryAmount`. These predicates are:
 
 
 * `MonetaryFunctions.isLessThanOrEqualTo(monetaryAmount)`
