@@ -1,3 +1,4 @@
 ### Grouping MonetaryAmount
 
-**Moneta** provides mechanism for grouping monetary values, ex: grouping by currency or summarizing the values.
+**Moneta** provides mechanism for grouping monetary values. For example, grouping by currency or summarizing the 
+values.
