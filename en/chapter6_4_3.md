@@ -1,6 +1,6 @@
 #### Summarizing Money
 
-A utility that provides some useful statistics for a given stream of monetary values. This results into an object of type `MonetarySummaryStatistics`, this object contains some statistical  information such as the minimum and maximum values, average, sum, and the number of elements in the stream. A currency must be provided and amounts with different currencies will be ignored. Here's an example.
+A utility that provides some useful statistics for a given stream of monetary values. This results into an object of type `MonetarySummaryStatistics`. This object contains some statistical information such as the minimum and maximum values, average, sum, and the number of elements in the stream. A currency must be provided and amounts with different currencies will be ignored. Here's an example.
 
 
 ```java
@@ -61,7 +61,7 @@ public class AggregateGroupSummaringMonetaryAmount {
     }
 }
 ```
-Currency conversions could be applied to `MonetarySummaryStatistics`if  an `ExchangeRateProvider`is provided. 
+Currency conversions can be applied to `MonetarySummaryStatistics`if an `ExchangeRateProvider`is provided. 
 
 ```java
 public class AggregateSummaringExchangeRateMonetaryAmount {
