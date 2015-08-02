@@ -1,6 +1,6 @@
 #### Partitioning
 
-A stream of monetary values could partitioned based on a predicate. The result will be a `Map<Boolean,List<MonetaryAmount>>`where the key is a boolean and the results are based on the behaviour of the predicate as shown in the example below. 
+A stream of monetary values can be partitioned based on a predicate. The result will be a `Map<Boolean,List<MonetaryAmount>>`where the key is a boolean and the results are based on the behaviour of the predicate as shown in the example below. 
 
 ```java
 public class AggregatePredicateMonetaryAmount {
