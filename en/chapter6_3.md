@@ -1,6 +1,6 @@
 ### Predicates
 
-A predicate is a higher order function that when applied to an element in the stream, it returns true if the condition holds or false otherwise. Predicates could be used for filtering (ex: filtering by currency). Here's an example.
+A predicate is a higher order function that when applied to an element in the stream, returns true if the condition holds, or false otherwise. Predicates can be used for filtering (ex: filtering by currency). Here's an example.
 
 
 ```java
