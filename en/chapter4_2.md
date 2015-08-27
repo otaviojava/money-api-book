@@ -8,7 +8,7 @@ public class MonetaryAmountFormatSymbolsExample {
     public static void main(String[] args) {
         CurrencyUnit currency = Monetary.getCurrency("BRL");
         MonetaryAmount money = Money.of(12, currency);
-        MonetaryAmountFormat defaultFormat = MonetaryAmountFormatSymbols.getdefaultFormat();
+        MonetaryAmountFormat defaultFormat = MonetaryAmountFormatSymbols.getDefault();
         String format = defaultFormat.format(money);//R$ 12,00
         MonetaryAmount moneyParsed = Money.parse(format, defaultFormat);//or using defaultFormat.parse(format);
 
