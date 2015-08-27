@@ -27,7 +27,7 @@ symbols or separator symbols.
 public class MonetaryAmountFormatSymbolsExample2 {
 
     public static void main(String[] args) {
-        MonetaryAmountFormatSymbols defaultFormat = MonetaryAmountFormatSymbols.getdefaultFormat();
+        MonetaryAmountFormatSymbols defaultFormat = MonetaryAmountFormatSymbols.getDefault();
         MonetaryAmountSymbols amountSymbols = defaultFormat.getAmountSymbols();
         MonetaryAmountNumericInformation numericInformation = defaultFormat.getNumericInformation();
 
