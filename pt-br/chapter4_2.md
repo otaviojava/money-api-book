@@ -26,7 +26,7 @@ Caso seja necessário configurar as informações como quantidade mínima, moeda
 public class MonetaryAmountFormatSymbolsExample2 {
 
     public static void main(String[] args) {
-        MonetaryAmountFormatSymbols defaultFormat = MonetaryAmountFormatSymbols.getDefafult();
+        MonetaryAmountFormatSymbols defaultFormat = MonetaryAmountFormatSymbols.getDefault();
         MonetaryAmountSymbols amountSymbols = defaultFormat.getAmountSymbols();
         MonetaryAmountNumericInformation numericInformation = defafult.getNumericInformation();
         
