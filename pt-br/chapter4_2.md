@@ -1,20 +1,24 @@
 ### A classe MonetaryAmountFormatSymbols
 
-Existe também a interface ```MonetaryAmountFormatSymbols```, que de forma semelhante a classe ```DecimalFormat``` com a classe ```Number```, tem o objetivo de realizar formatações do dinheiro a partir de configurações de símbolos, moedas, quantidade mínima e máxima de dígitos antes e depois da vírgula, etc.
+Existe também a interface ```MonetaryAmountDecimalFormatBuilder```, que de forma semelhante a classe ```DecimalFormat``` com a classe ```Number```, tem o objetivo de realizar formatações do dinheiro a partir de configurações de símbolos, moedas, quantidade mínima e máxima de dígitos antes e depois da vírgula, etc.
 
 
 ```java
-public class MonetaryAmountFormatSymbolsExample {
+public class MonetaryAmountDecimalFormatBuilderExample {
 
     public static void main(String[] args) {
+    	MonetaryAmountFormat defaultFormat = MonetaryAmountDecimalFormatBuilder.newInstance().build();
+    	MonetaryAmountFormat patternFormat = MonetaryAmountDecimalFormatBuilder.of("¤ ###,###.00").build();
+    	MonetaryAmountFormat localeFormat = MonetaryAmountDecimalFormatBuilder.of(Locale.US).build();
+    	
         CurrencyUnit currency = Monetary.getCurrency("BRL");
         MonetaryAmount money = Money.of(12, currency);
-        MonetaryAmountFormat defaultFormat = MonetaryAmountFormatSymbols.getDefault();
-        String format = defaultFormat.format(money);//R$ 12,00
+        String format = defaultFormat.format(money);//$12.00
         MonetaryAmount moneyParsed = Money.parse(format, defaultFormat);//or using defafult.parse(format);
 
     }
 }
+
 ```
 
 Caso seja necessário configurar as informações como quantidade mínima, moeda, etc. Existem duas classes: 
