@@ -4,17 +4,21 @@ Existe también la interface ```MonetaryAmountFormatSymbols```, que de forma sem
 
 
 ```java
-public class MonetaryAmountFormatSymbolsExample {
+public class MonetaryAmountDecimalFormatBuilderExample {
 
     public static void main(String[] args) {
+    	MonetaryAmountFormat defaultFormat = MonetaryAmountDecimalFormatBuilder.newInstance().build();
+    	MonetaryAmountFormat patternFormat = MonetaryAmountDecimalFormatBuilder.of("¤ ###,###.00").build();
+    	MonetaryAmountFormat localeFormat = MonetaryAmountDecimalFormatBuilder.of(Locale.US).build();
+    	
         CurrencyUnit currency = Monetary.getCurrency("BRL");
         MonetaryAmount money = Money.of(12, currency);
-        MonetaryAmountFormat defaultFormat = MonetaryAmountFormatSymbols.getDefault();
-        String format = defaultFormat.format(money);//R$ 12,00
+        String format = defaultFormat.format(money);//$12.00
         MonetaryAmount moneyParsed = Money.parse(format, defaultFormat);//or using defafult.parse(format);
 
     }
 }
+
 ```
 
 Cuando sea necesario configurar las informaciones como cantidad mínima, moneda, etc. Existen dos clases: 
