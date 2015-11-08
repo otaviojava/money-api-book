@@ -1,6 +1,6 @@
 ### Ignorando a cotação
 
-Em alguns momentos é necessário realizar uma troca de moeda sem realizar cotação, para isso existe o método **exchange** dentro do ```MonetaryOperators```.
+Em alguns momentos é necessário realizar uma troca de moeda sem realizar cotação, para isso existe o método **exchange** dentro do ```ConversionOperators```.
 
 ```java
 public class ExchangeRateProviderExample5 {
@@ -14,7 +14,7 @@ public class ExchangeRateProviderExample5 {
         MonetaryAmount money2 = FastMoney.of(10, real);
 
 
-        MonetaryOperator operator = MonetaryOperators.exchange(dollar);
+        MonetaryOperator operator = ConversionOperators.exchange(dollar);
         MonetaryAmount result = money2.with(operator).add(money);//USD 20.00000 ignoring currency
     }
 }
