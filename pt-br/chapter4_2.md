@@ -1,6 +1,6 @@
 ### A classe MonetaryAmountFormatSymbols
 
-Existe também a interface ```MonetaryAmountDecimalFormatBuilder```, que de forma semelhante a classe ```DecimalFormat``` com a classe ```Number```, tem o objetivo de realizar formatações do dinheiro a partir de configurações de símbolos, moedas, quantidade mínima e máxima de dígitos antes e depois da vírgula, etc.
+Existe também a classe ```MonetaryAmountDecimalFormatBuilder```, que de forma semelhante a classe ```DecimalFormat``` com a classe ```Number```, tem o objetivo de realizar formatações do dinheiro a partir de configurações de símbolos, moedas, quantidade mínima e máxima de dígitos antes e depois da vírgula, etc.
 
 
 ```java
@@ -50,6 +50,7 @@ public class MonetaryAmountDecimalFormatBuilderExample2 {
 ```
 
 Também é possível passar uma ```String``` como pattern para a formatação, essa ```String``` segue o mesmo padrão da classe [DecimalFormat](http://docs.oracle.com/javase/7/docs/api/java/text/DecimalFormat.html).
+
 
 ```java
 public class MonetaryAmountDecimalFormatBuilderExample3 {
