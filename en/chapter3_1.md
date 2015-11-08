@@ -43,7 +43,7 @@ public class HelloMonetaryOperator {
 `EUR 0.35`.
 * **majorPart()** returns the integral part. For example, the major part of `EUR 2.35` is `EUR 2`.
 * **rounding()** applies rounding. To see how many decimal digits the rounding will use, see the **getDefaultFractionDigits** from `CurrencyUnit`.
-* **exchange(CurrencyUnit currency)** swaps the currency. This operator just change the currency, but it isn't an exchange rate, for example, the `exchange('BRL')` of `EUR 2.35` returns `BRL 2.35`.
+* **exchange(CurrencyUnit currency)** swaps the currency. This operator just change the currency, but it isn't an exchange rate, for example, the `exchange('BRL')` of `EUR 2.35` returns `BRL 2.35`. This method is in the class `ConversionOperators`.
 
 ```java
 
@@ -60,7 +60,7 @@ public class MonetaryOperatorsExample {
         MonetaryAmount percentResult = money.with(MonetaryOperators.percent(20));//BRL 24.0462
         MonetaryAmount permilResult = money.with(MonetaryOperators.permil(100));//BRL 12.0231
         MonetaryAmount roundingResult = money.with(MonetaryOperators.rounding());//BRL 120.23
-        MonetaryAmount resultExchange = money.with(MonetaryOperators.exchange(dollar));//USD 120.231
+        MonetaryAmount resultExchange = money.with(ConversionOperators.exchange(dollar));//USD 120.231
     }
 }
 ```
