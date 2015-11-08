@@ -1,6 +1,6 @@
     ### La clase MonetaryAmountFormatSymbols
 
-Existe también la interface ```MonetaryAmountDecimalFormatBuilder```, que de forma semejante la clase ```DecimalFormat``` con la clase ```Number```, tiene el objetivo de realizar formateadores de dinero a partir del as configuraciones de símbolos, monedas, cantidad mínima y máxima de dígitos antes y despues la coma decimal, etc.
+Existe también la classe ```MonetaryAmountDecimalFormatBuilder```, que de forma semejante la clase ```DecimalFormat``` con la clase ```Number```, tiene el objetivo de realizar formateadores de dinero a partir del as configuraciones de símbolos, monedas, cantidad mínima y máxima de dígitos antes y despues la coma decimal, etc.
 
 
 ```java
