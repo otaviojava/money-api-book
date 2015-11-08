@@ -46,7 +46,7 @@ Moneta trae por estándar algunas implementaciones de `MonetaryOperator`, la cla
 * **minorPart()** retorna el valor que se encuentra a la derecha del punto decimal, por exemplo, la menor parte de `EUR 2.35` es ```EUR 0.35```.
 * **majorPart()** retorna el valor entero de dinero, por ejemplo, la menor parte de `EUR 2.35` es `EUR 2`.
 * **rounding()** realiza el proceso de redondeo de dinero, para saber el número de decimales despues del punto es recuperado la información del método getDefaultFractionDigits() de la interface CurrencyUnit.
-* **exchange(CurrencyUnit currency)** dado un Dinero ese operador realizará el intercambio de la moneda, osea, este solo va intercambiar la moneda no llevando en consideración su cotización, por ejemplo, `EUR 2.35` **exchange('BRL')** retornará `BRL 2.35`. This method is in the class `ConversionOperators`
+* **exchange(CurrencyUnit currency)** dado un Dinero ese operador realizará el intercambio de la moneda, osea, este solo va intercambiar la moneda no llevando en consideración su cotización, por ejemplo, `EUR 2.35` **exchange('BRL')** retornará `BRL 2.35`. Este método está en la clase `ConversionOperators`
 
 ```java
 
