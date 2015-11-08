@@ -79,7 +79,7 @@ public class AggregateSummaringExchangeRateMonetaryAmount {
         MonetaryAmount money5 = Money.of(25, dollar);
 
         MonetarySummaryStatistics summary = Stream.of(money, money2, money3, money4, money5)
-                .collect(MonetaryFunctions.summarizingMonetary(dollar, provider));
+                .collect(ConversionOperators.summarizingMonetary(dollar, provider));
 
         MonetaryAmount min = summary.getMin();//USD 2.831248
         MonetaryAmount max = summary.getMax();//USD 25
