@@ -21,24 +21,6 @@ public class MonetaryAmountDecimalFormatBuilderExample {
 
 ```
 
-Cuando sea necesario configurar las informaciones como cantidad mínima, moneda, etc. Existen dos clases: 
-
-* La primera es la ```MonetaryAmountSymbols``` con esta es posible definir los simbolos que serán utilizados, por ejemplo, símbolo de la moneda, separador, etc. 
-* La clase ```MonetaryAmountNumericInformation``` cuidará de las informaciones con relación al formateo del valor numérico, por ejemplo, el número mínimo y máximo de dígitos antes y después de la coma. 
-
-```java
-public class MonetaryAmountFormatSymbolsExample2 {
-
-    public static void main(String[] args) {
-        MonetaryAmountFormatSymbols defaultFormat = MonetaryAmountFormatSymbols.getDefault();
-        MonetaryAmountSymbols amountSymbols = defaultFormat.getAmountSymbols();
-        MonetaryAmountNumericInformation numericInformation = defafult.getNumericInformation();
-        
-    }
-}
-```
-
-
 
 También es posible definir cual implementación será utilizada en la serialización del objeto. Para eso existe la clase funcional ```MonetaryAmountProducer```, con esta es posible definir su propia implementación a partir del número y de la moneda. Moneta por estándar ya viene con tres implementaciones:
 
@@ -50,14 +32,18 @@ También es posible definir cual implementación será utilizada en la serializa
 
 
 ```java
-public class MonetaryAmountFormatSymbolsExample3 {
+public class MonetaryAmountDecimalFormatBuilderExample2 {
 
     public static void main(String[] args) {
-        MonetaryAmountSymbols symbols = new MonetaryAmountSymbols(Locale.US);// new MonetaryAmountSymbols();
-        symbols.setCurrencySymbol("Mon");
-        MonetaryAmountFormat formater = MonetaryAmountFormatSymbols.of(symbols, new MoneyProducer());
-        CurrencyUnit currency = Monetary.getCurrency("BRL");
-        String text = formater.format(Money.of(10, currency));//Mon 10.00
+    	CurrencyUnit currency = Monetary.getCurrency("BRL");
+        MonetaryAmount money = Money.of(12, currency);
+        
+    	MonetaryAmountFormat formater = MonetaryAmountDecimalFormatBuilder.of(new Locale("pt", "BR")).
+    			withCurrencyUnit(currency).withProducer(new MoneyProducer()).build();
+    	
+        
+        String format = formater.format(money);//R$ 12,00
+        MonetaryAmount moneyParsed = Money.parse(format, formater);//or using defafult.parse(format);
 
     }
 }
@@ -65,16 +51,19 @@ public class MonetaryAmountFormatSymbolsExample3 {
 
 También es posible pasar un ```String``` como patrón para el formateo, ese ```String``` sigue el mismo standard de la clase ```DecimalFormat```.
 
+
 ```java
-public class MonetaryAmountFormatSymbolsExample3 {
+public class MonetaryAmountDecimalFormatBuilderExample3 {
 
     public static void main(String[] args) {
-        MonetaryAmountSymbols symbols = new MonetaryAmountSymbols(Locale.US);// new MonetaryAmountSymbols();
-        symbols.setCurrencySymbol("Mon");
-        MonetaryAmountFormat formater = MonetaryAmountFormatSymbols.of("¤ ###,###.00", symbols, new MoneyProducer());
+    	MonetaryAmountFormat patternFormat = MonetaryAmountDecimalFormatBuilder.of("¤ ###,###.00").build();
+    	
         CurrencyUnit currency = Monetary.getCurrency("BRL");
-        String text = formater.format(Money.of(10_000_00, currency));//Mon 1,000,000.00
-        System.out.println(text);
+        MonetaryAmount money = Money.of(12, currency);
+        String format = patternFormat.format(money);//$ 12.00
+        MonetaryAmount moneyParsed = Money.parse(format, patternFormat);//or using defafult.parse(format);
+
     }
 }
+
 ```
