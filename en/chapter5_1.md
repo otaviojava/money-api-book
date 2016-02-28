@@ -24,6 +24,6 @@ Moneta has five implementations of `ExchangeRateProvider`:
 
 * **ECB** - Is an implementation that retrieves the latest rate from the European Central Bank.
 * **IMF** - Is an implementation that retrieves the latest rate from the International Monetary Fund.
-* **IMF_HIST** - Is an implementation that retrieves the rate of a specific date from the European Central Bank.
+* **IMF_HIST** - Is an implementation that retrieves the rate of a specific date from the International Monetary Fund.
 * **ECB_HIST90** - Is an implementation that retrieves the last ninety days of rates from the European Central Bank.
 * **ECB_HIST** - Is an implementation that retrieves all available information since 1999 from the European Central Bank.
