@@ -101,7 +101,7 @@ public class Product {
 }
 ```
 
-Com o nosso dinheiro composto precismos validar que as moedas são as mesmas na hora de realizar a compra ou realizar o somatório, afinal, a cotação de um produto em real deve ser diferente de um em dólar.
+Com o nosso dinheiro composto precisamos validar que as moedas são as mesmas na hora de realizar a compra ou realizar o somatório, afinal, a cotação de um produto em real deve ser diferente de um em dólar.
 
 ``` java
 Product banana = //instance;
