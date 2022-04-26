@@ -1,6 +1,0 @@
-# Author
-
-
-## Otavio Santana
-
-Otávio Santana (@otaviojava) is a developer and enthusiast of open source. He is an evangelist and practitioner of agile philosophy and polyglot development in Brazil. Otávio is a JUG leader of JavaBahia and SouJava, and a strong supporter of Java communities in Brazil. In Brazil he leads the BrasilJUGs initiative to incorporate Brazilian JUGs into joint activities. He is a co-creator and responsible for the Linguagil Group — a merge of Java, Ruby, Python, and Agile groups that promote agility across language-focused communities. In the open source world, Otávio is a developer in the OpenJDK and a creator of Easy-Cassandra. He has helped with JBoss Weld, Hibernate, Apache Commons, and other open source projects. Otávio is a very active speaker in Brazil, where he has participated in the largest Java events in the country. As an international speaker, Otávio has presented at JavaOne and the Cassandra tour events. Otávio is a writer, and has many articles and even a book on JVM Internals. Otávio Santana means to “make the future Java” by working on several Java Specification Requests (JSR) as part of the Java Expert group. Otávio recently won the JCP's Outstanding Adopt-a-JSR Participant of the Year award, and is a Java Champion.

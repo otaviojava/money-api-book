@@ -1,9 +1,0 @@
-## What has been done? Knowing the API
-
-
-In the last chapter we discussed the advantages of using a type class to represent money instead of a primitive value. But has anyone done this before? We do not want to “*re-invent the wheel*” and spend a lot of time and effort only to have the same problems that an advanced developer has already had. A famous phrase from Clarice Lispector says “Who walks alone might even get faster, but one that is accompanied surely goes further.” In other words, the best strategy is to join with more people and communities and in this way it is possible to share experiences, not repeat the same errors, and contribute to these tools to make them more mature and stronger. Relying on a single library or vendor is not very flexible, and since fragmentation of solutions can lead to the same mistakes being made many times, the obvious solution is to create a standard way of solving the money problem. With this goal in mind, the specification, **JSR 354** was born. 
-
-
-Once the interface is defined, each company, community, or group of developers can chose their favorite solution or can change it to use another implementation of their application. To do so, it just needs the money representation that implements this API. This behavior is similar to Java Persistance API. If the developers follow or use the JDBC's interfaces, it is possible to change the database by changing the driver and the implementation. Everything will then run normally.
-
-Using the money's approach, the money has two parts, the part of value is the number quantity. This is represented numerically, however with the number value alone, it's not possible do much. It is necessary to also use the coin. The coin represents the “system of money” in trivial use, specially within a country. This way the Brazilian real, dollar and euro are a kind of currency.
