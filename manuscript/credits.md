@@ -1,20 +1,30 @@
-## Revisadores
+## Reviewers
 
 
-**Daniel Dias**
+**Chris Sekaran**
 
-Tecnólogo em Analise e Desenvolvimento de Sistema e Pós-Graduando em Desenvolvimento Java pela Universidade Estácio de Sá. 
-Um Carioca apaixonado por tecnologia,games, animes e mangas.Interessado e se aperfeiçoando cada vez mais na Tecnologia Java, atualmente sou Administrador do Grupo de Java da minha Pós-Graduação, colunista no PTI(Profissionais de TI) e participante do GUJ respondendo sobre java e divulgando a Revista programar.
+I am a passionate Java developer currently working in London for a global payments and e-wallet company. Recently I have started to take a personal interest in the Internet-of-things and how the JVM can be used as a platform for this very future form of living.
+In my spare time I am off on a long drive or listening to music
 
+**Rene Enriquez**
 
-**Roberto Georg Platz**
+René Enríquez is currently a software architect for a RedHat partner company headquartered in Ecuador, currently is working with technologies such as: jBPM, Fuse, JEE, CDI, Spring among others. He has previously worked on many projects using several programming languages such as Java, php and .Net. He has achieved the following certifications:
 
-Roberto Georg Platz, bacharel em Ciências da Computação pela Universidade Estadual de Londrina,
-desenvolvedor Java a mais de dez anos trabalhando com desenvolvimento Java  e Banco de dados para web. 
-Possui certificações Java SCJP 1.4, SCJP 6, SCWCD 5, OCBCD 6; atualmente realiza consultaria java
-para empresa do ramo de sistemas de câmbio.
+* Oracle Certified Professional, Java SE 6 Programmer
+* Microsoft Technology Associate
+* Cisco Network Operating Systems
 
+Over the past few years, he has worked as a software consultant on various projects for private and government companies and as an instructor of courses to build enterprise and mobile applications, and is the Author of RESTful Java Web Services Security book published by PacktPub.
 
-**Jocélio Lima**
+**Daniel Dias Dos Santos**
 
-Tecnólogo em Analise e Desenvolvimento de Sistemas pela Universidade Estácio de Sá. Participante do CEJUG (Ceará Java Users Group).
+Technologist in Analysis and systems development and Post-Graduate in Java Development from the University Estacio de Sa. A Carioca passionate about technology, games, anime and mangas.Interested and perfecting ever
+More on Java technology, currently I am Java Group Administrator of my Graduate, columnist in PTI (IT professionals) and participant GUJ responding on java and disclosing the magazine  the Portugal's community  programming.
+
+**Helen Scott**
+
+I am a Technical Writer with over ten years experience and I have a keen interest in Java technologies. I'm passionate about using clear and concise English to improve the readability of technical documentation for all audiences. 
+
+**Sleiman Jneidi**
+
+I am software engineer and a member of the London Java Community (LJC), based in London and working as a Java developer. I am interested in concurrent programming and distributed systems. In my free time I write code for fun or read languages' specifications. I still go out though. At least occasionally.

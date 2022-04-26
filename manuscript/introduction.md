@@ -1,21 +1,18 @@
-# Uma especificação de dinheiro, será que vale mesmo a pena?
+# One specification for money, is it really worth it?
 
+Money is a verifiable record that is accepted as payment for goods and services. Java developers deal with money in their day-to-day jobs, but do we really need to introduce a specification for a money API? Why don't we just use the types that are already available in the JDK such as `Double`, `Float`, `String`, `BigDecimal`?  What are the alternatives? The Money-API specification was introduced to standardise the way we approach this problem.
 
-Dinheiro é a forma mais comum de realizar trocas de bens, compra de materiais etc. Ele certamente foi, é e será representando em diversos programas que rodam Java. Mas afinal qual é a motivação por trás de se usar um tipo dinheiro? Não vale mais a pena utilizar um tipo primitivo do Java como o ```Double```, ```Float```, ```String```, ```BigDecimal``` etc? Existem soluções melhores que essa? O que acontece com o meu encapsulamento quando se toma decisão de usar tipos primitivos? Usar classes utilitárias para tratar a mesma moeda pode ser muito interessante, mas caso a desenvolvedor esqueça de utilizar tal classe o resultado poderá ser desastroso. Uma vez que seja necessário criar um tipo dinheiro, surge a primeira dúvida: Será que ninguém nunca passou por esse problema antes? Vale lembrar que o fator de ficar “reinventando a roda” não é uma boa estratégia sem falar, que o desenvolvedor passará pelos mesmos problemas já resolvidos por outros mais experientes. Com esse intuito nasceu a especificação de moeda.
+**JSR 354** is a specification for a general purpose Money-API that aims to make the life of the Java developer easier. To give a clearer picture of the API, this cook book will be divided into the following parts:
 
+In the first chapter we will go through the motivation behind the Money-API, the benefits of its design, its lack of code-clutter,  ease-of-maintenance and object-oriented design.
 
-A **JSR 354**, é uma especificação Java cujo o objetivo é tomar conta do dinheiro e resolvendo alguns problemas triviais que os desenvolvedores Java vem enfrentado em seu dia a dia. A partir dessa especificação será mais fácil trabalhar com dinheiro de forma padronizada. Para entender melhor o funcionamento da API esse material foi dividido em algumas partes:
+Extracting and applying operations on monetary values. Working with query and operator: Here we will see how the `MonetaryOperator` and `MonetaryQuery` classes work and the differences between them. `MonetaryOperators` and `MonetaryQueries` are utility classes used to operate and query money respectively.
 
-No primeiro capítulo será discutido a motivação por trás de utilizar um tipo dinheiro em seu sistema, os benefícios tanto no design, centralização de código, manutenção e orientação a objetos.
+The Formatting Money chapter shows us how can we parse or convert a `String` into a monetary value without introducing 
+a custom formatter.
 
-Criação de um tipo dinheiro, mas será que ninguém nunca teve esse problema? Essa pergunta será respondida nesse segundo capítulo, falando da motivação da especificação além do uso básico da API.
+The API supports Java 8, so we will see how we can work with `Streams` of monetary values.
 
-Extrair valores e realizar pequenas operações a partir de um valor monetário, esse é o principal objetivo das operações com query e operador: Será demonstrado o funcionamento das classes ```MonetaryOperator``` e ```MonetaryQuery```, diferenças entre elas, as classes utilitárias ```MonetaryOperators``` e ```MonetaryQueries``` e como criar uma query ou operação no dinheiro.
+Working with **Java EE** such as **JSF** converters, **CDI**, **JPA**, **bean validator** etc., will be the subject of this chapter and how the API works with these technologies.
 
-Formatando um montante monetário: Será demonstrado aqui a forma de exibir formatar o dinheiro com classes já suportadas pela API, além de como criar um formatador do zero.
-
-Sim, estamos preparados para o Java 8!: Conheça as funções embutidas dentro da RI feita para trabalhar com **Streams** de montante monetário.
-Convertendo valores: O que acontece quando tentamos realizar somatórios de dinheiros com moedas diferentes? Certamente lançará uma exceção certo? Nesse ponto será demonstrado como realizar conversão com cotações de valores, além de realizar a busca de cotação a partir de uma data específica.
- Trabalhando com o Java EE: Conversores de JSF, CDI e Spring, nesse capítulo mostraremos classes utilitárias para trabalhar com essas tecnologias.
-
-Espero que os leitores curtam bastante o projeto realizado em conjunto com toda a comunidade Java.
+We hope that you will enjoy reading this book as well as using the API that was developed for the Java community, by the Java community.
